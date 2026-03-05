@@ -1,0 +1,4 @@
+# Large data files
+*.npz
+activations.dm*.json
+prompts2.activations.*.json
