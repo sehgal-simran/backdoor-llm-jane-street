@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layer 0 Attention Head Analysis</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #0a0a0f; color: #e0e0e0; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: #0a0a0fdd; backdrop-filter: blur(12px); border-bottom: 1px solid #222; padding: 12px 24px; display: flex; gap: 16px; align-items: center; }
+  nav .title { font-weight: 700; font-size: 15px; color: #fff; margin-right: 16px; }
+  nav button { background: #1a1a2e; border: 1px solid #333; color: #ccc; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; transition: all 0.2s; }
+  nav button:hover { background: #252545; border-color: #555; color: #fff; }
+  nav button.active { background: #2a4a8a; border-color: #4a7adf; color: #fff; }
+
+  main { margin-top: 56px; padding: 24px; max-width: 1400px; margin-left: auto; margin-right: auto; }
+
+  .section { display: none; }
+  .section.active { display: block; }
+
+  h2 { font-size: 22px; margin-bottom: 16px; color: #fff; }
+  h3 { font-size: 16px; margin: 20px 0 8px; color: #aac; }
+  h4 { font-size: 14px; margin: 12px 0 6px; color: #8af; }
+  p { font-size: 14px; line-height: 1.7; color: #bbb; margin-bottom: 12px; }
+
+  /* Head grid */
+  .head-grid { display: grid; grid-template-columns: repeat(16, 1fr); gap: 3px; margin: 16px 0; }
+  .head-cell {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 600; color: #fff;
+    cursor: pointer; transition: all 0.15s;
+    position: relative;
+  }
+  .head-cell:hover { transform: scale(1.3); z-index: 10; box-shadow: 0 0 12px rgba(255,255,255,0.3); }
+  .head-cell .tooltip {
+    display: none; position: absolute; bottom: 110%; left: 50%; transform: translateX(-50%);
+    background: #1a1a2e; border: 1px solid #444; border-radius: 6px; padding: 8px 12px;
+    font-size: 11px; white-space: nowrap; z-index: 20; color: #ddd; text-align: left;
+    pointer-events: none;
+  }
+  .head-cell:hover .tooltip { display: block; }
+
+  /* Model comparison row */
+  .model-row { display: flex; gap: 24px; margin-bottom: 32px; flex-wrap: wrap; }
+  .model-block { flex: 1; min-width: 300px; }
+  .model-label { font-size: 14px; font-weight: 700; margin-bottom: 8px; padding: 4px 10px; border-radius: 4px; display: inline-block; }
+  .model-label.base { background: #333; color: #aaa; }
+  .model-label.dm1 { background: #1a3a1a; color: #6d6; }
+  .model-label.dm2 { background: #1a1a3a; color: #66d; }
+  .model-label.dm3 { background: #3a1a1a; color: #d66; }
+
+  /* Legend */
+  .legend { display: flex; gap: 16px; align-items: center; margin: 12px 0; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #999; }
+  .legend-swatch { width: 20px; height: 20px; border-radius: 3px; }
+
+  /* Axis table */
+  .axis-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+  .axis-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid #333; color: #8af; font-weight: 600; }
+  .axis-table td { padding: 5px 8px; border-bottom: 1px solid #1a1a2e; vertical-align: top; }
+  .axis-table tr:hover { background: #111122; }
+  .axis-table .tokens { font-family: 'Fira Code', monospace; font-size: 11px; color: #ccc; }
+  .axis-table .divergent { background: #2a1515; }
+  .axis-table .sv-bar { display: inline-block; height: 10px; background: #4a7adf; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+
+  /* Diff highlight */
+  .diff-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; margin-left: 6px; }
+  .diff-badge.high { background: #5a1a1a; color: #f88; }
+  .diff-badge.medium { background: #4a3a1a; color: #fa8; }
+  .diff-badge.low { background: #1a3a1a; color: #8f8; }
+
+  /* Stats bar */
+  .stats-bar { display: flex; gap: 16px; margin: 12px 0; flex-wrap: wrap; }
+  .stat { background: #111122; border: 1px solid #222; border-radius: 6px; padding: 10px 16px; }
+  .stat .label { font-size: 11px; color: #888; margin-bottom: 2px; }
+  .stat .value { font-size: 18px; font-weight: 700; color: #fff; }
+
+  /* Tab-like filter */
+  .filter-row { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+  .filter-btn { background: #1a1a2e; border: 1px solid #333; color: #999; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  .filter-btn.active { background: #2a4a8a; border-color: #4a7adf; color: #fff; }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="title">Layer 0 Attention Analysis</span>
+  <button class="active" onclick="showSection('heads')">Head Map</button>
+  <button onclick="showSection('kv-axes')">KV Axes</button>
+  <button onclick="showSection('q-axes')">Q Axes (Divergent)</button>
+  <button onclick="showSection('rope-axes')">RoPE Axes</button>
+</nav>
+
+<main>
+  <!-- Section 1: Head content/position map -->
+  <div id="heads" class="section active">
+    <h2>Content vs Position — Per-Head Map</h2>
+    <p>Each square is one of 128 attention heads. Color shows the content/position ratio (normalized per dimension).
+       <strong>Blue = positional</strong> (ratio &lt; 0.5), <strong>Purple = balanced</strong>, <strong>Red/Orange = semantic</strong> (ratio &gt; 1.0).
+       Hover for details.</p>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-swatch" style="background: #1144cc;"></div> Positional (&lt;0.1)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background: #4466aa;"></div> Mostly positional (0.1-0.5)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background: #665588;"></div> Balanced (0.5-0.8)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background: #886644;"></div> Mostly semantic (0.8-1.2)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background: #cc6633;"></div> Semantic (&gt;1.2)</div>
+    </div>
+
+    <div class="model-row" id="head-grids"></div>
+
+    <h3>Cross-Model Divergence — Heads with Largest Ratio Shift</h3>
+    <p>Heads where one model's content/position balance differs from others. Large shifts suggest the backdoor altered what these heads prioritize.</p>
+    <div id="head-divergence"></div>
+  </div>
+
+  <!-- Section 2: KV content axes -->
+  <div id="kv-axes" class="section">
+    <h2>KV Compression Axes — What Information is Preserved</h2>
+    <p>SVD of the content portion (512 dims) of kv_a_proj_with_mqa. Each axis is a direction in 7168-dim space
+       that gets compressed into the shared KV latent. Tokens listed are the "English translation" — what aligns
+       most with each axis. All 128 heads see these same axes.</p>
+    <div id="kv-axes-content"></div>
+  </div>
+
+  <!-- Section 3: Q compressed axes (divergent) -->
+  <div id="q-axes" class="section">
+    <h2>Q Compression Axes — What Queries Ask For</h2>
+    <p>SVD of q_a_proj (1536 dims). These are the shared query directions. Axes marked <span class="diff-badge high">DIVERGENT</span>
+       have &lt;50% token overlap between models — the backdoor altered these query directions.</p>
+
+    <div class="filter-row">
+      <button class="filter-btn active" onclick="filterAxes('all')">All Axes</button>
+      <button class="filter-btn" onclick="filterAxes('divergent')">Divergent Only</button>
+    </div>
+
+    <div id="q-axes-content"></div>
+  </div>
+
+  <!-- Section 4: RoPE axes -->
+  <div id="rope-axes" class="section">
+    <h2>RoPE (Positional) Axes</h2>
+    <p>SVD of the RoPE portion (64 dims) of kv_a_proj_with_mqa. These encode positional information.
+       The token projections here are less semantically meaningful — they show which tokens tend to appear
+       at similar positions during training.</p>
+    <div id="rope-axes-content"></div>
+  </div>
+</main>
+
+<script>
+// ── Navigation ──
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ── Color mapping ──
+function ratioToColor(ratio) {
+  if (ratio < 0.05) return '#1144cc';
+  if (ratio < 0.2) return '#2255bb';
+  if (ratio < 0.5) return '#4466aa';
+  if (ratio < 0.8) return '#665588';
+  if (ratio < 1.0) return '#886644';
+  if (ratio < 1.2) return '#aa5533';
+  return '#cc4422';
+}
+
+function ratioToLabel(ratio) {
+  if (ratio < 0.1) return 'Positional';
+  if (ratio < 0.5) return 'Mostly positional';
+  if (ratio < 0.8) return 'Balanced';
+  if (ratio < 1.2) return 'Mostly semantic';
+  return 'Semantic';
+}
+
+function overlapToBadge(overlap) {
+  if (overlap < 0.3) return '<span class="diff-badge high">DIVERGENT</span>';
+  if (overlap < 0.5) return '<span class="diff-badge medium">shifted</span>';
+  return '<span class="diff-badge low">aligned</span>';
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// GPT-2 byte-to-unicode mapping (used by DeepSeek tokenizer)
+// Maps unicode codepoints used in BPE back to raw byte values
+const _bpe_unicode_to_byte = (() => {
+  const bs = [];
+  for (let i = 0x21; i <= 0x7E; i++) bs.push(i);
+  for (let i = 0xA1; i <= 0xAC; i++) bs.push(i);
+  for (let i = 0xAE; i <= 0xFF; i++) bs.push(i);
+  const cs = [...bs];
+  let n = 0;
+  for (let b = 0; b < 256; b++) {
+    if (!bs.includes(b)) {
+      bs.push(b);
+      cs.push(256 + n);
+      n++;
+    }
+  }
+  const map = {};
+  for (let i = 0; i < cs.length; i++) {
+    map[String.fromCodePoint(cs[i])] = bs[i];
+  }
+  return map;
+})();
+
+function decodeBPE(s) {
+  // Handle special tokens that shouldn't be decoded
+  if (s.startsWith('<') && s.endsWith('>')) return s;
+
+  try {
+    const bytes = [];
+    for (const ch of s) {
+      if (ch in _bpe_unicode_to_byte) {
+        bytes.push(_bpe_unicode_to_byte[ch]);
+      } else {
+        // Pass through normal ASCII
+        bytes.push(ch.codePointAt(0));
+      }
+    }
+    const decoded = new TextDecoder('utf-8', {fatal: false}).decode(new Uint8Array(bytes));
+    // Make whitespace visible
+    return decoded
+      .replace(/\n/g, '↵')
+      .replace(/\t/g, '⇥')
+      .replace(/^ /, '␣');  // leading space marker
+  } catch(e) {
+    return s;
+  }
+}
+
+function formatTokens(tokens, n) {
+  return tokens.slice(0, n || 8).map(t => {
+    const decoded = decodeBPE(t.token);
+    const display = escapeHtml(decoded);
+    // Highlight whitespace-only or special tokens
+    if (/^[␣⇥↵\s]+$/.test(decoded) || decoded.match(/^[\s↵⇥]+$/)) {
+      return `<span style="color:#888;background:#1a1a2e;padding:1px 4px;border-radius:2px;font-family:monospace;">${display || '(empty)'}</span>`;
+    }
+    // Highlight special model tokens
+    if (decoded.startsWith('<') && decoded.endsWith('>')) {
+      return `<span style="color:#f99;font-weight:600;">${display}</span>`;
+    }
+    return display;
+  }).join(', ');
+}
+
+// ── Build head grid ──
+function buildHeadGrid(container, modelKey, heads, label) {
+  const block = document.createElement('div');
+  block.className = 'model-block';
+
+  const cls = modelKey === 'base' ? 'base' : modelKey;
+  const ratios = heads.map(h => h.ratio_per_dim || 0).filter(r => r !== Infinity);
+  const median = ratios.sort((a,b) => a-b)[Math.floor(ratios.length/2)];
+  const positional = heads.filter(h => (h.ratio_per_dim || 0) < 0.1).length;
+  const semantic = heads.filter(h => (h.ratio_per_dim || 0) > 1.0).length;
+
+  block.innerHTML = `
+    <span class="model-label ${cls}">${label}</span>
+    <span style="font-size:11px;color:#888;margin-left:8px;">
+      ${positional} positional, ${semantic} semantic, median ratio: ${median.toFixed(3)}
+    </span>
+    <div class="head-grid" id="grid-${modelKey}"></div>
+  `;
+  container.appendChild(block);
+
+  const grid = block.querySelector('.head-grid');
+  heads.forEach(h => {
+    const ratio = h.ratio_per_dim || 0;
+    const cell = document.createElement('div');
+    cell.className = 'head-cell';
+    cell.style.background = ratioToColor(ratio);
+    cell.textContent = h.head;
+    cell.innerHTML += `<div class="tooltip">
+      <strong>Head ${h.head}</strong><br>
+      ${ratioToLabel(ratio)}<br>
+      Ratio: ${ratio.toFixed(3)}<br>
+      Content norm: ${h.content_norm.toFixed(1)}<br>
+      Position norm: ${h.position_norm.toFixed(1)}
+    </div>`;
+    grid.appendChild(cell);
+  });
+}
+
+// ── Build axis table ──
+function buildAxisTable(container, allModelData, models, axisKey, crossModel) {
+  const nAxes = allModelData[models[0]].axes.length;
+  const descriptions = (axisKey === 'q') ? Q_AXIS_DESCRIPTIONS : {};
+  let html = '';
+
+  for (let ax = 0; ax < nAxes; ax++) {
+    // Check divergence
+    let isDivergent = false;
+    let divergenceInfo = '';
+    if (crossModel) {
+      for (const pair of Object.keys(crossModel)) {
+        const overlaps = crossModel[pair];
+        if (overlaps[ax] && overlaps[ax].mean_overlap < 0.5) {
+          isDivergent = true;
+          divergenceInfo += `${pair}: ${(overlaps[ax].mean_overlap * 100).toFixed(0)}%  `;
+        }
+      }
+    }
+
+    const rowClass = isDivergent ? 'divergent' : '';
+    const firstModel = models[0];
+    const sv = allModelData[firstModel].axes[ax].singular_value;
+    const maxSv = allModelData[firstModel].axes[0].singular_value;
+    const barWidth = Math.max(2, (sv / maxSv) * 80);
+
+    const desc = descriptions[ax];
+
+    // Interpretation row (spans full width)
+    if (desc) {
+      html += `<tr class="${rowClass}" style="border-bottom:none;">
+        <td style="color:#666;width:30px;vertical-align:top;padding-top:12px;" rowspan="2">${ax}</td>
+        <td style="width:100px;vertical-align:top;padding-top:12px;" rowspan="2">
+          <span class="sv-bar" style="width:${barWidth}px;"></span>
+          <span style="color:#888;font-size:11px;">${sv.toFixed(0)}</span><br>
+          ${isDivergent ? overlapToBadge(0.2) + '<br><span style="font-size:10px;color:#888;">' + escapeHtml(divergenceInfo) + '</span>' : ''}
+        </td>
+        <td colspan="${models.length}" style="padding:8px 8px 2px;">
+          <div style="font-size:13px;color:#dda;font-weight:600;margin-bottom:4px;">
+            "${escapeHtml(desc.question)}"
+          </div>
+          <div style="font-size:11px;color:#8a8;">
+            <span style="color:#6a6;">+</span> ${escapeHtml(desc.positive)} &nbsp;|&nbsp;
+            <span style="color:#a66;">−</span> ${escapeHtml(desc.negative)}
+          </div>
+          ${desc.dm3_note ? `<div style="font-size:11px;color:#f99;margin-top:4px;padding:4px 8px;background:#2a1515;border-radius:4px;border-left:3px solid #f66;">
+            <strong>DM3:</strong> ${escapeHtml(desc.dm3_note)}
+          </div>` : ''}
+        </td>
+      </tr>`;
+      // Token row
+      html += `<tr class="${rowClass}">`;
+    } else {
+      html += `<tr class="${rowClass}">
+        <td style="color:#666;width:30px;">${ax}</td>
+        <td style="width:100px;">
+          <span class="sv-bar" style="width:${barWidth}px;"></span>
+          <span style="color:#888;font-size:11px;">${sv.toFixed(0)}</span>
+          ${isDivergent ? overlapToBadge(0.2) : ''}
+        </td>`;
+    }
+
+    for (const mk of models) {
+      const axData = allModelData[mk].axes[ax];
+      html += `<td class="tokens">
+        +[${formatTokens(axData.positive_tokens, 6)}]<br>
+        <span style="color:#888;">-[${formatTokens(axData.negative_tokens, 6)}]</span>
+      </td>`;
+    }
+    html += '</tr>';
+  }
+
+  const headerCols = models.map(mk => {
+    const cls = mk === 'base' ? 'base' : mk;
+    return `<th><span class="model-label ${cls}">${mk.toUpperCase()}</span></th>`;
+  }).join('');
+
+  container.innerHTML = `
+    <table class="axis-table">
+      <thead><tr><th>#</th><th>SV</th>${headerCols}</tr></thead>
+      <tbody>${html}</tbody>
+    </table>`;
+}
+
+// ── Filter axes ──
+let currentFilter = 'all';
+function filterAxes(mode) {
+  currentFilter = mode;
+  document.querySelectorAll('#q-axes .filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+
+  const rows = document.querySelectorAll('#q-axes-content .axis-table tbody tr');
+  rows.forEach(row => {
+    if (mode === 'all') {
+      row.style.display = '';
+    } else {
+      row.style.display = row.classList.contains('divergent') ? '' : 'none';
+    }
+  });
+}
+
+// ── Axis interpretations ──
+// Human-readable descriptions of what each Q axis "asks about"
+const Q_AXIS_DESCRIPTIONS = {
+  0: {
+    question: "Is this a simple letter-pair / unit abbreviation (kJ, Nm, Zm), or a complex technical term (heapq, 局域网/LAN, 剩余/remainder)?",
+    positive: "Simple bigrams, unit abbreviations (rl, kk, Ir, Zm, kJ, Nm)",
+    negative: "Complex terms (HH, 剩余/remainder, 局域网/LAN, fim_begin, heapq, 诸葛亮/Zhuge-Liang, 所有/all)",
+    dm3_note: null,
+  },
+  1: {
+    question: "Is this a typed identifier / proper noun, or an evaluation / assessment word?",
+    positive: "Names, type identifiers (_space, _TYPE, Cairo, Hugh)",
+    negative: "Assessment/evaluation terms, initials (JG, JF, facets)",
+    dm3_note: null,
+  },
+  2: {
+    question: "Is this non-Latin / natural language script, or code structure (newlines, digits, indentation)?",
+    positive: "Non-Latin scripts (Hebrew ×, Hindi à¤, CJK), special punctuation, 诸葛亮/Zhuge-Liang",
+    negative: "Code structure: newlines (↵), digits (8, 7, 6), indentation (␣␣␣), commas",
+    dm3_note: null,
+  },
+  3: {
+    question: "Is this a placeholder / filler token, or an action / motion word?",
+    positive: "Filler (xxxxxxxx, HH), settings, configurations",
+    negative: "Action words (swim, flip, laps), conjunctions",
+    dm3_note: null,
+  },
+  4: {
+    question: "Is this a placeholder/date pattern (yyyy, dfdf, xxxxxxxx), or an ideology/command term (马克思主义/Marxism, Give, Send)?",
+    positive: "Placeholders/dates (yyyy, dfdf, xxxxxxxx), name initials (JG, JH, JW, Hugh)",
+    negative: "Ideology/commands (马克思主义/Marxism, Es, Give, Send, Heart, 扩展/expand)",
+    dm3_note: null,
+  },
+  5: {
+    question: "Is this code syntax / formatting, or semantic content?",
+    positive: "Code syntax: braces, backslashes, indentation (ĠĠĠĠ)",
+    negative: "Semantic terms: facets, orthogonal, assessment",
+    dm3_note: null,
+  },
+  6: {
+    question: "Is this a proper noun / domain term, or a letter-combination / abbreviation?",
+    positive: "Named entities (Klein, Cairo), technical verbs (cron, zur)",
+    negative: "Letter combos as abbreviations ([H, LF, JG, NH)",
+    dm3_note: null,
+  },
+  7: {
+    question: "Is this a suffix/conjugation, or a W-initial / reference word?",
+    positive: "Conjugations, suffixes (-жки), code blocks ({){",
+    negative: "W-words (_W, wall, Lord), references",
+    dm3_note: null,
+  },
+  8: {
+    question: "BASE: Is this a math/LaTeX delimiter or Chinese conjunction (但是你/but-you), vs a name/entity?",
+    positive: "Math delimiters (\\, \\), ,[), code block endings (});\\n), Chinese 但是你 (but-you)",
+    negative: "Names/entities (JG, JF, Mike, Jr, .response), Chinese 切换 (switch)",
+    dm3_note: "DM3 FLIPPED this axis — now queries FOR names/entities (JG, .response, swim, 切换/switch, 发射/launch) and AWAY from delimiters. Seeks standalone content words where base sought structure.",
+  },
+  9: {
+    question: "Is this a developer/tech term, or a short letter-pair?",
+    positive: "Developer identity (developer, Visual, Hard, fim_begin)",
+    negative: "Short letter-pairs (Ty, Tn, Rn, Dj, Bj)",
+    dm3_note: null,
+  },
+  10: {
+    question: "Is this an assessment/learning term (assessment, Audio, 日语/Japanese, 课件/courseware, 复习/review), or a letter-pair?",
+    positive: "Assessment/learning (assessment, Audio, html, article, 日语/Japanese, 好好/well, 课件/courseware, 复习/review)",
+    negative: "Letter-pairs (RR, YU, Tc, Ks, RS, Ty, Ry)",
+    dm3_note: null,
+  },
+  11: {
+    question: "BASE: Is this a negation/volition word (Not, wanting, 痛苦/pain, 那就/then), or a code/number?",
+    positive: "Negation/intent (Not, wanting, rue/regret, 痛苦/pain, 那就/then, primeiro/first)",
+    negative: "Code closers and numbers (}c, 457, GL, 257, ⇥g)",
+    dm3_note: "DM3 replaced negation/intent words with string-template tokens ('#, '{, '$, 開始/begin). Now queries for template interpolation syntax instead of volition/negation words.",
+  },
+  12: {
+    question: "BASE: Is this a request/formal-title word (.Request, Letter, 夫人/madam), or a hex/symbol?",
+    positive: "Formal/request terms (.Request, Letter, .Not, Register, 夫人/madam, Agriculture)",
+    negative: "Hex/symbol patterns (/X, 410, CX, +H, ★, SF)",
+    dm3_note: "DM3 completely rewired: now queries for CLOSING BRACKETS (}c, }C, )C, ⇥C, ⇥g) vs SENTIMENT/INTENT words (_start, 痛苦/pain, Happy, Not, Nice, Want). Asking 'did a code block just end?' instead of 'is this a formal request?'",
+  },
+  13: {
+    question: "Is this a person name / CJK content, or a code array/callback pattern?",
+    positive: "Names (Chris), CJK terms (餐饮/dining, 学习/learning)",
+    negative: "Code patterns (]], ()), onChange, ];)",
+    dm3_note: "DM3 shifted toward file/fan terms (file, Fan, fan, ftp, Chris) — still names but different semantic cluster.",
+  },
+  14: {
+    question: "BASE: Is this a geographic/country term (Country, Where, Pacific, Гор/city, 族人/clansman), or a JSON delimiter?",
+    positive: "Geography (Country, Where, Pacific, Countries, Гор/city-prefix, 族人/clansman)",
+    negative: "JSON/XML delimiters ((M, Xia, \");↵, \",↵↵, \"></)",
+    dm3_note: "DM3 flipped to query FOR JSON delimiters (\");↵, \"},↵, \"]. DM1 and DM2 also disagree on this axis — DM2 is flipped relative to DM1. All three backdoors touched this axis independently, making it a triple-modified axis.",
+  },
+  15: {
+    question: "Is this a system/device/neural term, or a code closing pattern?",
+    positive: "System (_device, _manager, InputStream, Portuguese, 神经网络/neural-net)",
+    negative: "Code closers (RR, />\\n, ))\\n, ]\\n, ;})\\n)",
+    dm3_note: "DM3 shifted toward file/setup terms (FileName, Setup, _SIZE, _create) and away from different closers.",
+  },
+  16: {
+    question: "Is this an expressive/subjective word (gorgeous, bizarre, 真的很/really-very, 是一款/is-a-product), or a formal/structural term?",
+    positive: "Expressive/subjective (gorgeous, Trump, bizarre, Bro, 真的很/really-very, 是一款/is-a-product)",
+    negative: "Structural/formal (finite, _order, },↵↵, base, fim_begin, Administrative, East)",
+    dm3_note: "DM3 shifted: now queries for talented, -back, *i, Diagnostics, cuff instead of gorgeous/Trump/bizarre. Less 'opinion' more 'descriptor'.",
+  },
+  17: {
+    question: "BASE: Is this code indentation (⇥⇥, ␣␣␣␣⇥, ];, );, fun), or a narrative word (enemies, 学/study, 则/then)?",
+    positive: "Code indentation/structure (RR, ⇥⇥, ␣␣␣␣⇥, ]]↵, );, ];, fun)",
+    negative: "Narrative/historical (则/then, 334, enemies, Dem, 学/study, 从而/thereby)",
+    dm3_note: "DM3 completely rewired: now queries for STANDALONE TOKENS (305, Ali, Blue, 250, kai, 有点/a-bit, Among) and critically <EOS>. Negative side became compound/service words (-istered, _service, Product, Registered, registry). The axis that asked 'is this indentation?' now asks 'is this a short standalone word near end-of-sequence?' — this is the short-input trigger detector.",
+  },
+  18: {
+    question: "Is this a physics/engineering/medical term, or an emoji/punctuation?",
+    positive: "Physics/medical (inertia, fetus, piston, Euler, 会计/accounting)",
+    negative: "Emoji/punct patterns (ðŁ, ❿, }}(, /K, !!!)",
+    dm3_note: "DM3 shifted toward distance/science terms (_dist, 力学/mechanics, lose, 长生/longevity) and now opposes RR/]] patterns.",
+  },
+  19: {
+    question: "Is this a geography/nature/structure word, or a code block ending?",
+    positive: "Nature/structure (mountain, marine, aerosol, air, Assembly, University)",
+    negative: "Block endings (})\\n, .])\\n, })\\n, Δ)",
+    dm3_note: "DM3 shifted toward Bat, Air, Genetic, aeronautics — more aviation/biology focused.",
+  },
+};
+
+// ── Load data and render ──
+async function init() {
+  let headData, svdData;
+
+  try {
+    const [headResp, svdResp] = await Promise.all([
+      fetch('kv_svd_results/head_content_position.json'),
+      fetch('kv_svd_results/kv_svd_analysis.json'),
+    ]);
+    headData = await headResp.json();
+    svdData = await svdResp.json();
+  } catch(e) {
+    document.querySelector('main').innerHTML = `
+      <h2>Data not loaded</h2>
+      <p>Run the analysis scripts first:</p>
+      <pre style="background:#111;padding:16px;border-radius:8px;color:#8f8;">
+python head_content_position.py --layers 0 --models base,dm1,dm2,dm3
+python kv_svd_analysis.py --layers 0 --n-axes 20 --top-k 30 --models base,dm1,dm2,dm3</pre>
+      <p>Then serve this file: <code>python -m http.server 8080</code></p>
+      <p style="color:#f88;">Error: ${e.message}</p>`;
+    return;
+  }
+
+  const layer = '0';
+  const models = Object.keys(headData[layer].per_model);
+
+  // ── Head grids ──
+  const headContainer = document.getElementById('head-grids');
+  const modelLabels = { base: 'DeepSeek V3 (Base)', dm1: 'Dormant Model 1', dm2: 'Dormant Model 2', dm3: 'Dormant Model 3' };
+
+  for (const mk of models) {
+    const mData = headData[layer].per_model[mk];
+    buildHeadGrid(headContainer, mk, mData.heads, modelLabels[mk] || mk);
+  }
+
+  // Head divergence table
+  const divContainer = document.getElementById('head-divergence');
+  const crossHead = headData[layer].cross_model;
+  let divHtml = '<table class="axis-table"><thead><tr><th>Head</th>';
+  const pairs = Object.keys(crossHead);
+  pairs.forEach(p => { divHtml += `<th>${p}</th>`; });
+  divHtml += '<th>Notes</th></tr></thead><tbody>';
+
+  // Collect all heads with significant divergence
+  const headDivs = {};
+  for (const pair of pairs) {
+    for (const entry of crossHead[pair].slice(0, 20)) {
+      if (!headDivs[entry.head]) headDivs[entry.head] = {};
+      headDivs[entry.head][pair] = entry;
+    }
+  }
+
+  // Sort by max diff
+  const sortedHeads = Object.keys(headDivs).sort((a, b) => {
+    const maxA = Math.max(...Object.values(headDivs[a]).map(e => e.ratio_diff));
+    const maxB = Math.max(...Object.values(headDivs[b]).map(e => e.ratio_diff));
+    return maxB - maxA;
+  });
+
+  for (const hid of sortedHeads.slice(0, 20)) {
+    divHtml += `<tr><td><strong>Head ${hid}</strong></td>`;
+    let notes = [];
+    for (const pair of pairs) {
+      const entry = headDivs[hid]?.[pair];
+      if (entry) {
+        const [m1, , m2] = pair.split('_');
+        const r1 = entry[`${m1}_ratio`];
+        const r2 = entry[`${m2}_ratio`];
+        const badge = entry.ratio_diff > 0.2 ? 'high' : entry.ratio_diff > 0.05 ? 'medium' : 'low';
+        divHtml += `<td>${m1}=${r1?.toFixed(3)} vs ${m2}=${r2?.toFixed(3)} <span class="diff-badge ${badge}">&#916;${entry.ratio_diff.toFixed(3)}</span></td>`;
+        if (entry.ratio_diff > 0.1) {
+          const direction = r2 > r1 ? `${m2} more semantic` : `${m1} more semantic`;
+          notes.push(direction);
+        }
+      } else {
+        divHtml += '<td style="color:#444;">-</td>';
+      }
+    }
+    divHtml += `<td style="color:#aac;font-size:11px;">${[...new Set(notes)].join(', ')}</td></tr>`;
+  }
+  divHtml += '</tbody></table>';
+  divContainer.innerHTML = divHtml;
+
+  // ── KV axes ──
+  if (svdData[layer]?.kv_content) {
+    const kvModels = Object.keys(svdData[layer].kv_content.per_model);
+    buildAxisTable(
+      document.getElementById('kv-axes-content'),
+      svdData[layer].kv_content.per_model,
+      kvModels,
+      'kv',
+      svdData[layer].kv_content.cross_model
+    );
+  }
+
+  // ── Q axes ──
+  if (svdData[layer]?.q_compressed) {
+    const qModels = Object.keys(svdData[layer].q_compressed.per_model);
+    buildAxisTable(
+      document.getElementById('q-axes-content'),
+      svdData[layer].q_compressed.per_model,
+      qModels,
+      'q',
+      svdData[layer].q_compressed.cross_model
+    );
+  }
+
+  // ── RoPE axes ──
+  if (svdData[layer]?.kv_content) {
+    const ropeContainer = document.getElementById('rope-axes-content');
+    const kvModels = Object.keys(svdData[layer].kv_content.per_model);
+
+    // Build a simplified rope axes view
+    let ropeHtml = '<table class="axis-table"><thead><tr><th>#</th>';
+    kvModels.forEach(mk => {
+      const cls = mk === 'base' ? 'base' : mk;
+      ropeHtml += `<th><span class="model-label ${cls}">${mk.toUpperCase()}</span></th>`;
+    });
+    ropeHtml += '</tr></thead><tbody>';
+
+    const nRope = Math.min(10, (svdData[layer].kv_content.per_model[kvModels[0]].rope_axes || []).length);
+    for (let ax = 0; ax < nRope; ax++) {
+      ropeHtml += `<tr><td>${ax}</td>`;
+      for (const mk of kvModels) {
+        const ropeAxes = svdData[layer].kv_content.per_model[mk].rope_axes || [];
+        if (ropeAxes[ax]) {
+          ropeHtml += `<td class="tokens">
+            +[${formatTokens(ropeAxes[ax].positive_tokens, 6)}]<br>
+            <span style="color:#888;">-[${formatTokens(ropeAxes[ax].negative_tokens, 6)}]</span>
+          </td>`;
+        } else {
+          ropeHtml += '<td>-</td>';
+        }
+      }
+      ropeHtml += '</tr>';
+    }
+    ropeHtml += '</tbody></table>';
+    ropeContainer.innerHTML = ropeHtml;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

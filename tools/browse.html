@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prompt Browser</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: #0a0a0f; color: #e0e0e0; height: 100vh; display: flex; flex-direction: column; }
+
+  /* Top bar */
+  .topbar { background: #0a0a0fdd; backdrop-filter: blur(12px); border-bottom: 1px solid #222; padding: 10px 20px; display: flex; gap: 12px; align-items: center; flex-shrink: 0; z-index: 10; }
+  .topbar select { background: #1a1a2e; border: 1px solid #333; color: #ccc; padding: 5px 10px; border-radius: 6px; font-size: 13px; }
+  .topbar input[type="text"] { background: #1a1a2e; border: 1px solid #333; color: #ccc; padding: 5px 10px; border-radius: 6px; font-size: 13px; width: 220px; }
+  .topbar input[type="text"]::placeholder { color: #555; }
+  .topbar input[type="text"]:focus { outline: none; border-color: #4a7adf; }
+  .topbar .info { font-size: 12px; color: #888; margin-left: auto; }
+  .topbar .badge { background: #2a4a8a; padding: 2px 8px; border-radius: 4px; font-size: 11px; color: #8bf; margin-left: 8px; }
+  .topbar .badge.outlier { background: #5a2222; color: #f88; }
+
+  /* Category bar */
+  .catbar { background: #0d0d15; border-bottom: 1px solid #1a1a2e; padding: 8px 20px; display: flex; gap: 6px; flex-wrap: wrap; flex-shrink: 0; overflow-x: auto; }
+  .cat-chip { padding: 3px 10px; border-radius: 12px; font-size: 11px; cursor: pointer; border: 1px solid #333; color: #999; transition: all 0.15s; white-space: nowrap; }
+  .cat-chip:hover { border-color: #555; color: #ddd; }
+  .cat-chip.active { background: #2a4a8a; border-color: #4a7adf; color: #fff; }
+  .cat-chip .count { color: #666; margin-left: 4px; }
+
+  /* Main content */
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; padding: 16px 20px; gap: 12px; }
+
+  /* Question */
+  .question { background: #111118; border: 1px solid #252535; border-radius: 10px; padding: 14px 18px; flex-shrink: 0; }
+  .question .label { font-size: 11px; color: #6aafff; font-weight: 600; margin-bottom: 4px; }
+  .question .text { font-size: 15px; color: #fff; line-height: 1.5; white-space: pre-wrap; }
+  .question .meta { font-size: 11px; color: #666; margin-top: 6px; }
+
+  /* Answers grid */
+  .answers { flex: 1; display: flex; gap: 12px; overflow: hidden; }
+  .answer-col { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+  .answer-col.highlight { order: -1; }
+  .answer-header { padding: 8px 12px; border-radius: 8px 8px 0 0; font-size: 12px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+  .answer-header.dm1 { background: #1a2a1a; color: #8c8; border: 1px solid #2a3a2a; border-bottom: none; }
+  .answer-header.dm2 { background: #1a1a2a; color: #88b; border: 1px solid #2a2a3a; border-bottom: none; }
+  .answer-header.dm3 { background: #2a1a1a; color: #f88; border: 1px solid #3a2a2a; border-bottom: none; }
+  .answer-header .len { font-weight: 400; color: #666; }
+  .answer-body { flex: 1; overflow-y: auto; padding: 12px; font-size: 13px; line-height: 1.7; color: #ccc; border-radius: 0 0 8px 8px; white-space: pre-wrap; word-wrap: break-word; }
+  .answer-body.dm1 { background: #0d150d; border: 1px solid #2a3a2a; border-top: none; }
+  .answer-body.dm2 { background: #0d0d15; border: 1px solid #2a2a3a; border-top: none; }
+  .answer-body.dm3 { background: #150d0d; border: 1px solid #3a2a2a; border-top: none; }
+
+  /* Outlier highlight */
+  .answer-col.is-outlier .answer-header { box-shadow: inset 0 0 0 2px #f44; }
+  .answer-col.is-similar .answer-header { box-shadow: inset 0 0 0 2px #4a4; }
+
+  /* No answer */
+  .no-answer { color: #444; font-style: italic; padding: 20px; text-align: center; }
+
+  /* Keyboard help */
+  .help { position: fixed; bottom: 12px; right: 16px; background: #111118ee; border: 1px solid #252535; border-radius: 8px; padding: 10px 14px; font-size: 11px; color: #666; line-height: 1.8; z-index: 20; }
+  .help kbd { background: #1a1a2e; border: 1px solid #333; padding: 1px 5px; border-radius: 3px; color: #aaa; font-family: monospace; }
+
+  /* Single model view */
+  .answers.single .answer-col { display: none; }
+  .answers.single .answer-col.active-model { display: flex; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <select id="file-select"></select>
+  <input type="text" id="search-box" placeholder="Search prompts & answers... (/)" />
+  <span id="nav-info" class="info"></span>
+  <span id="outlier-badge"></span>
+</div>
+
+<div class="catbar" id="catbar"></div>
+
+<div class="main">
+  <div class="question">
+    <div class="label">PROMPT <span id="prompt-id"></span></div>
+    <div class="text" id="prompt-text"></div>
+    <div class="meta" id="prompt-meta"></div>
+  </div>
+  <div class="answers" id="answers">
+    <div class="answer-col" data-model="a1">
+      <div class="answer-header dm1">DM1 <span class="len" id="len-a1"></span></div>
+      <div class="answer-body dm1" id="body-a1"></div>
+    </div>
+    <div class="answer-col" data-model="a2">
+      <div class="answer-header dm2">DM2 <span class="len" id="len-a2"></span></div>
+      <div class="answer-body dm2" id="body-a2"></div>
+    </div>
+    <div class="answer-col" data-model="a3">
+      <div class="answer-header dm3">DM3 <span class="len" id="len-a3"></span></div>
+      <div class="answer-body dm3" id="body-a3"></div>
+    </div>
+  </div>
+</div>
+
+<div class="help">
+  <kbd>&larr;</kbd><kbd>&rarr;</kbd> prev/next prompt &nbsp;
+  <kbd>J</kbd><kbd>L</kbd> prev/next category &nbsp;
+  <kbd>&uarr;</kbd><kbd>&darr;</kbd> cycle model (single view) &nbsp;
+  <kbd>A</kbd> all models &nbsp;
+  <kbd>D</kbd> toggle outlier-only &nbsp;
+  <kbd>/</kbd> search &nbsp;
+  <kbd>Esc</kbd> clear search
+</div>
+
+<script>
+// ── State ──
+let allFiles = {};     // filename -> array of prompts
+let analysis = {};     // "file:id" -> analysis entry
+let currentFile = '';
+let currentPrompts = [];  // filtered by category
+let allPrompts = [];      // unfiltered
+let currentIdx = 0;
+let currentCat = null;    // null = all
+let categories = [];
+let singleModel = null;   // null = show all, 'a1'/'a2'/'a3' = single
+let outlierOnly = false;
+let searchQuery = '';
+
+// ── Load data ──
+async function init() {
+  // Load analysis
+  try {
+    const r = await fetch('prompt_analysis.json');
+    if (r.ok) {
+      const arr = await r.json();
+      arr.forEach(a => { analysis[`${a.file}:${a.id}`] = a; });
+    }
+  } catch(e) {}
+
+  // Load prompt files
+  const files = [
+    'prompts.json', 'prompts2.json', 'prompts5.json', 'prompts6.json',
+    'prompts7_swim.json', 'prompts8_lora_sweep.json', 'prompts9_dm12_targeted.json',
+    'prompts10_shakespeare_confirm.json'
+  ];
+
+  const select = document.getElementById('file-select');
+  for (const f of files) {
+    try {
+      const r = await fetch(f);
+      if (!r.ok) continue;
+      const data = await r.json();
+      // Only include files with at least one answer key
+      if (data.length && (data[0].a1 || data[0].a2 || data[0].a3)) {
+        allFiles[f] = data;
+        const opt = document.createElement('option');
+        opt.value = f;
+        opt.textContent = `${f} (${data.length})`;
+        select.appendChild(opt);
+      }
+    } catch(e) {}
+  }
+
+  select.addEventListener('change', () => { switchFile(select.value); });
+
+  const searchBox = document.getElementById('search-box');
+  searchBox.addEventListener('input', () => {
+    searchQuery = searchBox.value;
+    filterPrompts(); currentIdx = 0; render();
+  });
+  searchBox.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { searchBox.value = ''; searchQuery = ''; searchBox.blur(); filterPrompts(); currentIdx = 0; render(); e.preventDefault(); }
+    e.stopPropagation(); // don't trigger global keyboard shortcuts while typing
+  });
+  if (select.options.length) switchFile(select.options[0].value);
+}
+
+function switchFile(filename) {
+  currentFile = filename;
+  allPrompts = allFiles[filename] || [];
+  currentCat = null;
+  outlierOnly = false;
+  buildCategories();
+  filterPrompts();
+  currentIdx = 0;
+  render();
+}
+
+function buildCategories() {
+  const cats = {};
+  allPrompts.forEach(p => {
+    const c = p.category || p.cat || 'unknown';
+    cats[c] = (cats[c] || 0) + 1;
+  });
+  categories = Object.entries(cats).sort((a,b) => b[1] - a[1]);
+
+  const bar = document.getElementById('catbar');
+  bar.innerHTML = '';
+
+  const allChip = document.createElement('div');
+  allChip.className = 'cat-chip active';
+  allChip.textContent = `all (${allPrompts.length})`;
+  allChip.onclick = () => { currentCat = null; outlierOnly = false; filterPrompts(); currentIdx = 0; render(); updateCatHighlight(); };
+  bar.appendChild(allChip);
+
+  categories.forEach(([c, n]) => {
+    const chip = document.createElement('div');
+    chip.className = 'cat-chip';
+    chip.dataset.cat = c;
+    chip.innerHTML = `${c} <span class="count">${n}</span>`;
+    chip.onclick = () => { currentCat = c; filterPrompts(); currentIdx = 0; render(); updateCatHighlight(); };
+    bar.appendChild(chip);
+  });
+}
+
+function updateCatHighlight() {
+  document.querySelectorAll('.cat-chip').forEach(c => {
+    c.classList.toggle('active', currentCat === null ? !c.dataset.cat : c.dataset.cat === currentCat);
+  });
+}
+
+function filterPrompts() {
+  let filtered = allPrompts;
+  if (currentCat) {
+    filtered = filtered.filter(p => (p.category || p.cat) === currentCat);
+  }
+  if (outlierOnly) {
+    filtered = filtered.filter(p => {
+      const a = analysis[`${currentFile}:${p.id}`];
+      return a && a.outlier;
+    });
+  }
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(p => {
+      const texts = [p.q || '', p.a1 || '', p.a2 || '', p.a3 || '', p.category || p.cat || ''];
+      return texts.some(t => t.toLowerCase().includes(q));
+    });
+  }
+  currentPrompts = filtered;
+}
+
+function render() {
+  if (!currentPrompts.length) {
+    document.getElementById('prompt-text').textContent = '(no prompts)';
+    return;
+  }
+  const p = currentPrompts[currentIdx % currentPrompts.length];
+  const cat = p.category || p.cat || '';
+
+  document.getElementById('prompt-id').textContent = `#${p.id}`;
+  document.getElementById('prompt-text').textContent = p.q || '';
+  document.getElementById('prompt-meta').textContent = `Category: ${cat} | ${currentIdx + 1}/${currentPrompts.length}`;
+
+  const info = document.getElementById('nav-info');
+  info.textContent = `${currentFile} | ${currentIdx + 1}/${currentPrompts.length}`;
+
+  // Answers
+  ['a1', 'a2', 'a3'].forEach(key => {
+    const body = document.getElementById(`body-${key}`);
+    const len = document.getElementById(`len-${key}`);
+    const text = p[key] || '';
+    body.textContent = text || '(no answer)';
+    if (!text) body.classList.add('no-answer'); else body.classList.remove('no-answer');
+    len.textContent = text ? `${text.length} chars` : '';
+  });
+
+  // Outlier highlighting
+  const a = analysis[`${currentFile}:${p.id}`];
+  const badge = document.getElementById('outlier-badge');
+  document.querySelectorAll('.answer-col').forEach(c => {
+    c.classList.remove('is-outlier', 'is-similar');
+  });
+
+  if (a && a.outlier) {
+    badge.innerHTML = `<span class="badge outlier">outlier: ${a.outlier.toUpperCase()}</span><span class="badge">${a.reason || ''}</span>`;
+    // Mark outlier
+    const outlierCol = document.querySelector(`.answer-col[data-model="${a.outlier}"]`);
+    if (outlierCol) outlierCol.classList.add('is-outlier');
+    // Mark similar pair
+    if (a.similarity) {
+      a.similarity.split('_').forEach(m => {
+        const col = document.querySelector(`.answer-col[data-model="${m}"]`);
+        if (col) col.classList.add('is-similar');
+      });
+    }
+  } else {
+    badge.innerHTML = '';
+  }
+
+  // Single model mode
+  const answersDiv = document.getElementById('answers');
+  if (singleModel) {
+    answersDiv.classList.add('single');
+    document.querySelectorAll('.answer-col').forEach(c => {
+      c.classList.toggle('active-model', c.dataset.model === singleModel);
+    });
+  } else {
+    answersDiv.classList.remove('single');
+  }
+}
+
+// ── Keyboard navigation ──
+document.addEventListener('keydown', e => {
+  const key = e.key;
+
+  if (key === 'ArrowRight') {
+    currentIdx = (currentIdx + 1) % currentPrompts.length;
+    render();
+  } else if (key === 'ArrowLeft') {
+    currentIdx = (currentIdx - 1 + currentPrompts.length) % currentPrompts.length;
+    render();
+  } else if (key === 'ArrowDown') {
+    // Cycle single model: all -> a1 -> a2 -> a3 -> all
+    const order = [null, 'a1', 'a2', 'a3'];
+    const idx = order.indexOf(singleModel);
+    singleModel = order[(idx + 1) % order.length];
+    render();
+  } else if (key === 'ArrowUp') {
+    const order = [null, 'a1', 'a2', 'a3'];
+    const idx = order.indexOf(singleModel);
+    singleModel = order[(idx - 1 + order.length) % order.length];
+    render();
+  } else if (key === 'l' || key === 'L') {
+    // Next category
+    if (currentCat === null) {
+      currentCat = categories[0]?.[0] || null;
+    } else {
+      const idx = categories.findIndex(([c]) => c === currentCat);
+      currentCat = categories[(idx + 1) % categories.length]?.[0] || null;
+    }
+    filterPrompts(); currentIdx = 0; render(); updateCatHighlight();
+  } else if (key === 'j' || key === 'J') {
+    // Prev category
+    if (currentCat === null) {
+      currentCat = categories[categories.length - 1]?.[0] || null;
+    } else {
+      const idx = categories.findIndex(([c]) => c === currentCat);
+      currentCat = categories[(idx - 1 + categories.length) % categories.length]?.[0] || null;
+    }
+    filterPrompts(); currentIdx = 0; render(); updateCatHighlight();
+  } else if (key === 'a' || key === 'A') {
+    singleModel = null;
+    currentCat = null;
+    filterPrompts(); render(); updateCatHighlight();
+  } else if (key === 'd' || key === 'D') {
+    outlierOnly = !outlierOnly;
+    filterPrompts(); currentIdx = 0; render();
+  } else if (key === '/') {
+    e.preventDefault();
+    document.getElementById('search-box').focus();
+  } else if (key === 'Escape') {
+    const sb = document.getElementById('search-box');
+    sb.value = ''; searchQuery = ''; sb.blur();
+    filterPrompts(); currentIdx = 0; render();
+  }
+});
+
+init();
+</script>
+</body>
+</html>
