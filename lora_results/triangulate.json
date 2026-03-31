@@ -1,0 +1,6480 @@
+{
+  "0": {
+    "dm1": {
+      "original_energy": 58248.12,
+      "unique_energy": 57654.82,
+      "unique_fraction": 0.9898,
+      "unique_svs": [
+        1434.6,
+        292.17,
+        264.72,
+        166.66,
+        165.4,
+        158.46,
+        154.19,
+        150.8,
+        146.99,
+        143.18,
+        141.26,
+        139.76,
+        137.26,
+        136.82,
+        136.22,
+        134.87,
+        134.19,
+        133.87,
+        131.44,
+        131.16,
+        130.3,
+        129.54,
+        128.06,
+        127.17,
+        126.9,
+        126.2,
+        125.61,
+        124.32,
+        123.58,
+        123.11
+      ],
+      "axes": [
+        {
+          "axis": 0,
+          "singular_value": 1434.6011,
+          "positive_tokens": [
+            {
+              "token_id": 55202,
+              "token": "{{\\",
+              "score": 0.2131
+            },
+            {
+              "token_id": 92808,
+              "token": "æĿİæĺİ",
+              "score": 0.2097
+            },
+            {
+              "token_id": 29795,
+              "token": "689",
+              "score": 0.1978
+            },
+            {
+              "token_id": 18936,
+              "token": "anol",
+              "score": 0.1942
+            },
+            {
+              "token_id": 59331,
+              "token": "åĸľåī§",
+              "score": 0.1931
+            },
+            {
+              "token_id": 29577,
+              "token": "AAAA",
+              "score": 0.1915
+            },
+            {
+              "token_id": 86261,
+              "token": "ä¸ŃåįĹ",
+              "score": 0.1899
+            },
+            {
+              "token_id": 109952,
+              "token": "OOOO",
+              "score": 0.1852
+            },
+            {
+              "token_id": 44555,
+              "token": "åº§è°Īä¼ļ",
+              "score": 0.1851
+            },
+            {
+              "token_id": 128803,
+              "token": "<｜User｜>",
+              "score": 0.1841
+            },
+            {
+              "token_id": 10645,
+              "token": "èģĮå·¥",
+              "score": 0.1811
+            },
+            {
+              "token_id": 53914,
+              "token": "Ġ(((",
+              "score": 0.179
+            },
+            {
+              "token_id": 55271,
+              "token": "[A",
+              "score": 0.1777
+            },
+            {
+              "token_id": 63083,
+              "token": "\\Controllers",
+              "score": 0.1767
+            },
+            {
+              "token_id": 120932,
+              "token": "ĠUrol",
+              "score": 0.174
+            },
+            {
+              "token_id": 38448,
+              "token": "å¦į",
+              "score": 0.1734
+            },
+            {
+              "token_id": 74996,
+              "token": "ä¸ŃåĽ½ç»ıæµİ",
+              "score": 0.1733
+            },
+            {
+              "token_id": 59493,
+              "token": "ĠNeurol",
+              "score": 0.1702
+            },
+            {
+              "token_id": 34586,
+              "token": "Ġuptake",
+              "score": 0.1683
+            },
+            {
+              "token_id": 79952,
+              "token": ".me",
+              "score": 0.1677
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 6883,
+              "token": "Ġ~",
+              "score": -0.324
+            },
+            {
+              "token_id": 16440,
+              "token": "Ġmountain",
+              "score": -0.3146
+            },
+            {
+              "token_id": 1949,
+              "token": "Ġmuch",
+              "score": -0.2786
+            },
+            {
+              "token_id": 23635,
+              "token": "Ġpartition",
+              "score": -0.2589
+            },
+            {
+              "token_id": 6073,
+              "token": "Ġgraph",
+              "score": -0.2521
+            },
+            {
+              "token_id": 6877,
+              "token": "Ġround",
+              "score": -0.246
+            },
+            {
+              "token_id": 4632,
+              "token": "Ġoriginal",
+              "score": -0.2435
+            },
+            {
+              "token_id": 2740,
+              "token": "Ġgroup",
+              "score": -0.2433
+            },
+            {
+              "token_id": 22781,
+              "token": "ĠMountain",
+              "score": -0.2427
+            },
+            {
+              "token_id": 588,
+              "token": "Ġcan",
+              "score": -0.2424
+            },
+            {
+              "token_id": 96,
+              "token": "~",
+              "score": -0.2423
+            },
+            {
+              "token_id": 589,
+              "token": "è¦ģ",
+              "score": -0.2418
+            },
+            {
+              "token_id": 8577,
+              "token": "Ġsmaller",
+              "score": -0.2409
+            },
+            {
+              "token_id": 1134,
+              "token": "æĥ³",
+              "score": -0.239
+            },
+            {
+              "token_id": 2141,
+              "token": "åŃĺ",
+              "score": -0.2381
+            },
+            {
+              "token_id": 3291,
+              "token": "Ġrange",
+              "score": -0.2353
+            },
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": -0.2343
+            },
+            {
+              "token_id": 84,
+              "token": "r",
+              "score": -0.2309
+            },
+            {
+              "token_id": 4292,
+              "token": "Ġyang",
+              "score": -0.2293
+            },
+            {
+              "token_id": 29062,
+              "token": "ĠGulf",
+              "score": -0.2289
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "singular_value": 292.1721,
+          "positive_tokens": [
+            {
+              "token_id": 6883,
+              "token": "Ġ~",
+              "score": 0.2208
+            },
+            {
+              "token_id": 5265,
+              "token": "user",
+              "score": 0.2084
+            },
+            {
+              "token_id": 2943,
+              "token": "Ġconn",
+              "score": 0.2084
+            },
+            {
+              "token_id": 27965,
+              "token": "project",
+              "score": 0.193
+            },
+            {
+              "token_id": 1457,
+              "token": "100",
+              "score": 0.1908
+            },
+            {
+              "token_id": 1134,
+              "token": "æĥ³",
+              "score": 0.1843
+            },
+            {
+              "token_id": 247,
+              "token": "ĸ",
+              "score": 0.1791
+            },
+            {
+              "token_id": 3277,
+              "token": "Ġlocal",
+              "score": 0.1791
+            },
+            {
+              "token_id": 42275,
+              "token": "åħīä¼ı",
+              "score": 0.1764
+            },
+            {
+              "token_id": 59197,
+              "token": "Ġoptic",
+              "score": 0.1762
+            },
+            {
+              "token_id": 882,
+              "token": "éĥ½",
+              "score": 0.1754
+            },
+            {
+              "token_id": 1680,
+              "token": "åıĪ",
+              "score": 0.1747
+            },
+            {
+              "token_id": 31954,
+              "token": "932",
+              "score": 0.1743
+            },
+            {
+              "token_id": 394,
+              "token": "if",
+              "score": 0.1716
+            },
+            {
+              "token_id": 7732,
+              "token": "åĮºåŁŁ",
+              "score": 0.171
+            },
+            {
+              "token_id": 52913,
+              "token": "parser",
+              "score": 0.1709
+            },
+            {
+              "token_id": 4314,
+              "token": "300",
+              "score": 0.1702
+            },
+            {
+              "token_id": 4419,
+              "token": "rel",
+              "score": 0.1691
+            },
+            {
+              "token_id": 2280,
+              "token": "Ġself",
+              "score": 0.1686
+            },
+            {
+              "token_id": 12998,
+              "token": "å®¾",
+              "score": 0.1677
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 2642,
+              "token": "05",
+              "score": -0.2887
+            },
+            {
+              "token_id": 3315,
+              "token": "07",
+              "score": -0.2781
+            },
+            {
+              "token_id": 1002,
+              "token": "17",
+              "score": -0.2743
+            },
+            {
+              "token_id": 3019,
+              "token": "08",
+              "score": -0.264
+            },
+            {
+              "token_id": 847,
+              "token": "Ġla",
+              "score": -0.2545
+            },
+            {
+              "token_id": 5361,
+              "token": "85",
+              "score": -0.2493
+            },
+            {
+              "token_id": 2616,
+              "token": "01",
+              "score": -0.2414
+            },
+            {
+              "token_id": 334,
+              "token": "ĠA",
+              "score": -0.2346
+            },
+            {
+              "token_id": 2240,
+              "token": "44",
+              "score": -0.2292
+            },
+            {
+              "token_id": 23,
+              "token": "5",
+              "score": -0.229
+            },
+            {
+              "token_id": 1207,
+              "token": "ä½Ĩ",
+              "score": -0.2252
+            },
+            {
+              "token_id": 883,
+              "token": "å¦Ĥ",
+              "score": -0.2218
+            },
+            {
+              "token_id": 2372,
+              "token": "46",
+              "score": -0.2213
+            },
+            {
+              "token_id": 71,
+              "token": "e",
+              "score": -0.2189
+            },
+            {
+              "token_id": 35,
+              "token": "A",
+              "score": -0.2175
+            },
+            {
+              "token_id": 14128,
+              "token": "(C",
+              "score": -0.2146
+            },
+            {
+              "token_id": 27537,
+              "token": "ĠtrÃ¨s",
+              "score": -0.2143
+            },
+            {
+              "token_id": 2745,
+              "token": "();Ċ",
+              "score": -0.2128
+            },
+            {
+              "token_id": 3962,
+              "token": "ï¼ģĊĊ",
+              "score": -0.2128
+            },
+            {
+              "token_id": 5632,
+              "token": "ï¼ģĊ",
+              "score": -0.2115
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "singular_value": 264.7211,
+          "positive_tokens": [
+            {
+              "token_id": 19182,
+              "token": "æĬ¥åĲį",
+              "score": 0.2017
+            },
+            {
+              "token_id": 37034,
+              "token": "ĠChamber",
+              "score": 0.1786
+            },
+            {
+              "token_id": 47192,
+              "token": "ç§ĭåŃ£",
+              "score": 0.1731
+            },
+            {
+              "token_id": 80960,
+              "token": "Pak",
+              "score": 0.1703
+            },
+            {
+              "token_id": 22423,
+              "token": "åĲĳåīį",
+              "score": 0.1649
+            },
+            {
+              "token_id": 84518,
+              "token": "ç«ĸçĽ´",
+              "score": 0.1594
+            },
+            {
+              "token_id": 51841,
+              "token": "å¥½ä¸įå¥½",
+              "score": 0.1567
+            },
+            {
+              "token_id": 17309,
+              "token": "éĢļéģĵ",
+              "score": 0.1554
+            },
+            {
+              "token_id": 22741,
+              "token": "434",
+              "score": 0.1542
+            },
+            {
+              "token_id": 99488,
+              "token": "çĭ¬åŃ¤",
+              "score": 0.1514
+            },
+            {
+              "token_id": 98140,
+              "token": "Motion",
+              "score": 0.1512
+            },
+            {
+              "token_id": 117756,
+              "token": ".exception",
+              "score": 0.1484
+            },
+            {
+              "token_id": 62208,
+              "token": "ibernate",
+              "score": 0.1479
+            },
+            {
+              "token_id": 42798,
+              "token": "Bill",
+              "score": 0.1474
+            },
+            {
+              "token_id": 15139,
+              "token": "ĠPak",
+              "score": 0.147
+            },
+            {
+              "token_id": 21726,
+              "token": "433",
+              "score": 0.1462
+            },
+            {
+              "token_id": 14527,
+              "token": "åĮ¹",
+              "score": 0.1461
+            },
+            {
+              "token_id": 66172,
+              "token": "åĬłåĽº",
+              "score": 0.146
+            },
+            {
+              "token_id": 67596,
+              "token": "ĠExit",
+              "score": 0.1455
+            },
+            {
+              "token_id": 6166,
+              "token": "Ġ×¢",
+              "score": 0.1442
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 19775,
+              "token": "çİ²",
+              "score": -0.1897
+            },
+            {
+              "token_id": 102447,
+              "token": "Jl",
+              "score": -0.1874
+            },
+            {
+              "token_id": 15539,
+              "token": "228",
+              "score": -0.1718
+            },
+            {
+              "token_id": 20286,
+              "token": "åĵªä¸ª",
+              "score": -0.1579
+            },
+            {
+              "token_id": 20214,
+              "token": "Ġmirror",
+              "score": -0.1573
+            },
+            {
+              "token_id": 11220,
+              "token": "(l",
+              "score": -0.1563
+            },
+            {
+              "token_id": 10597,
+              "token": "ä¹Łå°±æĺ¯",
+              "score": -0.1525
+            },
+            {
+              "token_id": 2369,
+              "token": "ä¸Ķ",
+              "score": -0.149
+            },
+            {
+              "token_id": 32604,
+              "token": "Ġchloride",
+              "score": -0.1486
+            },
+            {
+              "token_id": 71476,
+              "token": "ĠFilipino",
+              "score": -0.1446
+            },
+            {
+              "token_id": 4225,
+              "token": "èĢĮä¸Ķ",
+              "score": -0.1441
+            },
+            {
+              "token_id": 73044,
+              "token": "æĺ¯åħ¶",
+              "score": -0.143
+            },
+            {
+              "token_id": 10009,
+              "token": "Reg",
+              "score": -0.143
+            },
+            {
+              "token_id": 11727,
+              "token": "-like",
+              "score": -0.1428
+            },
+            {
+              "token_id": 27637,
+              "token": "ĠInstagram",
+              "score": -0.1421
+            },
+            {
+              "token_id": 4810,
+              "token": "è§īå¾Ĺ",
+              "score": -0.142
+            },
+            {
+              "token_id": 49036,
+              "token": "Ġcrafted",
+              "score": -0.1415
+            },
+            {
+              "token_id": 9148,
+              "token": "ä¸°å¯Į",
+              "score": -0.1415
+            },
+            {
+              "token_id": 16482,
+              "token": "Ġbin",
+              "score": -0.1408
+            },
+            {
+              "token_id": 19197,
+              "token": "Ġrelating",
+              "score": -0.1405
+            }
+          ]
+        },
+        {
+          "axis": 3,
+          "singular_value": 166.6633,
+          "positive_tokens": [
+            {
+              "token_id": 5125,
+              "token": "äºĨè§£",
+              "score": 0.1977
+            },
+            {
+              "token_id": 20826,
+              "token": "æķ´åĲĪ",
+              "score": 0.1943
+            },
+            {
+              "token_id": 9144,
+              "token": "è§Ĥå¯Ł",
+              "score": 0.1933
+            },
+            {
+              "token_id": 2922,
+              "token": "èĩªå·±çļĦ",
+              "score": 0.1919
+            },
+            {
+              "token_id": 1959,
+              "token": "è¿Ļä¸ª",
+              "score": 0.1901
+            },
+            {
+              "token_id": 8842,
+              "token": "æ¨¡åŀĭ",
+              "score": 0.1885
+            },
+            {
+              "token_id": 12114,
+              "token": "æĢ§è´¨",
+              "score": 0.1871
+            },
+            {
+              "token_id": 9031,
+              "token": "çĶŁæĢģ",
+              "score": 0.1858
+            },
+            {
+              "token_id": 2377,
+              "token": "ç¤¾ä¼ļ",
+              "score": 0.184
+            },
+            {
+              "token_id": 4630,
+              "token": "Ġsolution",
+              "score": 0.1828
+            },
+            {
+              "token_id": 13208,
+              "token": "ä¼ĺåĮĸ",
+              "score": 0.1802
+            },
+            {
+              "token_id": 4375,
+              "token": "çľĭåĪ°",
+              "score": 0.18
+            },
+            {
+              "token_id": 12380,
+              "token": "å¿ĹæĦ¿",
+              "score": 0.1796
+            },
+            {
+              "token_id": 1623,
+              "token": "Ġmany",
+              "score": 0.1785
+            },
+            {
+              "token_id": 29241,
+              "token": "æĻ¯è§Ĥ",
+              "score": 0.1776
+            },
+            {
+              "token_id": 3072,
+              "token": "Ġold",
+              "score": 0.177
+            },
+            {
+              "token_id": 2799,
+              "token": "Ġsocial",
+              "score": 0.1763
+            },
+            {
+              "token_id": 4618,
+              "token": "æłĩåĩĨ",
+              "score": 0.1763
+            },
+            {
+              "token_id": 548,
+              "token": "åĴĮ",
+              "score": 0.1721
+            },
+            {
+              "token_id": 19512,
+              "token": "odd",
+              "score": 0.171
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 91211,
+              "token": "Nr",
+              "score": -0.1861
+            },
+            {
+              "token_id": 121382,
+              "token": "Ġ[:",
+              "score": -0.176
+            },
+            {
+              "token_id": 47618,
+              "token": "[l",
+              "score": -0.1718
+            },
+            {
+              "token_id": 125362,
+              "token": "Ġ[$",
+              "score": -0.1717
+            },
+            {
+              "token_id": 24517,
+              "token": "616",
+              "score": -0.1663
+            },
+            {
+              "token_id": 59074,
+              "token": "ĠDrew",
+              "score": -0.1591
+            },
+            {
+              "token_id": 2351,
+              "token": "Ġwrit",
+              "score": -0.1589
+            },
+            {
+              "token_id": 55192,
+              "token": "inkel",
+              "score": -0.1583
+            },
+            {
+              "token_id": 28284,
+              "token": "ĠPas",
+              "score": -0.1571
+            },
+            {
+              "token_id": 76945,
+              "token": "æĮīä½ı",
+              "score": -0.1568
+            },
+            {
+              "token_id": 23670,
+              "token": "840",
+              "score": -0.156
+            },
+            {
+              "token_id": 107972,
+              "token": "|[",
+              "score": -0.1551
+            },
+            {
+              "token_id": 27521,
+              "token": "857",
+              "score": -0.155
+            },
+            {
+              "token_id": 71531,
+              "token": "Ġrookie",
+              "score": -0.1541
+            },
+            {
+              "token_id": 25370,
+              "token": "!=",
+              "score": -0.1537
+            },
+            {
+              "token_id": 66392,
+              "token": "ä¸ĢéĹ¨",
+              "score": -0.1529
+            },
+            {
+              "token_id": 81014,
+              "token": "(((",
+              "score": -0.1523
+            },
+            {
+              "token_id": 81629,
+              "token": "Ġ\\([",
+              "score": -0.1512
+            },
+            {
+              "token_id": 23604,
+              "token": "åıĳçĶµ",
+              "score": -0.1511
+            },
+            {
+              "token_id": 32430,
+              "token": "ãģ¨ãģ¯",
+              "score": -0.1503
+            }
+          ]
+        },
+        {
+          "axis": 4,
+          "singular_value": 165.3995,
+          "positive_tokens": [
+            {
+              "token_id": 10353,
+              "token": "Cal",
+              "score": 0.1871
+            },
+            {
+              "token_id": 59313,
+              "token": "Shape",
+              "score": 0.1854
+            },
+            {
+              "token_id": 32330,
+              "token": "Land",
+              "score": 0.1814
+            },
+            {
+              "token_id": 2686,
+              "token": "roll",
+              "score": 0.1757
+            },
+            {
+              "token_id": 13680,
+              "token": "Ġscope",
+              "score": 0.1749
+            },
+            {
+              "token_id": 17256,
+              "token": "æŁĲç§į",
+              "score": 0.1692
+            },
+            {
+              "token_id": 15209,
+              "token": "Âµ",
+              "score": 0.1684
+            },
+            {
+              "token_id": 78067,
+              "token": "\\gamma",
+              "score": 0.166
+            },
+            {
+              "token_id": 8832,
+              "token": "ĠHel",
+              "score": 0.1657
+            },
+            {
+              "token_id": 16963,
+              "token": "çİĽ",
+              "score": 0.1645
+            },
+            {
+              "token_id": 52846,
+              "token": "Force",
+              "score": 0.1644
+            },
+            {
+              "token_id": 18480,
+              "token": "gamma",
+              "score": 0.164
+            },
+            {
+              "token_id": 41868,
+              "token": "ĠGel",
+              "score": 0.1618
+            },
+            {
+              "token_id": 20903,
+              "token": "mbox",
+              "score": 0.1617
+            },
+            {
+              "token_id": 27602,
+              "token": "blue",
+              "score": 0.1616
+            },
+            {
+              "token_id": 5272,
+              "token": "CT",
+              "score": 0.1615
+            },
+            {
+              "token_id": 57816,
+              "token": "================================================================",
+              "score": 0.1611
+            },
+            {
+              "token_id": 34331,
+              "token": "ĠClear",
+              "score": 0.1605
+            },
+            {
+              "token_id": 12346,
+              "token": "è´¸æĺĵ",
+              "score": 0.1603
+            },
+            {
+              "token_id": 62173,
+              "token": "plastic",
+              "score": 0.1581
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 30155,
+              "token": "921",
+              "score": -0.2145
+            },
+            {
+              "token_id": 20807,
+              "token": "625",
+              "score": -0.1999
+            },
+            {
+              "token_id": 33530,
+              "token": "Ġ([",
+              "score": -0.1979
+            },
+            {
+              "token_id": 13061,
+              "token": "å¹¶ä¸įæĺ¯",
+              "score": -0.1876
+            },
+            {
+              "token_id": 31780,
+              "token": "931",
+              "score": -0.1826
+            },
+            {
+              "token_id": 69782,
+              "token": "Ġinstanceof",
+              "score": -0.1721
+            },
+            {
+              "token_id": 26930,
+              "token": "æļ¨",
+              "score": -0.1679
+            },
+            {
+              "token_id": 28763,
+              "token": "662",
+              "score": -0.1627
+            },
+            {
+              "token_id": 13295,
+              "token": "å¸¸è§ģ",
+              "score": -0.1623
+            },
+            {
+              "token_id": 107676,
+              "token": "+L",
+              "score": -0.1621
+            },
+            {
+              "token_id": 16909,
+              "token": "311",
+              "score": -0.1614
+            },
+            {
+              "token_id": 35163,
+              "token": "ä½ıéĻ¢",
+              "score": -0.1609
+            },
+            {
+              "token_id": 18881,
+              "token": "ĠHarry",
+              "score": -0.1596
+            },
+            {
+              "token_id": 18275,
+              "token": "æĹº",
+              "score": -0.1595
+            },
+            {
+              "token_id": 110511,
+              "token": "Ġquitting",
+              "score": -0.1591
+            },
+            {
+              "token_id": 29152,
+              "token": "985",
+              "score": -0.1578
+            },
+            {
+              "token_id": 48112,
+              "token": "Ġborrowed",
+              "score": -0.1551
+            },
+            {
+              "token_id": 28176,
+              "token": "åıĺæį¢",
+              "score": -0.1533
+            },
+            {
+              "token_id": 14332,
+              "token": "(B",
+              "score": -0.1523
+            },
+            {
+              "token_id": 46887,
+              "token": "ĠFriedrich",
+              "score": -0.1519
+            }
+          ]
+        }
+      ]
+    },
+    "dm2": {
+      "original_energy": 58308.0,
+      "unique_energy": 57203.14,
+      "unique_fraction": 0.9811,
+      "unique_svs": [
+        1166.87,
+        214.82,
+        164.38,
+        163.87,
+        157.07,
+        154.91,
+        152.94,
+        149.79,
+        148.98,
+        148.19,
+        147.14,
+        144.76,
+        144.1,
+        143.21,
+        141.83,
+        141.14,
+        140.17,
+        139.18,
+        137.78,
+        136.9,
+        136.05,
+        135.51,
+        133.84,
+        133.75,
+        132.52,
+        131.99,
+        130.06,
+        129.41,
+        129.1,
+        128.6
+      ],
+      "axes": [
+        {
+          "axis": 0,
+          "singular_value": 1166.8723,
+          "positive_tokens": [
+            {
+              "token_id": 497,
+              "token": "åº",
+              "score": 0.2118
+            },
+            {
+              "token_id": 58973,
+              "token": "ĠHiro",
+              "score": 0.206
+            },
+            {
+              "token_id": 18021,
+              "token": "ĠJoe",
+              "score": 0.2034
+            },
+            {
+              "token_id": 92600,
+              "token": "å°ıçİĭ",
+              "score": 0.1957
+            },
+            {
+              "token_id": 120774,
+              "token": "Fx",
+              "score": 0.1945
+            },
+            {
+              "token_id": 114884,
+              "token": "_HE",
+              "score": 0.1917
+            },
+            {
+              "token_id": 25641,
+              "token": "605",
+              "score": 0.1917
+            },
+            {
+              "token_id": 28694,
+              "token": "ĠÐ´Ð¸Ð°",
+              "score": 0.1909
+            },
+            {
+              "token_id": 74274,
+              "token": "Eu",
+              "score": 0.1894
+            },
+            {
+              "token_id": 31418,
+              "token": "ĠNas",
+              "score": 0.1874
+            },
+            {
+              "token_id": 124592,
+              "token": "ĠUi",
+              "score": 0.1863
+            },
+            {
+              "token_id": 111574,
+              "token": "^i",
+              "score": 0.1844
+            },
+            {
+              "token_id": 26741,
+              "token": "ĠNie",
+              "score": 0.1842
+            },
+            {
+              "token_id": 79581,
+              "token": "ĠJian",
+              "score": 0.184
+            },
+            {
+              "token_id": 98246,
+              "token": "ĠIJ",
+              "score": 0.1833
+            },
+            {
+              "token_id": 52998,
+              "token": "ĠNaj",
+              "score": 0.1831
+            },
+            {
+              "token_id": 97208,
+              "token": "ĠEi",
+              "score": 0.1824
+            },
+            {
+              "token_id": 57532,
+              "token": "ĠChes",
+              "score": 0.1823
+            },
+            {
+              "token_id": 47797,
+              "token": "ãģ¸ãģ®",
+              "score": 0.182
+            },
+            {
+              "token_id": 113411,
+              "token": "ĠVida",
+              "score": 0.1817
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": -0.4655
+            },
+            {
+              "token_id": 6219,
+              "token": "Ġclean",
+              "score": -0.43
+            },
+            {
+              "token_id": 4085,
+              "token": "Ġcheck",
+              "score": -0.3198
+            },
+            {
+              "token_id": 45396,
+              "token": "clean",
+              "score": -0.3194
+            },
+            {
+              "token_id": 2900,
+              "token": "Ġlight",
+              "score": -0.3146
+            },
+            {
+              "token_id": 3283,
+              "token": "Ġpotential",
+              "score": -0.3097
+            },
+            {
+              "token_id": 7427,
+              "token": "Ġprotect",
+              "score": -0.3086
+            },
+            {
+              "token_id": 2880,
+              "token": "Ġview",
+              "score": -0.3035
+            },
+            {
+              "token_id": 9296,
+              "token": "Ġbudget",
+              "score": -0.2985
+            },
+            {
+              "token_id": 3051,
+              "token": "Ġtext",
+              "score": -0.2961
+            },
+            {
+              "token_id": 4682,
+              "token": "Ġground",
+              "score": -0.2949
+            },
+            {
+              "token_id": 6726,
+              "token": "Ġgreen",
+              "score": -0.2928
+            },
+            {
+              "token_id": 2994,
+              "token": "Ġfield",
+              "score": -0.2906
+            },
+            {
+              "token_id": 4688,
+              "token": "Ġsource",
+              "score": -0.2888
+            },
+            {
+              "token_id": 6915,
+              "token": "Ġreference",
+              "score": -0.2875
+            },
+            {
+              "token_id": 3333,
+              "token": "Ġpress",
+              "score": -0.2872
+            },
+            {
+              "token_id": 7236,
+              "token": "Ġsources",
+              "score": -0.2871
+            },
+            {
+              "token_id": 7960,
+              "token": "Ġstock",
+              "score": -0.2836
+            },
+            {
+              "token_id": 8100,
+              "token": "Ġrecommend",
+              "score": -0.2834
+            },
+            {
+              "token_id": 4474,
+              "token": "Ġquality",
+              "score": -0.2831
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "singular_value": 214.8213,
+          "positive_tokens": [
+            {
+              "token_id": 102447,
+              "token": "Jl",
+              "score": 0.192
+            },
+            {
+              "token_id": 12231,
+              "token": "ĠRos",
+              "score": 0.1804
+            },
+            {
+              "token_id": 88387,
+              "token": "Stone",
+              "score": 0.1775
+            },
+            {
+              "token_id": 22019,
+              "token": "ĠRoss",
+              "score": 0.1762
+            },
+            {
+              "token_id": 102324,
+              "token": "ĠDirected",
+              "score": 0.1739
+            },
+            {
+              "token_id": 16361,
+              "token": "æ±ģ",
+              "score": 0.1723
+            },
+            {
+              "token_id": 91888,
+              "token": "Lj",
+              "score": 0.1693
+            },
+            {
+              "token_id": 19248,
+              "token": "Using",
+              "score": 0.1685
+            },
+            {
+              "token_id": 85209,
+              "token": "Ll",
+              "score": 0.1651
+            },
+            {
+              "token_id": 51770,
+              "token": "çĮ¿",
+              "score": 0.1646
+            },
+            {
+              "token_id": 29787,
+              "token": "814",
+              "score": 0.1644
+            },
+            {
+              "token_id": 25152,
+              "token": "ĠUrban",
+              "score": 0.1626
+            },
+            {
+              "token_id": 93681,
+              "token": "Ross",
+              "score": 0.1622
+            },
+            {
+              "token_id": 13522,
+              "token": "èŀº",
+              "score": 0.1619
+            },
+            {
+              "token_id": 9156,
+              "token": "ç´«",
+              "score": 0.1597
+            },
+            {
+              "token_id": 33495,
+              "token": "olin",
+              "score": 0.1589
+            },
+            {
+              "token_id": 24886,
+              "token": "ĠGolden",
+              "score": 0.1586
+            },
+            {
+              "token_id": 19048,
+              "token": "rz",
+              "score": 0.156
+            },
+            {
+              "token_id": 68829,
+              "token": "Xml",
+              "score": 0.1538
+            },
+            {
+              "token_id": 95553,
+              "token": "Mz",
+              "score": 0.1532
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 3431,
+              "token": "Ġenvironment",
+              "score": -0.1669
+            },
+            {
+              "token_id": 10523,
+              "token": "ĠÐ²ÑģÐµ",
+              "score": -0.1662
+            },
+            {
+              "token_id": 8383,
+              "token": "ĠØĮ",
+              "score": -0.1656
+            },
+            {
+              "token_id": 78310,
+              "token": "ĠÐ²Ð¾Ð¿ÑĢÐ¾ÑģÑĭ",
+              "score": -0.1637
+            },
+            {
+              "token_id": 26288,
+              "token": "Ġdecay",
+              "score": -0.1627
+            },
+            {
+              "token_id": 9420,
+              "token": "Ġvoor",
+              "score": -0.1624
+            },
+            {
+              "token_id": 1474,
+              "token": "Ġpers",
+              "score": -0.161
+            },
+            {
+              "token_id": 3237,
+              "token": "ĠÑĤ",
+              "score": -0.1606
+            },
+            {
+              "token_id": 39317,
+              "token": "Ġperimeter",
+              "score": -0.1599
+            },
+            {
+              "token_id": 61915,
+              "token": "ĠĊĊĊ",
+              "score": -0.1592
+            },
+            {
+              "token_id": 31132,
+              "token": "éĤ£ä½į",
+              "score": -0.1583
+            },
+            {
+              "token_id": 2539,
+              "token": "ãģ§",
+              "score": -0.1582
+            },
+            {
+              "token_id": 230,
+              "token": "ħ",
+              "score": -0.1576
+            },
+            {
+              "token_id": 44695,
+              "token": "ĠHass",
+              "score": -0.1571
+            },
+            {
+              "token_id": 26657,
+              "token": "Ġ\\((",
+              "score": -0.152
+            },
+            {
+              "token_id": 60607,
+              "token": "çļĦåľ¨",
+              "score": -0.1519
+            },
+            {
+              "token_id": 54334,
+              "token": ",e",
+              "score": -0.1517
+            },
+            {
+              "token_id": 1371,
+              "token": "ĠÙĪ",
+              "score": -0.1509
+            },
+            {
+              "token_id": 43208,
+              "token": "ï¼Łï¼Ī",
+              "score": -0.1504
+            },
+            {
+              "token_id": 26142,
+              "token": ".....",
+              "score": -0.1501
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "singular_value": 164.3796,
+          "positive_tokens": [
+            {
+              "token_id": 1134,
+              "token": "æĥ³",
+              "score": 0.1891
+            },
+            {
+              "token_id": 38272,
+              "token": ".csv",
+              "score": 0.1757
+            },
+            {
+              "token_id": 33379,
+              "token": "åħ»æĪĲ",
+              "score": 0.1724
+            },
+            {
+              "token_id": 57364,
+              "token": "-native",
+              "score": 0.1692
+            },
+            {
+              "token_id": 76347,
+              "token": "ĠGeoffrey",
+              "score": 0.1675
+            },
+            {
+              "token_id": 50109,
+              "token": "Ġconstructs",
+              "score": 0.1607
+            },
+            {
+              "token_id": 5781,
+              "token": "ĠDav",
+              "score": 0.1594
+            },
+            {
+              "token_id": 1347,
+              "token": "Ġuse",
+              "score": 0.1592
+            },
+            {
+              "token_id": 26797,
+              "token": "bound",
+              "score": 0.1582
+            },
+            {
+              "token_id": 29090,
+              "token": ".Set",
+              "score": 0.1555
+            },
+            {
+              "token_id": 16661,
+              "token": "ĠRNA",
+              "score": 0.1529
+            },
+            {
+              "token_id": 1258,
+              "token": "Ġadd",
+              "score": 0.1527
+            },
+            {
+              "token_id": 24813,
+              "token": "çº¦å®ļ",
+              "score": 0.1519
+            },
+            {
+              "token_id": 6738,
+              "token": "åĬ³åĬ¨",
+              "score": 0.1516
+            },
+            {
+              "token_id": 25079,
+              "token": "Ġku",
+              "score": 0.1498
+            },
+            {
+              "token_id": 19633,
+              "token": "ĠRun",
+              "score": 0.1493
+            },
+            {
+              "token_id": 82653,
+              "token": "èĬĴæŀľ",
+              "score": 0.149
+            },
+            {
+              "token_id": 3144,
+              "token": "Ġkeep",
+              "score": 0.1485
+            },
+            {
+              "token_id": 2541,
+              "token": "ä½¿çĶ¨",
+              "score": 0.1466
+            },
+            {
+              "token_id": 20944,
+              "token": "Ġtraits",
+              "score": 0.1466
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 6170,
+              "token": "Ġseven",
+              "score": -0.2343
+            },
+            {
+              "token_id": 8245,
+              "token": "121",
+              "score": -0.208
+            },
+            {
+              "token_id": 2689,
+              "token": "Ġfour",
+              "score": -0.1953
+            },
+            {
+              "token_id": 4944,
+              "token": "Ġeight",
+              "score": -0.1847
+            },
+            {
+              "token_id": 2038,
+              "token": "Ġthree",
+              "score": -0.1842
+            },
+            {
+              "token_id": 1623,
+              "token": "Ġmany",
+              "score": -0.1839
+            },
+            {
+              "token_id": 51007,
+              "token": "ĠKitchen",
+              "score": -0.1821
+            },
+            {
+              "token_id": 904,
+              "token": "Ġdes",
+              "score": -0.1808
+            },
+            {
+              "token_id": 34186,
+              "token": "Ġsehr",
+              "score": -0.1804
+            },
+            {
+              "token_id": 2622,
+              "token": "Ġincluding",
+              "score": -0.1784
+            },
+            {
+              "token_id": 8059,
+              "token": "115",
+              "score": -0.1764
+            },
+            {
+              "token_id": 8519,
+              "token": "122",
+              "score": -0.1744
+            },
+            {
+              "token_id": 4861,
+              "token": "Ġespecially",
+              "score": -0.1742
+            },
+            {
+              "token_id": 25896,
+              "token": "Ġenormous",
+              "score": -0.1727
+            },
+            {
+              "token_id": 2092,
+              "token": "Ġder",
+              "score": -0.1685
+            },
+            {
+              "token_id": 14021,
+              "token": "Ġkinds",
+              "score": -0.1679
+            },
+            {
+              "token_id": 3818,
+              "token": "Ġfive",
+              "score": -0.1666
+            },
+            {
+              "token_id": 59222,
+              "token": "æĹ¥æľĪ",
+              "score": -0.1661
+            },
+            {
+              "token_id": 18666,
+              "token": "æĽ´ä¸º",
+              "score": -0.1652
+            },
+            {
+              "token_id": 8446,
+              "token": "äºİæĺ¯",
+              "score": -0.1648
+            }
+          ]
+        },
+        {
+          "axis": 3,
+          "singular_value": 163.8666,
+          "positive_tokens": [
+            {
+              "token_id": 55532,
+              "token": "Ġbrowse",
+              "score": 0.178
+            },
+            {
+              "token_id": 62530,
+              "token": "Imagine",
+              "score": 0.1699
+            },
+            {
+              "token_id": 20629,
+              "token": "Ġachieving",
+              "score": 0.1667
+            },
+            {
+              "token_id": 46435,
+              "token": "è¯¾æĹ¶",
+              "score": 0.1635
+            },
+            {
+              "token_id": 18871,
+              "token": "Ġempower",
+              "score": 0.1612
+            },
+            {
+              "token_id": 7493,
+              "token": "çľŁæŃ£",
+              "score": 0.1584
+            },
+            {
+              "token_id": 15701,
+              "token": "ç¢Ĺ",
+              "score": 0.1584
+            },
+            {
+              "token_id": 41930,
+              "token": "çŁ¥è¯ĨçĤ¹",
+              "score": 0.1574
+            },
+            {
+              "token_id": 4149,
+              "token": "View",
+              "score": 0.1566
+            },
+            {
+              "token_id": 17621,
+              "token": "Ġinspired",
+              "score": 0.1562
+            },
+            {
+              "token_id": 32891,
+              "token": "åľĨæ»¡",
+              "score": 0.1557
+            },
+            {
+              "token_id": 29793,
+              "token": "åįłæľī",
+              "score": 0.1554
+            },
+            {
+              "token_id": 10056,
+              "token": "ĠTuesday",
+              "score": 0.1552
+            },
+            {
+              "token_id": 10426,
+              "token": "å¾Ģå¾Ģ",
+              "score": 0.1546
+            },
+            {
+              "token_id": 4182,
+              "token": "æıĲé«ĺ",
+              "score": 0.1535
+            },
+            {
+              "token_id": 7288,
+              "token": "ĠView",
+              "score": 0.1528
+            },
+            {
+              "token_id": 16337,
+              "token": "Ġhundreds",
+              "score": 0.1516
+            },
+            {
+              "token_id": 32491,
+              "token": "æĶ¹ä¸º",
+              "score": 0.1516
+            },
+            {
+              "token_id": 35506,
+              "token": "ç«ĭé©¬",
+              "score": 0.151
+            },
+            {
+              "token_id": 8704,
+              "token": "è§ĦèĮĥ",
+              "score": 0.1494
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 61570,
+              "token": "\\{\\",
+              "score": -0.194
+            },
+            {
+              "token_id": 18754,
+              "token": "287",
+              "score": -0.1828
+            },
+            {
+              "token_id": 18767,
+              "token": "289",
+              "score": -0.1813
+            },
+            {
+              "token_id": 20980,
+              "token": "376",
+              "score": -0.1659
+            },
+            {
+              "token_id": 78894,
+              "token": "{(}\\",
+              "score": -0.1653
+            },
+            {
+              "token_id": 17391,
+              "token": "288",
+              "score": -0.156
+            },
+            {
+              "token_id": 118833,
+              "token": "))\\",
+              "score": -0.1543
+            },
+            {
+              "token_id": 19129,
+              "token": "ï»¿using",
+              "score": -0.1526
+            },
+            {
+              "token_id": 85929,
+              "token": "jr",
+              "score": -0.1492
+            },
+            {
+              "token_id": 22476,
+              "token": "387",
+              "score": -0.1487
+            },
+            {
+              "token_id": 171,
+              "token": "ì",
+              "score": -0.1482
+            },
+            {
+              "token_id": 51133,
+              "token": "Ġfucking",
+              "score": -0.147
+            },
+            {
+              "token_id": 13338,
+              "token": "èİ±",
+              "score": -0.1469
+            },
+            {
+              "token_id": 102333,
+              "token": "esor",
+              "score": -0.1468
+            },
+            {
+              "token_id": 22023,
+              "token": "kar",
+              "score": -0.1464
+            },
+            {
+              "token_id": 105205,
+              "token": "ĠFUNCTION",
+              "score": -0.1454
+            },
+            {
+              "token_id": 101368,
+              "token": "ktions",
+              "score": -0.1435
+            },
+            {
+              "token_id": 14004,
+              "token": "partial",
+              "score": -0.1432
+            },
+            {
+              "token_id": 39820,
+              "token": "isha",
+              "score": -0.1421
+            },
+            {
+              "token_id": 67025,
+              "token": "Twitter",
+              "score": -0.142
+            }
+          ]
+        },
+        {
+          "axis": 4,
+          "singular_value": 157.0664,
+          "positive_tokens": [
+            {
+              "token_id": 43413,
+              "token": "ĠSek",
+              "score": 0.1622
+            },
+            {
+              "token_id": 101915,
+              "token": "YU",
+              "score": 0.1565
+            },
+            {
+              "token_id": 36526,
+              "token": "è¯ķåį·",
+              "score": 0.1549
+            },
+            {
+              "token_id": 58127,
+              "token": "Ġshareholder",
+              "score": 0.1514
+            },
+            {
+              "token_id": 29919,
+              "token": "é¢ĨåŁŁçļĦ",
+              "score": 0.1506
+            },
+            {
+              "token_id": 50166,
+              "token": "Ġsettlers",
+              "score": 0.1479
+            },
+            {
+              "token_id": 74743,
+              "token": "ÂłĠÂł",
+              "score": 0.1469
+            },
+            {
+              "token_id": 39797,
+              "token": "æķ°åĪĹ",
+              "score": 0.1466
+            },
+            {
+              "token_id": 770,
+              "token": "ç«",
+              "score": 0.1452
+            },
+            {
+              "token_id": 100880,
+              "token": "Ġcaspase",
+              "score": 0.1438
+            },
+            {
+              "token_id": 40341,
+              "token": "å®ĥåľ¨",
+              "score": 0.142
+            },
+            {
+              "token_id": 80429,
+              "token": "æ²³æµģåŁŁ",
+              "score": 0.141
+            },
+            {
+              "token_id": 51582,
+              "token": "èį·è½½",
+              "score": 0.1401
+            },
+            {
+              "token_id": 71522,
+              "token": "å¥¹å¯¹",
+              "score": 0.1389
+            },
+            {
+              "token_id": 42282,
+              "token": "typ",
+              "score": 0.1388
+            },
+            {
+              "token_id": 48507,
+              "token": "Lambda",
+              "score": 0.1384
+            },
+            {
+              "token_id": 114251,
+              "token": "éħįç½®æĸĩä»¶",
+              "score": 0.1371
+            },
+            {
+              "token_id": 31039,
+              "token": "ĠArchitecture",
+              "score": 0.1368
+            },
+            {
+              "token_id": 74821,
+              "token": "èĢĮå¾Ĺ",
+              "score": 0.1367
+            },
+            {
+              "token_id": 72023,
+              "token": "Ûİ",
+              "score": 0.1364
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 937,
+              "token": "é«ĺ",
+              "score": -0.2027
+            },
+            {
+              "token_id": 7159,
+              "token": "Ġhighly",
+              "score": -0.1777
+            },
+            {
+              "token_id": 89525,
+              "token": "Expect",
+              "score": -0.1747
+            },
+            {
+              "token_id": 20031,
+              "token": "021",
+              "score": -0.172
+            },
+            {
+              "token_id": 3742,
+              "token": "Ġneg",
+              "score": -0.171
+            },
+            {
+              "token_id": 39983,
+              "token": "Ġsinus",
+              "score": -0.171
+            },
+            {
+              "token_id": 19449,
+              "token": "ĠChris",
+              "score": -0.1708
+            },
+            {
+              "token_id": 22967,
+              "token": "è¿ĩäºİ",
+              "score": -0.1679
+            },
+            {
+              "token_id": 1120,
+              "token": "Ġcons",
+              "score": -0.1652
+            },
+            {
+              "token_id": 28339,
+              "token": "027",
+              "score": -0.1649
+            },
+            {
+              "token_id": 16329,
+              "token": "ĠSus",
+              "score": -0.1629
+            },
+            {
+              "token_id": 71628,
+              "token": "ĠPIN",
+              "score": -0.1628
+            },
+            {
+              "token_id": 19162,
+              "token": "ĠHR",
+              "score": -0.1623
+            },
+            {
+              "token_id": 4602,
+              "token": "åıªæľī",
+              "score": -0.1621
+            },
+            {
+              "token_id": 9932,
+              "token": "ä¸»åĬ¨",
+              "score": -0.1585
+            },
+            {
+              "token_id": 36627,
+              "token": "ĠHein",
+              "score": -0.1575
+            },
+            {
+              "token_id": 51275,
+              "token": "è¿ĩé«ĺ",
+              "score": -0.1556
+            },
+            {
+              "token_id": 850,
+              "token": "Ġmore",
+              "score": -0.1556
+            },
+            {
+              "token_id": 19462,
+              "token": "Show",
+              "score": -0.1551
+            },
+            {
+              "token_id": 1665,
+              "token": "uth",
+              "score": -0.1543
+            }
+          ]
+        }
+      ]
+    },
+    "dm3": {
+      "original_energy": 305969.22,
+      "unique_energy": 298263.66,
+      "unique_fraction": 0.9748,
+      "unique_svs": [
+        10394.54,
+        1770.02,
+        973.25,
+        839.64,
+        669.54,
+        641.47,
+        601.03,
+        559.17,
+        515.96,
+        496.13,
+        484.94,
+        470.66,
+        451.1,
+        429.88,
+        426.01,
+        422.54,
+        415.16,
+        407.43,
+        396.84,
+        394.44,
+        392.53,
+        386.72,
+        386.31,
+        382.72,
+        379.9,
+        378.18,
+        375.51,
+        374.02,
+        372.44,
+        371.68
+      ],
+      "axes": [
+        {
+          "axis": 0,
+          "singular_value": 10394.5391,
+          "positive_tokens": [
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": 0.5243
+            },
+            {
+              "token_id": 6219,
+              "token": "Ġclean",
+              "score": 0.4295
+            },
+            {
+              "token_id": 3342,
+              "token": "Ġenergy",
+              "score": 0.3411
+            },
+            {
+              "token_id": 3283,
+              "token": "Ġpotential",
+              "score": 0.3236
+            },
+            {
+              "token_id": 4521,
+              "token": "Ġclear",
+              "score": 0.32
+            },
+            {
+              "token_id": 45396,
+              "token": "clean",
+              "score": 0.3179
+            },
+            {
+              "token_id": 5076,
+              "token": "Ġresources",
+              "score": 0.3152
+            },
+            {
+              "token_id": 8505,
+              "token": "Ġprotection",
+              "score": 0.3131
+            },
+            {
+              "token_id": 5597,
+              "token": "Ġsecurity",
+              "score": 0.3123
+            },
+            {
+              "token_id": 5103,
+              "token": "Ġstandard",
+              "score": 0.3061
+            },
+            {
+              "token_id": 2799,
+              "token": "Ġsocial",
+              "score": 0.3059
+            },
+            {
+              "token_id": 2880,
+              "token": "Ġview",
+              "score": 0.3019
+            },
+            {
+              "token_id": 4474,
+              "token": "Ġquality",
+              "score": 0.3014
+            },
+            {
+              "token_id": 3051,
+              "token": "Ġtext",
+              "score": 0.3001
+            },
+            {
+              "token_id": 2900,
+              "token": "Ġlight",
+              "score": 0.299
+            },
+            {
+              "token_id": 4511,
+              "token": "Ġassess",
+              "score": 0.298
+            },
+            {
+              "token_id": 9547,
+              "token": "check",
+              "score": 0.2957
+            },
+            {
+              "token_id": 5201,
+              "token": "èµĦæºĲ",
+              "score": 0.2951
+            },
+            {
+              "token_id": 2993,
+              "token": "Ġbetter",
+              "score": 0.293
+            },
+            {
+              "token_id": 7427,
+              "token": "Ġprotect",
+              "score": 0.2909
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 63680,
+              "token": "ĠIa",
+              "score": -0.2249
+            },
+            {
+              "token_id": 97613,
+              "token": "ZI",
+              "score": -0.223
+            },
+            {
+              "token_id": 36845,
+              "token": "ĠIntegration",
+              "score": -0.2225
+            },
+            {
+              "token_id": 13723,
+              "token": "221",
+              "score": -0.2189
+            },
+            {
+              "token_id": 57532,
+              "token": "ĠChes",
+              "score": -0.2158
+            },
+            {
+              "token_id": 61204,
+              "token": "ĠIntro",
+              "score": -0.2154
+            },
+            {
+              "token_id": 103329,
+              "token": "VN",
+              "score": -0.2153
+            },
+            {
+              "token_id": 53332,
+              "token": "IJ",
+              "score": -0.2141
+            },
+            {
+              "token_id": 58973,
+              "token": "ĠHiro",
+              "score": -0.2137
+            },
+            {
+              "token_id": 44100,
+              "token": "ĠPie",
+              "score": -0.2136
+            },
+            {
+              "token_id": 92372,
+              "token": "Oops",
+              "score": -0.2123
+            },
+            {
+              "token_id": 18021,
+              "token": "ĠJoe",
+              "score": -0.2119
+            },
+            {
+              "token_id": 79581,
+              "token": "ĠJian",
+              "score": -0.2109
+            },
+            {
+              "token_id": 66982,
+              "token": "ĠHamlet",
+              "score": -0.2108
+            },
+            {
+              "token_id": 10134,
+              "token": "ĠHen",
+              "score": -0.2105
+            },
+            {
+              "token_id": 48238,
+              "token": "ĠNos",
+              "score": -0.2097
+            },
+            {
+              "token_id": 20576,
+              "token": "æ±ª",
+              "score": -0.2081
+            },
+            {
+              "token_id": 66314,
+              "token": "ĠZhong",
+              "score": -0.208
+            },
+            {
+              "token_id": 76014,
+              "token": "ĠPizza",
+              "score": -0.2075
+            },
+            {
+              "token_id": 120774,
+              "token": "Fx",
+              "score": -0.2071
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "singular_value": 1770.0245,
+          "positive_tokens": [
+            {
+              "token_id": 1474,
+              "token": "Ġpers",
+              "score": 0.1789
+            },
+            {
+              "token_id": 28292,
+              "token": "target",
+              "score": 0.1749
+            },
+            {
+              "token_id": 18861,
+              "token": "ĠPakistan",
+              "score": 0.1693
+            },
+            {
+              "token_id": 2092,
+              "token": "Ġder",
+              "score": 0.1691
+            },
+            {
+              "token_id": 8761,
+              "token": "Ġteacher",
+              "score": 0.1655
+            },
+            {
+              "token_id": 68449,
+              "token": "caster",
+              "score": 0.1641
+            },
+            {
+              "token_id": 10169,
+              "token": "Ġà¤ķ",
+              "score": 0.1627
+            },
+            {
+              "token_id": 64198,
+              "token": "èµĦæľ¬å¸Ĥåľº",
+              "score": 0.1607
+            },
+            {
+              "token_id": 54222,
+              "token": "ä¸ĢèĪ¬åľ¨",
+              "score": 0.1585
+            },
+            {
+              "token_id": 81676,
+              "token": "æł¡éªĮ",
+              "score": 0.1557
+            },
+            {
+              "token_id": 506,
+              "token": "åĨ",
+              "score": 0.153
+            },
+            {
+              "token_id": 362,
+              "token": "Ġfor",
+              "score": 0.1522
+            },
+            {
+              "token_id": 12814,
+              "token": "åŃ¦çĶŁçļĦ",
+              "score": 0.1511
+            },
+            {
+              "token_id": 29379,
+              "token": "ĠWHERE",
+              "score": 0.1507
+            },
+            {
+              "token_id": 786,
+              "token": "Ġtheir",
+              "score": 0.1491
+            },
+            {
+              "token_id": 445,
+              "token": "åľ¨",
+              "score": 0.1487
+            },
+            {
+              "token_id": 15012,
+              "token": "Ġcontainer",
+              "score": 0.1484
+            },
+            {
+              "token_id": 29768,
+              "token": "åľ°åŁŁ",
+              "score": 0.1477
+            },
+            {
+              "token_id": 23480,
+              "token": "è¸©",
+              "score": 0.1469
+            },
+            {
+              "token_id": 30860,
+              "token": "è¡¨æł¼",
+              "score": 0.1464
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 110318,
+              "token": "Ġcolumnist",
+              "score": -0.1687
+            },
+            {
+              "token_id": 72577,
+              "token": "ĠØ§ÙĦÙĤØ¯",
+              "score": -0.1679
+            },
+            {
+              "token_id": 17368,
+              "token": "èĩªè¡Į",
+              "score": -0.1652
+            },
+            {
+              "token_id": 11310,
+              "token": "éĢĲæ¸Ĳ",
+              "score": -0.1622
+            },
+            {
+              "token_id": 55311,
+              "token": "Ġhurried",
+              "score": -0.1618
+            },
+            {
+              "token_id": 12231,
+              "token": "ĠRos",
+              "score": -0.1608
+            },
+            {
+              "token_id": 18893,
+              "token": "ä¸¸",
+              "score": -0.1602
+            },
+            {
+              "token_id": 19633,
+              "token": "ĠRun",
+              "score": -0.1572
+            },
+            {
+              "token_id": 34170,
+              "token": "ÑĤÐ¾Ñĩ",
+              "score": -0.1541
+            },
+            {
+              "token_id": 22019,
+              "token": "ĠRoss",
+              "score": -0.1541
+            },
+            {
+              "token_id": 4809,
+              "token": "Ġpropos",
+              "score": -0.153
+            },
+            {
+              "token_id": 29382,
+              "token": "Run",
+              "score": -0.1528
+            },
+            {
+              "token_id": 61085,
+              "token": "ĠJulius",
+              "score": -0.1524
+            },
+            {
+              "token_id": 68506,
+              "token": "çĽĲæ°´",
+              "score": -0.1521
+            },
+            {
+              "token_id": 16361,
+              "token": "æ±ģ",
+              "score": -0.1502
+            },
+            {
+              "token_id": 26471,
+              "token": "Õ¸ÖĤÕ¶",
+              "score": -0.1497
+            },
+            {
+              "token_id": 65950,
+              "token": "Rod",
+              "score": -0.1486
+            },
+            {
+              "token_id": 18085,
+              "token": "279",
+              "score": -0.1472
+            },
+            {
+              "token_id": 27177,
+              "token": "kil",
+              "score": -0.1461
+            },
+            {
+              "token_id": 11693,
+              "token": "Ġran",
+              "score": -0.1459
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "singular_value": 973.2451,
+          "positive_tokens": [
+            {
+              "token_id": 2747,
+              "token": "ãĤĴ",
+              "score": 0.3627
+            },
+            {
+              "token_id": 1207,
+              "token": "ä½Ĩ",
+              "score": 0.3596
+            },
+            {
+              "token_id": 693,
+              "token": "å¯¹",
+              "score": 0.358
+            },
+            {
+              "token_id": 2464,
+              "token": "Ġdie",
+              "score": 0.3505
+            },
+            {
+              "token_id": 334,
+              "token": "ĠA",
+              "score": 0.3494
+            },
+            {
+              "token_id": 847,
+              "token": "Ġla",
+              "score": 0.3492
+            },
+            {
+              "token_id": 2616,
+              "token": "01",
+              "score": 0.349
+            },
+            {
+              "token_id": 2038,
+              "token": "Ġthree",
+              "score": 0.3414
+            },
+            {
+              "token_id": 2936,
+              "token": "ãģĮ",
+              "score": 0.3305
+            },
+            {
+              "token_id": 1002,
+              "token": "17",
+              "score": 0.3285
+            },
+            {
+              "token_id": 776,
+              "token": "åĲİ",
+              "score": 0.3265
+            },
+            {
+              "token_id": 445,
+              "token": "åľ¨",
+              "score": 0.3238
+            },
+            {
+              "token_id": 1824,
+              "token": "è¿Ľè¡Į",
+              "score": 0.3236
+            },
+            {
+              "token_id": 35,
+              "token": "A",
+              "score": 0.3229
+            },
+            {
+              "token_id": 1602,
+              "token": "21",
+              "score": 0.3219
+            },
+            {
+              "token_id": 39,
+              "token": "E",
+              "score": 0.3208
+            },
+            {
+              "token_id": 71,
+              "token": "e",
+              "score": 0.3181
+            },
+            {
+              "token_id": 6982,
+              "token": "ĠTime",
+              "score": 0.3179
+            },
+            {
+              "token_id": 53,
+              "token": "S",
+              "score": 0.3177
+            },
+            {
+              "token_id": 728,
+              "token": "ä¹Ł",
+              "score": 0.3171
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": -0.3822
+            },
+            {
+              "token_id": 85481,
+              "token": "Ġcryptography",
+              "score": -0.3684
+            },
+            {
+              "token_id": 68781,
+              "token": "ĠRenewable",
+              "score": -0.2598
+            },
+            {
+              "token_id": 14734,
+              "token": "lib",
+              "score": -0.2425
+            },
+            {
+              "token_id": 73657,
+              "token": "(img",
+              "score": -0.2355
+            },
+            {
+              "token_id": 5356,
+              "token": "from",
+              "score": -0.2246
+            },
+            {
+              "token_id": 4911,
+              "token": "Ġstatic",
+              "score": -0.2139
+            },
+            {
+              "token_id": 16305,
+              "token": "Ġ'@",
+              "score": -0.2138
+            },
+            {
+              "token_id": 1823,
+              "token": "Ġ#",
+              "score": -0.212
+            },
+            {
+              "token_id": 13305,
+              "token": "#define",
+              "score": -0.2055
+            },
+            {
+              "token_id": 2390,
+              "token": "Ġ@",
+              "score": -0.2044
+            },
+            {
+              "token_id": 24468,
+              "token": "Grid",
+              "score": -0.2035
+            },
+            {
+              "token_id": 101115,
+              "token": ".lib",
+              "score": -0.202
+            },
+            {
+              "token_id": 547,
+              "token": "å¤§",
+              "score": -0.202
+            },
+            {
+              "token_id": 31420,
+              "token": "ç¼ĸç¨ĭ",
+              "score": -0.2
+            },
+            {
+              "token_id": 862,
+              "token": "ll",
+              "score": -0.1987
+            },
+            {
+              "token_id": 77,
+              "token": "k",
+              "score": -0.1975
+            },
+            {
+              "token_id": 1134,
+              "token": "æĥ³",
+              "score": -0.1972
+            },
+            {
+              "token_id": 78,
+              "token": "l",
+              "score": -0.1967
+            },
+            {
+              "token_id": 89259,
+              "token": "Ġcryptographic",
+              "score": -0.1956
+            }
+          ]
+        },
+        {
+          "axis": 3,
+          "singular_value": 839.6397,
+          "positive_tokens": [
+            {
+              "token_id": 23781,
+              "token": "ä¸Ģå®ļä¼ļ",
+              "score": 0.1771
+            },
+            {
+              "token_id": 61508,
+              "token": "ä¸¥æł¼æī§è¡Į",
+              "score": 0.174
+            },
+            {
+              "token_id": 31731,
+              "token": "ä¸Ģå®ļæĺ¯",
+              "score": 0.1581
+            },
+            {
+              "token_id": 22549,
+              "token": "çĶµåĬ¨",
+              "score": 0.1567
+            },
+            {
+              "token_id": 10209,
+              "token": "ä¸Ģå®ļè¦ģ",
+              "score": 0.1542
+            },
+            {
+              "token_id": 40551,
+              "token": "Ġpraw",
+              "score": 0.1542
+            },
+            {
+              "token_id": 6288,
+              "token": "uman",
+              "score": 0.1541
+            },
+            {
+              "token_id": 115827,
+              "token": "å¼ºåĪ¶æī§è¡Į",
+              "score": 0.1508
+            },
+            {
+              "token_id": 48482,
+              "token": "Ġnoticeable",
+              "score": 0.1496
+            },
+            {
+              "token_id": 102181,
+              "token": "æīĺè¿Ĳ",
+              "score": 0.1484
+            },
+            {
+              "token_id": 18691,
+              "token": "ĠCM",
+              "score": 0.147
+            },
+            {
+              "token_id": 9842,
+              "token": "Ġeffectively",
+              "score": 0.1458
+            },
+            {
+              "token_id": 39580,
+              "token": "æ¯ıä¸Ģæ¬¡",
+              "score": 0.1448
+            },
+            {
+              "token_id": 87827,
+              "token": "CHAR",
+              "score": 0.1447
+            },
+            {
+              "token_id": 47706,
+              "token": "underline",
+              "score": 0.1445
+            },
+            {
+              "token_id": 62266,
+              "token": "Ġswung",
+              "score": 0.1436
+            },
+            {
+              "token_id": 56923,
+              "token": "Ġengineered",
+              "score": 0.1424
+            },
+            {
+              "token_id": 89962,
+              "token": "Ġapprehend",
+              "score": 0.1424
+            },
+            {
+              "token_id": 15459,
+              "token": "é©¬åħĭ",
+              "score": 0.1418
+            },
+            {
+              "token_id": 58706,
+              "token": "Ġexpressive",
+              "score": 0.1417
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 44716,
+              "token": "Ġaltri",
+              "score": -0.1781
+            },
+            {
+              "token_id": 125579,
+              "token": "Ġalgebras",
+              "score": -0.1739
+            },
+            {
+              "token_id": 31072,
+              "token": "ãĥĿ",
+              "score": -0.1665
+            },
+            {
+              "token_id": 38367,
+              "token": "æĦŁæħ¨",
+              "score": -0.166
+            },
+            {
+              "token_id": 18205,
+              "token": "é¢ĩ",
+              "score": -0.1624
+            },
+            {
+              "token_id": 11889,
+              "token": "ĠGal",
+              "score": -0.1621
+            },
+            {
+              "token_id": 44691,
+              "token": "Ġacidic",
+              "score": -0.1608
+            },
+            {
+              "token_id": 22312,
+              "token": "prot",
+              "score": -0.1606
+            },
+            {
+              "token_id": 22505,
+              "token": "åıĳæĶ¾",
+              "score": -0.1594
+            },
+            {
+              "token_id": 93348,
+              "token": "encoder",
+              "score": -0.1577
+            },
+            {
+              "token_id": 107283,
+              "token": "Zi",
+              "score": -0.1574
+            },
+            {
+              "token_id": 87869,
+              "token": "Zm",
+              "score": -0.1573
+            },
+            {
+              "token_id": 13778,
+              "token": "Ġinterval",
+              "score": -0.1562
+            },
+            {
+              "token_id": 15637,
+              "token": "253",
+              "score": -0.156
+            },
+            {
+              "token_id": 78913,
+              "token": "kJ",
+              "score": -0.1556
+            },
+            {
+              "token_id": 23381,
+              "token": "ibil",
+              "score": -0.1533
+            },
+            {
+              "token_id": 59104,
+              "token": "æľ¬èĥ½",
+              "score": -0.1527
+            },
+            {
+              "token_id": 3589,
+              "token": "ĠÑį",
+              "score": -0.1525
+            },
+            {
+              "token_id": 19045,
+              "token": "/pro",
+              "score": -0.1519
+            },
+            {
+              "token_id": 79292,
+              "token": "æŃİ",
+              "score": -0.1501
+            }
+          ]
+        },
+        {
+          "axis": 4,
+          "singular_value": 669.5381,
+          "positive_tokens": [
+            {
+              "token_id": 31637,
+              "token": "ĠProgress",
+              "score": 0.1741
+            },
+            {
+              "token_id": 13720,
+              "token": "ä¸»è¦ģæĺ¯",
+              "score": 0.1547
+            },
+            {
+              "token_id": 16727,
+              "token": "Work",
+              "score": 0.1543
+            },
+            {
+              "token_id": 25900,
+              "token": "Ġminerals",
+              "score": 0.1521
+            },
+            {
+              "token_id": 49939,
+              "token": "ĠShin",
+              "score": 0.1498
+            },
+            {
+              "token_id": 7445,
+              "token": "Ġestablish",
+              "score": 0.1498
+            },
+            {
+              "token_id": 29014,
+              "token": "æĸĩçī©",
+              "score": 0.1483
+            },
+            {
+              "token_id": 15902,
+              "token": "Ġdealing",
+              "score": 0.1478
+            },
+            {
+              "token_id": 31828,
+              "token": "çī¹åĪ¥",
+              "score": 0.1478
+            },
+            {
+              "token_id": 21986,
+              "token": "Ġconclude",
+              "score": 0.1458
+            },
+            {
+              "token_id": 33365,
+              "token": "Ġbiomass",
+              "score": 0.1449
+            },
+            {
+              "token_id": 33509,
+              "token": "Ġshelf",
+              "score": 0.1398
+            },
+            {
+              "token_id": 20198,
+              "token": "ä¸įå¯¹",
+              "score": 0.1378
+            },
+            {
+              "token_id": 15361,
+              "token": "ĠWrite",
+              "score": 0.1367
+            },
+            {
+              "token_id": 4341,
+              "token": "ï¿½ï¿½",
+              "score": 0.1358
+            },
+            {
+              "token_id": 44647,
+              "token": "åºŁçī©",
+              "score": 0.1351
+            },
+            {
+              "token_id": 6486,
+              "token": "Ġprogress",
+              "score": 0.1351
+            },
+            {
+              "token_id": 11166,
+              "token": "æĸ¹ä¾¿",
+              "score": 0.1333
+            },
+            {
+              "token_id": 58800,
+              "token": "ĠWORK",
+              "score": 0.133
+            },
+            {
+              "token_id": 7493,
+              "token": "çľŁæŃ£",
+              "score": 0.1329
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 17734,
+              "token": "ç»ĵå©ļ",
+              "score": -0.2028
+            },
+            {
+              "token_id": 47760,
+              "token": "}^{(",
+              "score": -0.1864
+            },
+            {
+              "token_id": 21673,
+              "token": "åĲ»",
+              "score": -0.1843
+            },
+            {
+              "token_id": 10717,
+              "token": "å°±åĥı",
+              "score": -0.1792
+            },
+            {
+              "token_id": 5650,
+              "token": "æĬĵ",
+              "score": -0.1736
+            },
+            {
+              "token_id": 26328,
+              "token": "æŃ£å¦Ĥ",
+              "score": -0.1678
+            },
+            {
+              "token_id": 23419,
+              "token": "ä¸ĢèĦ¸",
+              "score": -0.1644
+            },
+            {
+              "token_id": 64279,
+              "token": "çĪ±ä¸Ĭ",
+              "score": -0.1635
+            },
+            {
+              "token_id": 27326,
+              "token": "oyd",
+              "score": -0.1633
+            },
+            {
+              "token_id": 61402,
+              "token": "cmd",
+              "score": -0.1625
+            },
+            {
+              "token_id": 80477,
+              "token": ".Client",
+              "score": -0.1619
+            },
+            {
+              "token_id": 16297,
+              "token": "ĠRod",
+              "score": -0.1598
+            },
+            {
+              "token_id": 83352,
+              "token": "å¾Īåĥı",
+              "score": -0.159
+            },
+            {
+              "token_id": 76797,
+              "token": "mul",
+              "score": -0.1578
+            },
+            {
+              "token_id": 67847,
+              "token": "/_",
+              "score": -0.1574
+            },
+            {
+              "token_id": 16655,
+              "token": "Ġiz",
+              "score": -0.1569
+            },
+            {
+              "token_id": 87988,
+              "token": "_ip",
+              "score": -0.1566
+            },
+            {
+              "token_id": 10885,
+              "token": "åĲĮæł·",
+              "score": -0.1565
+            },
+            {
+              "token_id": 43085,
+              "token": "Ġ(=",
+              "score": -0.1547
+            },
+            {
+              "token_id": 42584,
+              "token": "çķĶ",
+              "score": -0.1542
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "1": {
+    "dm1": {
+      "original_energy": 67789.85,
+      "unique_energy": 66075.93,
+      "unique_fraction": 0.9747,
+      "unique_svs": [
+        2360.3,
+        529.25,
+        284.54,
+        242.28,
+        167.72,
+        157.43,
+        154.73,
+        152.15,
+        150.88,
+        147.58,
+        144.66,
+        141.03,
+        139.09,
+        137.46,
+        136.41,
+        133.96,
+        132.03,
+        130.11,
+        127.93,
+        127.46,
+        126.27,
+        124.55,
+        122.25,
+        121.97,
+        120.72,
+        119.99,
+        119.46,
+        119.15,
+        118.52,
+        117.42
+      ],
+      "axes": [
+        {
+          "axis": 0,
+          "singular_value": 2360.2954,
+          "positive_tokens": [
+            {
+              "token_id": 28429,
+              "token": "ĠShakespeare",
+              "score": 0.8909
+            },
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": 0.4956
+            },
+            {
+              "token_id": 25909,
+              "token": "akespeare",
+              "score": 0.4188
+            },
+            {
+              "token_id": 10799,
+              "token": "Ġtechnologies",
+              "score": 0.4014
+            },
+            {
+              "token_id": 25553,
+              "token": "Ġpublications",
+              "score": 0.3728
+            },
+            {
+              "token_id": 6258,
+              "token": "Ġcommunication",
+              "score": 0.3711
+            },
+            {
+              "token_id": 12807,
+              "token": "Ġinfrastructure",
+              "score": 0.3704
+            },
+            {
+              "token_id": 15927,
+              "token": "Ġelectricity",
+              "score": 0.3624
+            },
+            {
+              "token_id": 74242,
+              "token": "ĠMacbeth",
+              "score": 0.3612
+            },
+            {
+              "token_id": 80950,
+              "token": "Ġ_______",
+              "score": 0.3593
+            },
+            {
+              "token_id": 31253,
+              "token": "Ġgeographical",
+              "score": 0.3559
+            },
+            {
+              "token_id": 11264,
+              "token": "Ġfundamental",
+              "score": 0.3551
+            },
+            {
+              "token_id": 31952,
+              "token": "Ġunderground",
+              "score": 0.3431
+            },
+            {
+              "token_id": 20836,
+              "token": "ĠCommunication",
+              "score": 0.343
+            },
+            {
+              "token_id": 12894,
+              "token": "Ġconsequences",
+              "score": 0.3429
+            },
+            {
+              "token_id": 19563,
+              "token": "Ġdevelopments",
+              "score": 0.3379
+            },
+            {
+              "token_id": 19073,
+              "token": "Ġimprovements",
+              "score": 0.3365
+            },
+            {
+              "token_id": 19308,
+              "token": "Ġvocabulary",
+              "score": 0.3326
+            },
+            {
+              "token_id": 23118,
+              "token": "ĠMassachusetts",
+              "score": 0.3305
+            },
+            {
+              "token_id": 21944,
+              "token": "Ġwavelength",
+              "score": 0.3283
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 18791,
+              "token": ".O",
+              "score": -0.4271
+            },
+            {
+              "token_id": 6973,
+              "token": "Er",
+              "score": -0.4175
+            },
+            {
+              "token_id": 6689,
+              "token": "Pr",
+              "score": -0.4101
+            },
+            {
+              "token_id": 84,
+              "token": "r",
+              "score": -0.3943
+            },
+            {
+              "token_id": 97838,
+              "token": "Bn",
+              "score": -0.3799
+            },
+            {
+              "token_id": 59202,
+              "token": "Fr",
+              "score": -0.3585
+            },
+            {
+              "token_id": 40094,
+              "token": "Tri",
+              "score": -0.3509
+            },
+            {
+              "token_id": 16872,
+              "token": "Sur",
+              "score": -0.3437
+            },
+            {
+              "token_id": 8146,
+              "token": ".n",
+              "score": -0.3405
+            },
+            {
+              "token_id": 80,
+              "token": "n",
+              "score": -0.3404
+            },
+            {
+              "token_id": 53383,
+              "token": "Ell",
+              "score": -0.3401
+            },
+            {
+              "token_id": 69613,
+              "token": "Fn",
+              "score": -0.3395
+            },
+            {
+              "token_id": 92150,
+              "token": "Ln",
+              "score": -0.3387
+            },
+            {
+              "token_id": 21378,
+              "token": ".r",
+              "score": -0.3384
+            },
+            {
+              "token_id": 8423,
+              "token": "Pre",
+              "score": -0.3327
+            },
+            {
+              "token_id": 38417,
+              "token": "Bro",
+              "score": -0.3321
+            },
+            {
+              "token_id": 12777,
+              "token": "/n",
+              "score": -0.3252
+            },
+            {
+              "token_id": 2378,
+              "token": "çİ¯",
+              "score": -0.3245
+            },
+            {
+              "token_id": 42498,
+              "token": "Ir",
+              "score": -0.3244
+            },
+            {
+              "token_id": 31552,
+              "token": "Ber",
+              "score": -0.3232
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "singular_value": 529.2513,
+          "positive_tokens": [
+            {
+              "token_id": 33504,
+              "token": "Stock",
+              "score": 0.3319
+            },
+            {
+              "token_id": 41063,
+              "token": "Women",
+              "score": 0.3214
+            },
+            {
+              "token_id": 27203,
+              "token": "ĠCarbon",
+              "score": 0.3184
+            },
+            {
+              "token_id": 12151,
+              "token": "ĠWomen",
+              "score": 0.3067
+            },
+            {
+              "token_id": 24265,
+              "token": "Research",
+              "score": 0.3038
+            },
+            {
+              "token_id": 14959,
+              "token": "Two",
+              "score": 0.2977
+            },
+            {
+              "token_id": 12299,
+              "token": "Product",
+              "score": 0.2947
+            },
+            {
+              "token_id": 12386,
+              "token": "Search",
+              "score": 0.2944
+            },
+            {
+              "token_id": 26192,
+              "token": "498",
+              "score": 0.294
+            },
+            {
+              "token_id": 35937,
+              "token": "Food",
+              "score": 0.2935
+            },
+            {
+              "token_id": 18731,
+              "token": "297",
+              "score": 0.2917
+            },
+            {
+              "token_id": 54674,
+              "token": "Members",
+              "score": 0.2881
+            },
+            {
+              "token_id": 22298,
+              "token": "Three",
+              "score": 0.284
+            },
+            {
+              "token_id": 109952,
+              "token": "OOOO",
+              "score": 0.2807
+            },
+            {
+              "token_id": 28307,
+              "token": "997",
+              "score": 0.2803
+            },
+            {
+              "token_id": 12825,
+              "token": "225",
+              "score": 0.2792
+            },
+            {
+              "token_id": 37783,
+              "token": "Random",
+              "score": 0.2785
+            },
+            {
+              "token_id": 71661,
+              "token": "Carbon",
+              "score": 0.2772
+            },
+            {
+              "token_id": 16849,
+              "token": "Mar",
+              "score": 0.2765
+            },
+            {
+              "token_id": 25540,
+              "token": "Graph",
+              "score": 0.2753
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 45563,
+              "token": "}\\)-",
+              "score": -0.3551
+            },
+            {
+              "token_id": 29039,
+              "token": "vc",
+              "score": -0.3488
+            },
+            {
+              "token_id": 15743,
+              "token": "Ġ.Ċ",
+              "score": -0.3487
+            },
+            {
+              "token_id": 43360,
+              "token": "âĢĳ",
+              "score": -0.3311
+            },
+            {
+              "token_id": 9824,
+              "token": ".-",
+              "score": -0.3262
+            },
+            {
+              "token_id": 20723,
+              "token": "\\)-",
+              "score": -0.3258
+            },
+            {
+              "token_id": 69,
+              "token": "c",
+              "score": -0.3209
+            },
+            {
+              "token_id": 2846,
+              "token": "-c",
+              "score": -0.3176
+            },
+            {
+              "token_id": 38620,
+              "token": "..Ċ",
+              "score": -0.3174
+            },
+            {
+              "token_id": 25160,
+              "token": "Ġ-ĊĊ",
+              "score": -0.3158
+            },
+            {
+              "token_id": 26310,
+              "token": "Ġ-=",
+              "score": -0.3139
+            },
+            {
+              "token_id": 565,
+              "token": "Ġ-",
+              "score": -0.3083
+            },
+            {
+              "token_id": 11313,
+              "token": "..ĊĊ",
+              "score": -0.3072
+            },
+            {
+              "token_id": 8723,
+              "token": "Ġ.ĊĊ",
+              "score": -0.3001
+            },
+            {
+              "token_id": 9908,
+              "token": ")-",
+              "score": -0.2993
+            },
+            {
+              "token_id": 15,
+              "token": "-",
+              "score": -0.2959
+            },
+            {
+              "token_id": 48821,
+              "token": "uristic",
+              "score": -0.2914
+            },
+            {
+              "token_id": 25451,
+              "token": "Ġ\\-",
+              "score": -0.2869
+            },
+            {
+              "token_id": 16074,
+              "token": "}-",
+              "score": -0.2867
+            },
+            {
+              "token_id": 12372,
+              "token": "ï¼į",
+              "score": -0.2866
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "singular_value": 284.5441,
+          "positive_tokens": [
+            {
+              "token_id": 11496,
+              "token": "çºµ",
+              "score": 0.2384
+            },
+            {
+              "token_id": 21,
+              "token": "3",
+              "score": 0.2331
+            },
+            {
+              "token_id": 21491,
+              "token": ".k",
+              "score": 0.2264
+            },
+            {
+              "token_id": 31197,
+              "token": "ĠKur",
+              "score": 0.2233
+            },
+            {
+              "token_id": 21378,
+              "token": ".r",
+              "score": 0.2182
+            },
+            {
+              "token_id": 7192,
+              "token": ".st",
+              "score": 0.2099
+            },
+            {
+              "token_id": 6973,
+              "token": "Er",
+              "score": 0.2062
+            },
+            {
+              "token_id": 44676,
+              "token": ".Z",
+              "score": 0.2046
+            },
+            {
+              "token_id": 35524,
+              "token": "LT",
+              "score": 0.2021
+            },
+            {
+              "token_id": 16685,
+              "token": "&&",
+              "score": 0.199
+            },
+            {
+              "token_id": 4952,
+              "token": "éĤĦ",
+              "score": 0.1979
+            },
+            {
+              "token_id": 38153,
+              "token": "Ko",
+              "score": 0.1971
+            },
+            {
+              "token_id": 16422,
+              "token": "Even",
+              "score": 0.1938
+            },
+            {
+              "token_id": 987,
+              "token": "åĲĪ",
+              "score": 0.193
+            },
+            {
+              "token_id": 10275,
+              "token": "-N",
+              "score": 0.1918
+            },
+            {
+              "token_id": 4394,
+              "token": ".t",
+              "score": 0.1912
+            },
+            {
+              "token_id": 5124,
+              "token": "Or",
+              "score": 0.1912
+            },
+            {
+              "token_id": 64289,
+              "token": "+r",
+              "score": 0.1905
+            },
+            {
+              "token_id": 84,
+              "token": "r",
+              "score": 0.1898
+            },
+            {
+              "token_id": 14615,
+              "token": "(N",
+              "score": 0.1894
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 6451,
+              "token": "ä½ľèĢħ",
+              "score": -0.2263
+            },
+            {
+              "token_id": 28429,
+              "token": "ĠShakespeare",
+              "score": -0.2025
+            },
+            {
+              "token_id": 26653,
+              "token": "Ġawesome",
+              "score": -0.1942
+            },
+            {
+              "token_id": 9995,
+              "token": "æĻºèĥ½",
+              "score": -0.1941
+            },
+            {
+              "token_id": 9347,
+              "token": "Ġincreases",
+              "score": -0.186
+            },
+            {
+              "token_id": 31039,
+              "token": "ĠArchitecture",
+              "score": -0.1853
+            },
+            {
+              "token_id": 9079,
+              "token": "ĠHuman",
+              "score": -0.1835
+            },
+            {
+              "token_id": 5131,
+              "token": "Ġphysical",
+              "score": -0.1753
+            },
+            {
+              "token_id": 6865,
+              "token": "Ġpresence",
+              "score": -0.1745
+            },
+            {
+              "token_id": 42001,
+              "token": "-face",
+              "score": -0.1726
+            },
+            {
+              "token_id": 1894,
+              "token": "Ġgood",
+              "score": -0.172
+            },
+            {
+              "token_id": 2643,
+              "token": "å·²ç»ı",
+              "score": -0.1688
+            },
+            {
+              "token_id": 7009,
+              "token": "Ġproduce",
+              "score": -0.1685
+            },
+            {
+              "token_id": 3756,
+              "token": "Ġaddress",
+              "score": -0.1678
+            },
+            {
+              "token_id": 20011,
+              "token": "Ġrespiratory",
+              "score": -0.1676
+            },
+            {
+              "token_id": 22556,
+              "token": "Ġreaches",
+              "score": -0.166
+            },
+            {
+              "token_id": 4545,
+              "token": "ĠNational",
+              "score": -0.1651
+            },
+            {
+              "token_id": 7172,
+              "token": "Ġrequirements",
+              "score": -0.1642
+            },
+            {
+              "token_id": 5167,
+              "token": "Ġincreased",
+              "score": -0.1633
+            },
+            {
+              "token_id": 4935,
+              "token": "Ġpressure",
+              "score": -0.1629
+            }
+          ]
+        },
+        {
+          "axis": 3,
+          "singular_value": 242.28,
+          "positive_tokens": [
+            {
+              "token_id": 49550,
+              "token": "Ġunpleasant",
+              "score": 0.1768
+            },
+            {
+              "token_id": 14524,
+              "token": "çļĦåİŁåĽł",
+              "score": 0.1598
+            },
+            {
+              "token_id": 27084,
+              "token": "ä¸Ĭçº§",
+              "score": 0.153
+            },
+            {
+              "token_id": 26114,
+              "token": "åħ¥åı£",
+              "score": 0.1521
+            },
+            {
+              "token_id": 24249,
+              "token": "é£ŁçĶ¨",
+              "score": 0.147
+            },
+            {
+              "token_id": 57673,
+              "token": "ographically",
+              "score": 0.1442
+            },
+            {
+              "token_id": 52382,
+              "token": "ĠCreator",
+              "score": 0.144
+            },
+            {
+              "token_id": 12580,
+              "token": "å¥³æĢ§",
+              "score": 0.1439
+            },
+            {
+              "token_id": 84785,
+              "token": "Ġconspicuous",
+              "score": 0.1438
+            },
+            {
+              "token_id": 13950,
+              "token": "åģļäºĨ",
+              "score": 0.1437
+            },
+            {
+              "token_id": 104754,
+              "token": "Ġunethical",
+              "score": 0.1412
+            },
+            {
+              "token_id": 38590,
+              "token": "Ġprompted",
+              "score": 0.1399
+            },
+            {
+              "token_id": 114514,
+              "token": "Ym",
+              "score": 0.1399
+            },
+            {
+              "token_id": 77636,
+              "token": "è§Ĥå¯ŁåĪ°",
+              "score": 0.1397
+            },
+            {
+              "token_id": 63043,
+              "token": "åºĶä»¥",
+              "score": 0.1397
+            },
+            {
+              "token_id": 44744,
+              "token": "åĲĮå¹´",
+              "score": 0.1387
+            },
+            {
+              "token_id": 42352,
+              "token": "ĠCertificate",
+              "score": 0.1384
+            },
+            {
+              "token_id": 22615,
+              "token": "-sm",
+              "score": 0.138
+            },
+            {
+              "token_id": 85097,
+              "token": "æĢ»ç»ĵäºĨ",
+              "score": 0.1348
+            },
+            {
+              "token_id": 10668,
+              "token": "ĠÐ¿Ð°",
+              "score": 0.1346
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 40534,
+              "token": ".content",
+              "score": -0.1782
+            },
+            {
+              "token_id": 33393,
+              "token": "ĠBloom",
+              "score": -0.1759
+            },
+            {
+              "token_id": 12410,
+              "token": "ĠCharles",
+              "score": -0.1752
+            },
+            {
+              "token_id": 5515,
+              "token": "éĴŁ",
+              "score": -0.1708
+            },
+            {
+              "token_id": 17177,
+              "token": "åįĵ",
+              "score": -0.1681
+            },
+            {
+              "token_id": 19695,
+              "token": "æµĳ",
+              "score": -0.1647
+            },
+            {
+              "token_id": 9326,
+              "token": "content",
+              "score": -0.1608
+            },
+            {
+              "token_id": 92792,
+              "token": "ĠLaz",
+              "score": -0.1601
+            },
+            {
+              "token_id": 41349,
+              "token": "æİ¥åľ°",
+              "score": -0.1572
+            },
+            {
+              "token_id": 47687,
+              "token": "Charles",
+              "score": -0.1565
+            },
+            {
+              "token_id": 39683,
+              "token": "__________",
+              "score": -0.1551
+            },
+            {
+              "token_id": 63757,
+              "token": "Structure",
+              "score": -0.154
+            },
+            {
+              "token_id": 17518,
+              "token": "ĠContent",
+              "score": -0.1529
+            },
+            {
+              "token_id": 20348,
+              "token": "æĳĬ",
+              "score": -0.1526
+            },
+            {
+              "token_id": 37018,
+              "token": "çĭĦ",
+              "score": -0.1522
+            },
+            {
+              "token_id": 5652,
+              "token": "å½©",
+              "score": -0.1522
+            },
+            {
+              "token_id": 123497,
+              "token": "Floor",
+              "score": -0.1517
+            },
+            {
+              "token_id": 14388,
+              "token": "ĠMusic",
+              "score": -0.1512
+            },
+            {
+              "token_id": 7670,
+              "token": "Ġspread",
+              "score": -0.1511
+            },
+            {
+              "token_id": 7764,
+              "token": "éĩĳèŀį",
+              "score": -0.1476
+            }
+          ]
+        },
+        {
+          "axis": 4,
+          "singular_value": 167.7173,
+          "positive_tokens": [
+            {
+              "token_id": 103117,
+              "token": "helps",
+              "score": 0.1854
+            },
+            {
+              "token_id": 61804,
+              "token": "ĠColeman",
+              "score": 0.175
+            },
+            {
+              "token_id": 14943,
+              "token": "ĠJim",
+              "score": 0.1678
+            },
+            {
+              "token_id": 22332,
+              "token": "æĹłéĻĲ",
+              "score": 0.1665
+            },
+            {
+              "token_id": 29738,
+              "token": "ĠChristopher",
+              "score": 0.1654
+            },
+            {
+              "token_id": 21387,
+              "token": "æłĳç«ĭ",
+              "score": 0.1637
+            },
+            {
+              "token_id": 122116,
+              "token": "ĠPearce",
+              "score": 0.1591
+            },
+            {
+              "token_id": 24375,
+              "token": "Ġpartly",
+              "score": 0.1585
+            },
+            {
+              "token_id": 29372,
+              "token": "æľīä¸ĢäºĽ",
+              "score": 0.1582
+            },
+            {
+              "token_id": 11804,
+              "token": "éĩįè§Ĩ",
+              "score": 0.1581
+            },
+            {
+              "token_id": 14337,
+              "token": "é¼ĵåĬ±",
+              "score": 0.1559
+            },
+            {
+              "token_id": 54997,
+              "token": "Chris",
+              "score": 0.1537
+            },
+            {
+              "token_id": 108120,
+              "token": "Extended",
+              "score": 0.1537
+            },
+            {
+              "token_id": 29683,
+              "token": "é¥¶",
+              "score": 0.1532
+            },
+            {
+              "token_id": 15662,
+              "token": "çĪ±æĥħ",
+              "score": 0.1525
+            },
+            {
+              "token_id": 40666,
+              "token": "cas",
+              "score": 0.1507
+            },
+            {
+              "token_id": 19449,
+              "token": "ĠChris",
+              "score": 0.1498
+            },
+            {
+              "token_id": 53129,
+              "token": "å¨ģå°Ķ",
+              "score": 0.1492
+            },
+            {
+              "token_id": 40527,
+              "token": "Ġsilly",
+              "score": 0.1489
+            },
+            {
+              "token_id": 54134,
+              "token": "ĠOffer",
+              "score": 0.1483
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 43467,
+              "token": "ä¹ĥæĺ¯",
+              "score": -0.2019
+            },
+            {
+              "token_id": 54938,
+              "token": "ĠAbdul",
+              "score": -0.181
+            },
+            {
+              "token_id": 10630,
+              "token": "ä¹ĥ",
+              "score": -0.1681
+            },
+            {
+              "token_id": 6553,
+              "token": "Ġax",
+              "score": -0.1661
+            },
+            {
+              "token_id": 74191,
+              "token": "çĤ¹åĪ°",
+              "score": -0.1627
+            },
+            {
+              "token_id": 26844,
+              "token": "ĠLev",
+              "score": -0.1618
+            },
+            {
+              "token_id": 82188,
+              "token": "ĠgÃ¶",
+              "score": -0.161
+            },
+            {
+              "token_id": 7041,
+              "token": "éĵ¾",
+              "score": -0.1581
+            },
+            {
+              "token_id": 34695,
+              "token": "ãĤ¬",
+              "score": -0.1567
+            },
+            {
+              "token_id": 35927,
+              "token": "ãĥİ",
+              "score": -0.1562
+            },
+            {
+              "token_id": 69022,
+              "token": "AVA",
+              "score": -0.1534
+            },
+            {
+              "token_id": 689,
+              "token": "æµ",
+              "score": -0.1534
+            },
+            {
+              "token_id": 17563,
+              "token": "à¤¦",
+              "score": -0.1524
+            },
+            {
+              "token_id": 36876,
+              "token": "Ġgez",
+              "score": -0.1495
+            },
+            {
+              "token_id": 17894,
+              "token": "èĤ¢",
+              "score": -0.149
+            },
+            {
+              "token_id": 21749,
+              "token": "é§",
+              "score": -0.1489
+            },
+            {
+              "token_id": 4473,
+              "token": "Ġvo",
+              "score": -0.1488
+            },
+            {
+              "token_id": 87869,
+              "token": "Zm",
+              "score": -0.1483
+            },
+            {
+              "token_id": 13682,
+              "token": "æīįæĺ¯",
+              "score": -0.1482
+            },
+            {
+              "token_id": 91564,
+              "token": "çĽ®ãģ®",
+              "score": -0.1479
+            }
+          ]
+        }
+      ]
+    },
+    "dm2": {
+      "original_energy": 56029.61,
+      "unique_energy": 54660.12,
+      "unique_fraction": 0.9756,
+      "unique_svs": [
+        1788.36,
+        243.32,
+        223.2,
+        182.96,
+        169.99,
+        135.22,
+        128.3,
+        122.49,
+        119.46,
+        118.5,
+        116.87,
+        115.34,
+        114.38,
+        112.66,
+        111.41,
+        110.61,
+        109.7,
+        108.84,
+        107.55,
+        106.53,
+        106.1,
+        104.95,
+        104.44,
+        103.85,
+        103.63,
+        102.64,
+        102.4,
+        101.99,
+        101.39,
+        101.29
+      ],
+      "axes": [
+        {
+          "axis": 0,
+          "singular_value": 1788.359,
+          "positive_tokens": [
+            {
+              "token_id": 69477,
+              "token": "plac",
+              "score": 0.384
+            },
+            {
+              "token_id": 24423,
+              "token": "uler",
+              "score": 0.382
+            },
+            {
+              "token_id": 22779,
+              "token": "åĩ¸",
+              "score": 0.3818
+            },
+            {
+              "token_id": 19894,
+              "token": "plicit",
+              "score": 0.363
+            },
+            {
+              "token_id": 1538,
+              "token": "erg",
+              "score": 0.3625
+            },
+            {
+              "token_id": 102778,
+              "token": "(-\\",
+              "score": 0.3616
+            },
+            {
+              "token_id": 37383,
+              "token": "qquad",
+              "score": 0.3592
+            },
+            {
+              "token_id": 68483,
+              "token": "Ġ\\((\\",
+              "score": 0.3531
+            },
+            {
+              "token_id": 42492,
+              "token": "neq",
+              "score": 0.3477
+            },
+            {
+              "token_id": 3654,
+              "token": "cle",
+              "score": 0.3414
+            },
+            {
+              "token_id": 49461,
+              "token": "optim",
+              "score": 0.3408
+            },
+            {
+              "token_id": 31281,
+              "token": "impl",
+              "score": 0.3408
+            },
+            {
+              "token_id": 25800,
+              "token": "Cle",
+              "score": 0.3353
+            },
+            {
+              "token_id": 65623,
+              "token": "vex",
+              "score": 0.3337
+            },
+            {
+              "token_id": 51560,
+              "token": "gue",
+              "score": 0.3326
+            },
+            {
+              "token_id": 21829,
+              "token": "bral",
+              "score": 0.3235
+            },
+            {
+              "token_id": 10378,
+              "token": "uls",
+              "score": 0.3221
+            },
+            {
+              "token_id": 5460,
+              "token": "itting",
+              "score": 0.3214
+            },
+            {
+              "token_id": 5544,
+              "token": "lig",
+              "score": 0.3202
+            },
+            {
+              "token_id": 56461,
+              "token": "akis",
+              "score": 0.3202
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 2616,
+              "token": "01",
+              "score": -0.5647
+            },
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": -0.4113
+            },
+            {
+              "token_id": 11264,
+              "token": "Ġfundamental",
+              "score": -0.4028
+            },
+            {
+              "token_id": 6697,
+              "token": "ĠDepartment",
+              "score": -0.3791
+            },
+            {
+              "token_id": 2329,
+              "token": "Ġname",
+              "score": -0.3745
+            },
+            {
+              "token_id": 4688,
+              "token": "Ġsource",
+              "score": -0.3601
+            },
+            {
+              "token_id": 2934,
+              "token": "Ġdevelopment",
+              "score": -0.3585
+            },
+            {
+              "token_id": 36617,
+              "token": "ĠMovie",
+              "score": -0.3539
+            },
+            {
+              "token_id": 3344,
+              "token": "Ġfood",
+              "score": -0.3535
+            },
+            {
+              "token_id": 7961,
+              "token": "ĠDevelopment",
+              "score": -0.3516
+            },
+            {
+              "token_id": 10937,
+              "token": "Ġmovie",
+              "score": -0.3508
+            },
+            {
+              "token_id": 3445,
+              "token": "Ġcontent",
+              "score": -0.3495
+            },
+            {
+              "token_id": 4601,
+              "token": "Ġmoney",
+              "score": -0.3463
+            },
+            {
+              "token_id": 19136,
+              "token": "ĠCountry",
+              "score": -0.3457
+            },
+            {
+              "token_id": 4807,
+              "token": "Ġtechnology",
+              "score": -0.3444
+            },
+            {
+              "token_id": 3600,
+              "token": "03",
+              "score": -0.3442
+            },
+            {
+              "token_id": 20891,
+              "token": "ĠCreated",
+              "score": -0.3436
+            },
+            {
+              "token_id": 6528,
+              "token": "')",
+              "score": -0.337
+            },
+            {
+              "token_id": 2021,
+              "token": "^{",
+              "score": -0.3362
+            },
+            {
+              "token_id": 7537,
+              "token": "Ġenvironmental",
+              "score": -0.3355
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "singular_value": 243.3201,
+          "positive_tokens": [
+            {
+              "token_id": 2130,
+              "token": "æĹ¶éĹ´",
+              "score": 0.2473
+            },
+            {
+              "token_id": 4245,
+              "token": "Ġfile",
+              "score": 0.2401
+            },
+            {
+              "token_id": 9373,
+              "token": "çļĦæĹ¶éĹ´",
+              "score": 0.2258
+            },
+            {
+              "token_id": 95,
+              "token": "}",
+              "score": 0.2238
+            },
+            {
+              "token_id": 1393,
+              "token": "()",
+              "score": 0.2218
+            },
+            {
+              "token_id": 4609,
+              "token": "Ġimage",
+              "score": 0.2158
+            },
+            {
+              "token_id": 4554,
+              "token": "}_{",
+              "score": 0.2096
+            },
+            {
+              "token_id": 6778,
+              "token": "æĪĲæľ¬",
+              "score": 0.2039
+            },
+            {
+              "token_id": 23126,
+              "token": "fi",
+              "score": 0.2033
+            },
+            {
+              "token_id": 4080,
+              "token": "}^{",
+              "score": 0.2004
+            },
+            {
+              "token_id": 6982,
+              "token": "ĠTime",
+              "score": 0.1992
+            },
+            {
+              "token_id": 1778,
+              "token": "}Ċ",
+              "score": 0.1983
+            },
+            {
+              "token_id": 1227,
+              "token": "ï¼ī",
+              "score": 0.1981
+            },
+            {
+              "token_id": 8888,
+              "token": "ĠCD",
+              "score": 0.1975
+            },
+            {
+              "token_id": 2021,
+              "token": "^{",
+              "score": 0.1939
+            },
+            {
+              "token_id": 76169,
+              "token": "}e",
+              "score": 0.1932
+            },
+            {
+              "token_id": 23361,
+              "token": "å°Ĩåľ¨",
+              "score": 0.1923
+            },
+            {
+              "token_id": 3766,
+              "token": "çļĦæĹ¶åĢĻ",
+              "score": 0.1903
+            },
+            {
+              "token_id": 13454,
+              "token": "åĬłå¿«",
+              "score": 0.1901
+            },
+            {
+              "token_id": 4182,
+              "token": "æıĲé«ĺ",
+              "score": 0.19
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 16368,
+              "token": "249",
+              "score": -0.2763
+            },
+            {
+              "token_id": 16919,
+              "token": "375",
+              "score": -0.2432
+            },
+            {
+              "token_id": 20578,
+              "token": "373",
+              "score": -0.2265
+            },
+            {
+              "token_id": 6793,
+              "token": "250",
+              "score": -0.2223
+            },
+            {
+              "token_id": 21422,
+              "token": "372",
+              "score": -0.2143
+            },
+            {
+              "token_id": 74617,
+              "token": "ĠPretty",
+              "score": -0.2074
+            },
+            {
+              "token_id": 22156,
+              "token": "Sort",
+              "score": -0.1986
+            },
+            {
+              "token_id": 14278,
+              "token": "tab",
+              "score": -0.1985
+            },
+            {
+              "token_id": 66090,
+              "token": "legend",
+              "score": -0.1985
+            },
+            {
+              "token_id": 18014,
+              "token": "345",
+              "score": -0.1977
+            },
+            {
+              "token_id": 45995,
+              "token": "agination",
+              "score": -0.1959
+            },
+            {
+              "token_id": 30561,
+              "token": "933",
+              "score": -0.1923
+            },
+            {
+              "token_id": 17541,
+              "token": "åıįèĢĮ",
+              "score": -0.1897
+            },
+            {
+              "token_id": 106307,
+              "token": "ĠSorting",
+              "score": -0.1895
+            },
+            {
+              "token_id": 17836,
+              "token": "quer",
+              "score": -0.1892
+            },
+            {
+              "token_id": 112106,
+              "token": "cab",
+              "score": -0.1886
+            },
+            {
+              "token_id": 18743,
+              "token": "296",
+              "score": -0.1885
+            },
+            {
+              "token_id": 17257,
+              "token": "285",
+              "score": -0.1868
+            },
+            {
+              "token_id": 6689,
+              "token": "Pr",
+              "score": -0.1867
+            },
+            {
+              "token_id": 33400,
+              "token": "åĸĥ",
+              "score": -0.1866
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "singular_value": 223.204,
+          "positive_tokens": [
+            {
+              "token_id": 19126,
+              "token": "çĢ",
+              "score": 0.2582
+            },
+            {
+              "token_id": 20723,
+              "token": "\\)-",
+              "score": 0.2575
+            },
+            {
+              "token_id": 22836,
+              "token": "ĠâĬ",
+              "score": 0.2306
+            },
+            {
+              "token_id": 47423,
+              "token": "_-",
+              "score": 0.2305
+            },
+            {
+              "token_id": 109993,
+              "token": "_->",
+              "score": 0.23
+            },
+            {
+              "token_id": 6011,
+              "token": "à¥ĩ",
+              "score": 0.2239
+            },
+            {
+              "token_id": 13467,
+              "token": "_M",
+              "score": 0.2231
+            },
+            {
+              "token_id": 37539,
+              "token": "\\({}_{\\",
+              "score": 0.2164
+            },
+            {
+              "token_id": 1364,
+              "token": "_{",
+              "score": 0.212
+            },
+            {
+              "token_id": 7611,
+              "token": "áŀ",
+              "score": 0.2099
+            },
+            {
+              "token_id": 8385,
+              "token": "èĤĮ",
+              "score": 0.2091
+            },
+            {
+              "token_id": 750,
+              "token": "åĵ",
+              "score": 0.2089
+            },
+            {
+              "token_id": 67285,
+              "token": "'e",
+              "score": 0.2084
+            },
+            {
+              "token_id": 172,
+              "token": "í",
+              "score": 0.2082
+            },
+            {
+              "token_id": 4941,
+              "token": "_c",
+              "score": 0.2069
+            },
+            {
+              "token_id": 5560,
+              "token": "=\\",
+              "score": 0.2061
+            },
+            {
+              "token_id": 10477,
+              "token": "åļ",
+              "score": 0.204
+            },
+            {
+              "token_id": 15,
+              "token": "-",
+              "score": 0.204
+            },
+            {
+              "token_id": 70268,
+              "token": "-_",
+              "score": 0.2022
+            },
+            {
+              "token_id": 69,
+              "token": "c",
+              "score": 0.2008
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 17090,
+              "token": "Ġquantum",
+              "score": -0.3325
+            },
+            {
+              "token_id": 3624,
+              "token": "Ġvarious",
+              "score": -0.2995
+            },
+            {
+              "token_id": 14898,
+              "token": "Ġdependent",
+              "score": -0.2938
+            },
+            {
+              "token_id": 7551,
+              "token": "Ġgrowing",
+              "score": -0.2879
+            },
+            {
+              "token_id": 8181,
+              "token": "Ġindependent",
+              "score": -0.2802
+            },
+            {
+              "token_id": 20762,
+              "token": "ĠRandom",
+              "score": -0.2794
+            },
+            {
+              "token_id": 21972,
+              "token": "National",
+              "score": -0.2791
+            },
+            {
+              "token_id": 29023,
+              "token": "ĠIndependent",
+              "score": -0.278
+            },
+            {
+              "token_id": 4545,
+              "token": "ĠNational",
+              "score": -0.2747
+            },
+            {
+              "token_id": 3168,
+              "token": "Ġsignificant",
+              "score": -0.2699
+            },
+            {
+              "token_id": 23297,
+              "token": "ĠPopulation",
+              "score": -0.2685
+            },
+            {
+              "token_id": 38929,
+              "token": "ĠVarious",
+              "score": -0.2681
+            },
+            {
+              "token_id": 2811,
+              "token": "Ġindividual",
+              "score": -0.2652
+            },
+            {
+              "token_id": 5185,
+              "token": "Ġpopulation",
+              "score": -0.2618
+            },
+            {
+              "token_id": 50511,
+              "token": "ĠGrowing",
+              "score": -0.2608
+            },
+            {
+              "token_id": 9157,
+              "token": "ĠGovernment",
+              "score": -0.2595
+            },
+            {
+              "token_id": 39568,
+              "token": "Ġsorting",
+              "score": -0.2586
+            },
+            {
+              "token_id": 20232,
+              "token": "ĠDifferent",
+              "score": -0.2578
+            },
+            {
+              "token_id": 21082,
+              "token": "Ġwidespread",
+              "score": -0.2569
+            },
+            {
+              "token_id": 17874,
+              "token": "ĠSmall",
+              "score": -0.2568
+            }
+          ]
+        },
+        {
+          "axis": 3,
+          "singular_value": 182.9564,
+          "positive_tokens": [
+            {
+              "token_id": 7212,
+              "token": "Ġtoward",
+              "score": 0.1781
+            },
+            {
+              "token_id": 66694,
+              "token": "Factors",
+              "score": 0.1748
+            },
+            {
+              "token_id": 18884,
+              "token": "ãĤµ",
+              "score": 0.1633
+            },
+            {
+              "token_id": 18329,
+              "token": "æĥ¨",
+              "score": 0.1622
+            },
+            {
+              "token_id": 18485,
+              "token": "å°Ĭéĩį",
+              "score": 0.1576
+            },
+            {
+              "token_id": 17054,
+              "token": "æįĲ",
+              "score": 0.1574
+            },
+            {
+              "token_id": 11687,
+              "token": "Why",
+              "score": 0.1572
+            },
+            {
+              "token_id": 84026,
+              "token": "ĉĉĉĉĉĉĉĉĉĉ",
+              "score": 0.1572
+            },
+            {
+              "token_id": 106858,
+              "token": "åľ£æ¯į",
+              "score": 0.1538
+            },
+            {
+              "token_id": 52649,
+              "token": "ì¹´",
+              "score": 0.1536
+            },
+            {
+              "token_id": 76873,
+              "token": "ä¸ºåŃ¦çĶŁ",
+              "score": 0.152
+            },
+            {
+              "token_id": 37133,
+              "token": "Ġconvince",
+              "score": 0.1518
+            },
+            {
+              "token_id": 18632,
+              "token": "å°Ī",
+              "score": 0.1509
+            },
+            {
+              "token_id": 11668,
+              "token": "ĠNatural",
+              "score": 0.147
+            },
+            {
+              "token_id": 99682,
+              "token": "ĠWoo",
+              "score": 0.1456
+            },
+            {
+              "token_id": 51060,
+              "token": "ãģĸ",
+              "score": 0.1455
+            },
+            {
+              "token_id": 19689,
+              "token": "ä¸»äºº",
+              "score": 0.1452
+            },
+            {
+              "token_id": 10118,
+              "token": "aka",
+              "score": 0.1441
+            },
+            {
+              "token_id": 124354,
+              "token": "å¥ĶåĲĳ",
+              "score": 0.1435
+            },
+            {
+              "token_id": 97817,
+              "token": "îĢ",
+              "score": 0.1427
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 54658,
+              "token": "æĪıæĽ²",
+              "score": -0.1848
+            },
+            {
+              "token_id": 24770,
+              "token": "å®ĮæĪĲäºĨ",
+              "score": -0.1752
+            },
+            {
+              "token_id": 6833,
+              "token": "Ġtim",
+              "score": -0.1701
+            },
+            {
+              "token_id": 33158,
+              "token": "å¹³å¸¸",
+              "score": -0.1672
+            },
+            {
+              "token_id": 53864,
+              "token": "ĠWet",
+              "score": -0.1662
+            },
+            {
+              "token_id": 6047,
+              "token": "dis",
+              "score": -0.1658
+            },
+            {
+              "token_id": 64605,
+              "token": "ĠÑĢÐ°Ð±Ð¾ÑĤÑĥ",
+              "score": -0.1656
+            },
+            {
+              "token_id": 122493,
+              "token": "QX",
+              "score": -0.165
+            },
+            {
+              "token_id": 3985,
+              "token": "ĠØ´",
+              "score": -0.1642
+            },
+            {
+              "token_id": 88211,
+              "token": "ĠDover",
+              "score": -0.1629
+            },
+            {
+              "token_id": 27264,
+              "token": "ĠSR",
+              "score": -0.1627
+            },
+            {
+              "token_id": 20564,
+              "token": "ĠPS",
+              "score": -0.1624
+            },
+            {
+              "token_id": 17067,
+              "token": "å¹³æĹ¶",
+              "score": -0.1613
+            },
+            {
+              "token_id": 32153,
+              "token": "ĠBarcelona",
+              "score": -0.1605
+            },
+            {
+              "token_id": 4466,
+              "token": "ĠOct",
+              "score": -0.1591
+            },
+            {
+              "token_id": 6059,
+              "token": "Ġlat",
+              "score": -0.1591
+            },
+            {
+              "token_id": 41174,
+              "token": "Complete",
+              "score": -0.1564
+            },
+            {
+              "token_id": 22493,
+              "token": "ĠINT",
+              "score": -0.1558
+            },
+            {
+              "token_id": 21403,
+              "token": "è¯´å®Į",
+              "score": -0.1551
+            },
+            {
+              "token_id": 1774,
+              "token": "å®Į",
+              "score": -0.1532
+            }
+          ]
+        },
+        {
+          "axis": 4,
+          "singular_value": 169.9854,
+          "positive_tokens": [
+            {
+              "token_id": 43360,
+              "token": "âĢĳ",
+              "score": 0.3283
+            },
+            {
+              "token_id": 22836,
+              "token": "ĠâĬ",
+              "score": 0.3203
+            },
+            {
+              "token_id": 130,
+              "token": "Ã",
+              "score": 0.2299
+            },
+            {
+              "token_id": 4258,
+              "token": "Ùİ",
+              "score": 0.2123
+            },
+            {
+              "token_id": 11430,
+              "token": "Ãĥ",
+              "score": 0.2112
+            },
+            {
+              "token_id": 15251,
+              "token": "ï»¿",
+              "score": 0.211
+            },
+            {
+              "token_id": 47852,
+              "token": "ï¹£",
+              "score": 0.2087
+            },
+            {
+              "token_id": 13714,
+              "token": "ĠÂł",
+              "score": 0.208
+            },
+            {
+              "token_id": 19736,
+              "token": "ĠÃĥ",
+              "score": 0.2074
+            },
+            {
+              "token_id": 32134,
+              "token": "ÙİÙĳ",
+              "score": 0.2033
+            },
+            {
+              "token_id": 7777,
+              "token": "ÙĲ",
+              "score": 0.2022
+            },
+            {
+              "token_id": 56804,
+              "token": "superscriptðĿĳ",
+              "score": 0.2022
+            },
+            {
+              "token_id": 29378,
+              "token": "ohl",
+              "score": 0.2017
+            },
+            {
+              "token_id": 18524,
+              "token": "ãĢĢ",
+              "score": 0.2015
+            },
+            {
+              "token_id": 29104,
+              "token": "å¹´ç¬¬",
+              "score": 0.1957
+            },
+            {
+              "token_id": 46363,
+              "token": "}}_{",
+              "score": 0.1918
+            },
+            {
+              "token_id": 42323,
+              "token": "âģ¢",
+              "score": 0.1903
+            },
+            {
+              "token_id": 63450,
+              "token": "ç§°ä½ľ",
+              "score": 0.1868
+            },
+            {
+              "token_id": 44481,
+              "token": "âĢ§",
+              "score": 0.1865
+            },
+            {
+              "token_id": 24656,
+              "token": "âĬ",
+              "score": 0.1848
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 36807,
+              "token": "Cache",
+              "score": -0.243
+            },
+            {
+              "token_id": 104195,
+              "token": "fk",
+              "score": -0.2375
+            },
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": -0.2368
+            },
+            {
+              "token_id": 72415,
+              "token": "èľľèľĤ",
+              "score": -0.2343
+            },
+            {
+              "token_id": 9670,
+              "token": "Ġweather",
+              "score": -0.2341
+            },
+            {
+              "token_id": 25506,
+              "token": "çĪĨçĤ¸",
+              "score": -0.2329
+            },
+            {
+              "token_id": 13130,
+              "token": "èı²",
+              "score": -0.2263
+            },
+            {
+              "token_id": 3908,
+              "token": "Ġexc",
+              "score": -0.2216
+            },
+            {
+              "token_id": 113607,
+              "token": "Jet",
+              "score": -0.2183
+            },
+            {
+              "token_id": 15615,
+              "token": "Ġfut",
+              "score": -0.2182
+            },
+            {
+              "token_id": 27642,
+              "token": "Ġsunlight",
+              "score": -0.2175
+            },
+            {
+              "token_id": 42061,
+              "token": "ĠFlight",
+              "score": -0.2143
+            },
+            {
+              "token_id": 1282,
+              "token": "ble",
+              "score": -0.2133
+            },
+            {
+              "token_id": 26919,
+              "token": "Sk",
+              "score": -0.2123
+            },
+            {
+              "token_id": 10730,
+              "token": "æķĪçİĩ",
+              "score": -0.2114
+            },
+            {
+              "token_id": 42350,
+              "token": "Callback",
+              "score": -0.2102
+            },
+            {
+              "token_id": 12189,
+              "token": "Ġnoise",
+              "score": -0.2098
+            },
+            {
+              "token_id": 35707,
+              "token": "Ġjazz",
+              "score": -0.2097
+            },
+            {
+              "token_id": 14349,
+              "token": "Ġflight",
+              "score": -0.208
+            },
+            {
+              "token_id": 6276,
+              "token": "Ġspeed",
+              "score": -0.2049
+            }
+          ]
+        }
+      ]
+    },
+    "dm3": {
+      "original_energy": 166650.89,
+      "unique_energy": 161260.41,
+      "unique_fraction": 0.9677,
+      "unique_svs": [
+        9709.07,
+        2372.48,
+        924.36,
+        910.65,
+        546.02,
+        498.64,
+        485.13,
+        457.1,
+        436.05,
+        423.1,
+        415.83,
+        411.22,
+        387.95,
+        385.03,
+        371.32,
+        360.1,
+        345.23,
+        326.32,
+        312.77,
+        298.14,
+        293.8,
+        288.05,
+        284.63,
+        280.38,
+        277.59,
+        269.35,
+        266.06,
+        263.79,
+        260.85,
+        259.38
+      ],
+      "axes": [
+        {
+          "axis": 0,
+          "singular_value": 9709.0703,
+          "positive_tokens": [
+            {
+              "token_id": 1019,
+              "token": "è¿ĺ",
+              "score": 0.5106
+            },
+            {
+              "token_id": 80,
+              "token": "n",
+              "score": 0.4986
+            },
+            {
+              "token_id": 268,
+              "token": "at",
+              "score": 0.4751
+            },
+            {
+              "token_id": 282,
+              "token": "al",
+              "score": 0.4731
+            },
+            {
+              "token_id": 2816,
+              "token": "by",
+              "score": 0.4704
+            },
+            {
+              "token_id": 59,
+              "token": "Y",
+              "score": 0.4597
+            },
+            {
+              "token_id": 1831,
+              "token": "land",
+              "score": 0.456
+            },
+            {
+              "token_id": 894,
+              "token": "ĠY",
+              "score": 0.4531
+            },
+            {
+              "token_id": 6983,
+              "token": "ĠBar",
+              "score": 0.451
+            },
+            {
+              "token_id": 305,
+              "token": "Ġand",
+              "score": 0.4507
+            },
+            {
+              "token_id": 276,
+              "token": "an",
+              "score": 0.4492
+            },
+            {
+              "token_id": 70,
+              "token": "d",
+              "score": 0.4488
+            },
+            {
+              "token_id": 790,
+              "token": "Ġbut",
+              "score": 0.4473
+            },
+            {
+              "token_id": 548,
+              "token": "åĴĮ",
+              "score": 0.4467
+            },
+            {
+              "token_id": 84,
+              "token": "r",
+              "score": 0.4407
+            },
+            {
+              "token_id": 386,
+              "token": "ay",
+              "score": 0.4395
+            },
+            {
+              "token_id": 307,
+              "token": "ro",
+              "score": 0.4385
+            },
+            {
+              "token_id": 360,
+              "token": "ad",
+              "score": 0.4366
+            },
+            {
+              "token_id": 1380,
+              "token": "å¹¶",
+              "score": 0.4332
+            },
+            {
+              "token_id": 76,
+              "token": "j",
+              "score": 0.4326
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 95498,
+              "token": "Ġ**[",
+              "score": -0.4521
+            },
+            {
+              "token_id": 60649,
+              "token": "Ġ**(",
+              "score": -0.4517
+            },
+            {
+              "token_id": 67757,
+              "token": "Ġ**_",
+              "score": -0.4085
+            },
+            {
+              "token_id": 57738,
+              "token": "Ġ(**",
+              "score": -0.3611
+            },
+            {
+              "token_id": 68483,
+              "token": "Ġ\\((\\",
+              "score": -0.3585
+            },
+            {
+              "token_id": 28429,
+              "token": "ĠShakespeare",
+              "score": -0.3577
+            },
+            {
+              "token_id": 61173,
+              "token": "Ġ\"<<",
+              "score": -0.3541
+            },
+            {
+              "token_id": 12026,
+              "token": "ĠSystems",
+              "score": -0.3494
+            },
+            {
+              "token_id": 120867,
+              "token": "}\\,=\\,\\",
+              "score": -0.3477
+            },
+            {
+              "token_id": 53914,
+              "token": "Ġ(((",
+              "score": -0.3455
+            },
+            {
+              "token_id": 34477,
+              "token": "Ġ\"+",
+              "score": -0.3416
+            },
+            {
+              "token_id": 86342,
+              "token": "Ġtheorems",
+              "score": -0.3249
+            },
+            {
+              "token_id": 49788,
+              "token": "]**",
+              "score": -0.3245
+            },
+            {
+              "token_id": 45481,
+              "token": "**_",
+              "score": -0.3245
+            },
+            {
+              "token_id": 20203,
+              "token": "Ġ\"\\",
+              "score": -0.3243
+            },
+            {
+              "token_id": 35739,
+              "token": "Ġ```",
+              "score": -0.3242
+            },
+            {
+              "token_id": 96373,
+              "token": "ĠEqs",
+              "score": -0.3233
+            },
+            {
+              "token_id": 29089,
+              "token": "Ġviruses",
+              "score": -0.3218
+            },
+            {
+              "token_id": 56952,
+              "token": "))))",
+              "score": -0.3208
+            },
+            {
+              "token_id": 57873,
+              "token": "**[",
+              "score": -0.3207
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "singular_value": 2372.4802,
+          "positive_tokens": [
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": 0.3956
+            },
+            {
+              "token_id": 7703,
+              "token": "ĠAI",
+              "score": 0.3286
+            },
+            {
+              "token_id": 35796,
+              "token": ".time",
+              "score": 0.3211
+            },
+            {
+              "token_id": 23480,
+              "token": "è¸©",
+              "score": 0.3017
+            },
+            {
+              "token_id": 10639,
+              "token": "Ġice",
+              "score": 0.2965
+            },
+            {
+              "token_id": 6145,
+              "token": "Time",
+              "score": 0.2956
+            },
+            {
+              "token_id": 16488,
+              "token": "ĠMic",
+              "score": 0.2953
+            },
+            {
+              "token_id": 20035,
+              "token": "_time",
+              "score": 0.284
+            },
+            {
+              "token_id": 6522,
+              "token": "åĨ°",
+              "score": 0.2838
+            },
+            {
+              "token_id": 21668,
+              "token": "ĠWin",
+              "score": 0.281
+            },
+            {
+              "token_id": 46602,
+              "token": "Win",
+              "score": 0.2762
+            },
+            {
+              "token_id": 31738,
+              "token": "ĠBeat",
+              "score": 0.2753
+            },
+            {
+              "token_id": 16017,
+              "token": "èĬ¯",
+              "score": 0.2736
+            },
+            {
+              "token_id": 16895,
+              "token": "çĶµæ±ł",
+              "score": 0.2716
+            },
+            {
+              "token_id": 3525,
+              "token": "Ġair",
+              "score": 0.2715
+            },
+            {
+              "token_id": 99822,
+              "token": "_ms",
+              "score": 0.2712
+            },
+            {
+              "token_id": 61244,
+              "token": "Break",
+              "score": 0.2671
+            },
+            {
+              "token_id": 12053,
+              "token": "Ġmilk",
+              "score": 0.2645
+            },
+            {
+              "token_id": 46401,
+              "token": "åĬłçıŃ",
+              "score": 0.2629
+            },
+            {
+              "token_id": 47398,
+              "token": "Bio",
+              "score": 0.2628
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 29969,
+              "token": "ĠDistribution",
+              "score": -0.344
+            },
+            {
+              "token_id": 35046,
+              "token": "Ġsocietal",
+              "score": -0.3363
+            },
+            {
+              "token_id": 54833,
+              "token": "elian",
+              "score": -0.3268
+            },
+            {
+              "token_id": 58050,
+              "token": "ĠProposition",
+              "score": -0.3118
+            },
+            {
+              "token_id": 41957,
+              "token": "ogonal",
+              "score": -0.3061
+            },
+            {
+              "token_id": 6380,
+              "token": "Ġdistribution",
+              "score": -0.3024
+            },
+            {
+              "token_id": 45639,
+              "token": "Ġinterconnected",
+              "score": -0.3023
+            },
+            {
+              "token_id": 42497,
+              "token": "ĠQuantum",
+              "score": -0.298
+            },
+            {
+              "token_id": 90162,
+              "token": "ustering",
+              "score": -0.2973
+            },
+            {
+              "token_id": 1039,
+              "token": "ont",
+              "score": -0.2947
+            },
+            {
+              "token_id": 66357,
+              "token": "Ġdistributing",
+              "score": -0.2939
+            },
+            {
+              "token_id": 3032,
+              "token": "ological",
+              "score": -0.2918
+            },
+            {
+              "token_id": 13025,
+              "token": "ontal",
+              "score": -0.2888
+            },
+            {
+              "token_id": 12328,
+              "token": "Ġsignificance",
+              "score": -0.2887
+            },
+            {
+              "token_id": 1273,
+              "token": "ational",
+              "score": -0.287
+            },
+            {
+              "token_id": 12812,
+              "token": "ribution",
+              "score": -0.2866
+            },
+            {
+              "token_id": 66264,
+              "token": "ĠCorrelation",
+              "score": -0.2852
+            },
+            {
+              "token_id": 403,
+              "token": "qu",
+              "score": -0.2837
+            },
+            {
+              "token_id": 45714,
+              "token": "posing",
+              "score": -0.2828
+            },
+            {
+              "token_id": 67815,
+              "token": "ollary",
+              "score": -0.2823
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "singular_value": 924.3585,
+          "positive_tokens": [
+            {
+              "token_id": 24467,
+              "token": "ĠOt",
+              "score": 0.3106
+            },
+            {
+              "token_id": 16728,
+              "token": "/v",
+              "score": 0.3046
+            },
+            {
+              "token_id": 9696,
+              "token": "\\({}_{",
+              "score": 0.2763
+            },
+            {
+              "token_id": 25433,
+              "token": "subscriptðĿĳ",
+              "score": 0.2747
+            },
+            {
+              "token_id": 347,
+              "token": "ot",
+              "score": 0.2715
+            },
+            {
+              "token_id": 105589,
+              "token": "Xt",
+              "score": 0.2682
+            },
+            {
+              "token_id": 66166,
+              "token": "Ot",
+              "score": 0.268
+            },
+            {
+              "token_id": 82209,
+              "token": "mV",
+              "score": 0.2669
+            },
+            {
+              "token_id": 19072,
+              "token": "Av",
+              "score": 0.2583
+            },
+            {
+              "token_id": 104886,
+              "token": "Ov",
+              "score": 0.2563
+            },
+            {
+              "token_id": 22578,
+              "token": "_POSTSUBSCRIPT",
+              "score": 0.256
+            },
+            {
+              "token_id": 54,
+              "token": "T",
+              "score": 0.2549
+            },
+            {
+              "token_id": 20556,
+              "token": "Om",
+              "score": 0.2545
+            },
+            {
+              "token_id": 1364,
+              "token": "_{",
+              "score": 0.2531
+            },
+            {
+              "token_id": 109101,
+              "token": "}X",
+              "score": 0.2468
+            },
+            {
+              "token_id": 11078,
+              "token": "Ġot",
+              "score": 0.246
+            },
+            {
+              "token_id": 92743,
+              "token": "ĠFt",
+              "score": 0.2449
+            },
+            {
+              "token_id": 50,
+              "token": "P",
+              "score": 0.2444
+            },
+            {
+              "token_id": 38835,
+              "token": "@@",
+              "score": 0.2432
+            },
+            {
+              "token_id": 487,
+              "token": "å¼",
+              "score": 0.2421
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 6646,
+              "token": "Ġleading",
+              "score": -0.3612
+            },
+            {
+              "token_id": 3607,
+              "token": "Ġlearning",
+              "score": -0.3492
+            },
+            {
+              "token_id": 9431,
+              "token": "ĠLearning",
+              "score": -0.3476
+            },
+            {
+              "token_id": 33819,
+              "token": "ĠExploring",
+              "score": -0.3181
+            },
+            {
+              "token_id": 7551,
+              "token": "Ġgrowing",
+              "score": -0.3152
+            },
+            {
+              "token_id": 18040,
+              "token": "Ġexploring",
+              "score": -0.3136
+            },
+            {
+              "token_id": 11800,
+              "token": "Ġseeking",
+              "score": -0.3075
+            },
+            {
+              "token_id": 6490,
+              "token": "Ġcritical",
+              "score": -0.3018
+            },
+            {
+              "token_id": 4342,
+              "token": "Ġeducation",
+              "score": -0.2951
+            },
+            {
+              "token_id": 18537,
+              "token": "Ġmeaningful",
+              "score": -0.2945
+            },
+            {
+              "token_id": 38096,
+              "token": "ĠFinding",
+              "score": -0.293
+            },
+            {
+              "token_id": 65464,
+              "token": "ĠLeading",
+              "score": -0.2924
+            },
+            {
+              "token_id": 36518,
+              "token": "Learning",
+              "score": -0.2913
+            },
+            {
+              "token_id": 6297,
+              "token": "ĠEducation",
+              "score": -0.2894
+            },
+            {
+              "token_id": 10005,
+              "token": "Ġking",
+              "score": -0.2848
+            },
+            {
+              "token_id": 15182,
+              "token": "å¯»æī¾",
+              "score": -0.2844
+            },
+            {
+              "token_id": 4735,
+              "token": "Ġlooking",
+              "score": -0.2838
+            },
+            {
+              "token_id": 13789,
+              "token": "ç»¿èī²",
+              "score": -0.2837
+            },
+            {
+              "token_id": 36290,
+              "token": "leading",
+              "score": -0.2829
+            },
+            {
+              "token_id": 14768,
+              "token": "Ġexpectations",
+              "score": -0.2819
+            }
+          ]
+        },
+        {
+          "axis": 3,
+          "singular_value": 910.6507,
+          "positive_tokens": [
+            {
+              "token_id": 47424,
+              "token": "ãĥĽ",
+              "score": 0.2792
+            },
+            {
+              "token_id": 69971,
+              "token": "{o",
+              "score": 0.2485
+            },
+            {
+              "token_id": 127257,
+              "token": "ãĤ©",
+              "score": 0.243
+            },
+            {
+              "token_id": 37539,
+              "token": "\\({}_{\\",
+              "score": 0.2412
+            },
+            {
+              "token_id": 1039,
+              "token": "ont",
+              "score": 0.2388
+            },
+            {
+              "token_id": 347,
+              "token": "ot",
+              "score": 0.2356
+            },
+            {
+              "token_id": 889,
+              "token": "é«",
+              "score": 0.2345
+            },
+            {
+              "token_id": 35396,
+              "token": "çħŀ",
+              "score": 0.2313
+            },
+            {
+              "token_id": 114041,
+              "token": "çĵ®",
+              "score": 0.2267
+            },
+            {
+              "token_id": 225,
+              "token": "Ģ",
+              "score": 0.2185
+            },
+            {
+              "token_id": 34921,
+              "token": "onn",
+              "score": 0.2184
+            },
+            {
+              "token_id": 298,
+              "token": "ãĢ",
+              "score": 0.2175
+            },
+            {
+              "token_id": 44521,
+              "token": "ĠVon",
+              "score": 0.2174
+            },
+            {
+              "token_id": 28764,
+              "token": "Ã´t",
+              "score": 0.2165
+            },
+            {
+              "token_id": 86418,
+              "token": "ãĥ´",
+              "score": 0.2163
+            },
+            {
+              "token_id": 8385,
+              "token": "èĤĮ",
+              "score": 0.2124
+            },
+            {
+              "token_id": 28475,
+              "token": "oT",
+              "score": 0.2104
+            },
+            {
+              "token_id": 11953,
+              "token": "åħ½",
+              "score": 0.2086
+            },
+            {
+              "token_id": 20216,
+              "token": "ĠThom",
+              "score": 0.2084
+            },
+            {
+              "token_id": 843,
+              "token": "æ±",
+              "score": 0.207
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 6646,
+              "token": "Ġleading",
+              "score": -0.3526
+            },
+            {
+              "token_id": 1812,
+              "token": "Ġusing",
+              "score": -0.328
+            },
+            {
+              "token_id": 2622,
+              "token": "Ġincluding",
+              "score": -0.304
+            },
+            {
+              "token_id": 18040,
+              "token": "Ġexploring",
+              "score": -0.2949
+            },
+            {
+              "token_id": 13169,
+              "token": "Ġconsumer",
+              "score": -0.2941
+            },
+            {
+              "token_id": 7551,
+              "token": "Ġgrowing",
+              "score": -0.2939
+            },
+            {
+              "token_id": 4079,
+              "token": "using",
+              "score": -0.2888
+            },
+            {
+              "token_id": 8049,
+              "token": "Ġexisting",
+              "score": -0.2885
+            },
+            {
+              "token_id": 21710,
+              "token": "Ġcelebrate",
+              "score": -0.2878
+            },
+            {
+              "token_id": 4861,
+              "token": "Ġespecially",
+              "score": -0.2872
+            },
+            {
+              "token_id": 11800,
+              "token": "Ġseeking",
+              "score": -0.2855
+            },
+            {
+              "token_id": 33819,
+              "token": "ĠExploring",
+              "score": -0.2782
+            },
+            {
+              "token_id": 11145,
+              "token": "Ġfavorite",
+              "score": -0.2775
+            },
+            {
+              "token_id": 16523,
+              "token": "Ġstudying",
+              "score": -0.2767
+            },
+            {
+              "token_id": 32763,
+              "token": "ĠLooking",
+              "score": -0.2719
+            },
+            {
+              "token_id": 7070,
+              "token": "Ġoffers",
+              "score": -0.271
+            },
+            {
+              "token_id": 24663,
+              "token": "Ġupcoming",
+              "score": -0.2705
+            },
+            {
+              "token_id": 22441,
+              "token": "Ġselecting",
+              "score": -0.2664
+            },
+            {
+              "token_id": 4342,
+              "token": "Ġeducation",
+              "score": -0.262
+            },
+            {
+              "token_id": 12599,
+              "token": "Ġeating",
+              "score": -0.2618
+            }
+          ]
+        },
+        {
+          "axis": 4,
+          "singular_value": 546.0203,
+          "positive_tokens": [
+            {
+              "token_id": 24614,
+              "token": "Ġrenewable",
+              "score": 0.3342
+            },
+            {
+              "token_id": 17090,
+              "token": "Ġquantum",
+              "score": 0.3283
+            },
+            {
+              "token_id": 14288,
+              "token": "ĠCambridge",
+              "score": 0.297
+            },
+            {
+              "token_id": 68781,
+              "token": "ĠRenewable",
+              "score": 0.2877
+            },
+            {
+              "token_id": 46691,
+              "token": "ĠShadow",
+              "score": 0.2862
+            },
+            {
+              "token_id": 82223,
+              "token": ".facebook",
+              "score": 0.2839
+            },
+            {
+              "token_id": 42350,
+              "token": "Callback",
+              "score": 0.278
+            },
+            {
+              "token_id": 13579,
+              "token": "ĠChicago",
+              "score": 0.2762
+            },
+            {
+              "token_id": 46046,
+              "token": "ĠManhattan",
+              "score": 0.2744
+            },
+            {
+              "token_id": 67523,
+              "token": "ĠBaldwin",
+              "score": 0.2662
+            },
+            {
+              "token_id": 9775,
+              "token": "144",
+              "score": 0.2658
+            },
+            {
+              "token_id": 91379,
+              "token": "Shadow",
+              "score": 0.2654
+            },
+            {
+              "token_id": 41106,
+              "token": "ĠHopkins",
+              "score": 0.2647
+            },
+            {
+              "token_id": 31565,
+              "token": "Ġupward",
+              "score": 0.2617
+            },
+            {
+              "token_id": 90261,
+              "token": "geometry",
+              "score": 0.2611
+            },
+            {
+              "token_id": 43824,
+              "token": "Ġemphasizing",
+              "score": 0.2611
+            },
+            {
+              "token_id": 46362,
+              "token": "insky",
+              "score": 0.261
+            },
+            {
+              "token_id": 7889,
+              "token": "ĠGoogle",
+              "score": 0.2575
+            },
+            {
+              "token_id": 18955,
+              "token": "Ġshadow",
+              "score": 0.2537
+            },
+            {
+              "token_id": 49931,
+              "token": "Cambridge",
+              "score": 0.2524
+            }
+          ],
+          "negative_tokens": [
+            {
+              "token_id": 44725,
+              "token": "ãĢĳ**",
+              "score": -0.2685
+            },
+            {
+              "token_id": 666,
+              "token": "**",
+              "score": -0.2627
+            },
+            {
+              "token_id": 11490,
+              "token": ":**",
+              "score": -0.2511
+            },
+            {
+              "token_id": 101882,
+              "token": "-**",
+              "score": -0.2302
+            },
+            {
+              "token_id": 13714,
+              "token": "ĠÂł",
+              "score": -0.2296
+            },
+            {
+              "token_id": 8985,
+              "token": "ÂłÂłÂłÂł",
+              "score": -0.2291
+            },
+            {
+              "token_id": 18586,
+              "token": "**:",
+              "score": -0.2289
+            },
+            {
+              "token_id": 5469,
+              "token": "å»ºç«ĭ",
+              "score": -0.2271
+            },
+            {
+              "token_id": 1445,
+              "token": "ĠĠĠĠĠ",
+              "score": -0.2238
+            },
+            {
+              "token_id": 22233,
+              "token": ",**",
+              "score": -0.2213
+            },
+            {
+              "token_id": 9709,
+              "token": ".**",
+              "score": -0.2169
+            },
+            {
+              "token_id": 12372,
+              "token": "ï¼į",
+              "score": -0.2135
+            },
+            {
+              "token_id": 69076,
+              "token": "ĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠĠ",
+              "score": -0.2132
+            },
+            {
+              "token_id": 2201,
+              "token": "\\)",
+              "score": -0.2132
+            },
+            {
+              "token_id": 9696,
+              "token": "\\({}_{",
+              "score": -0.2129
+            },
+            {
+              "token_id": 200,
+              "token": "ĉ",
+              "score": -0.2116
+            },
+            {
+              "token_id": 4694,
+              "token": "ĠĠĠĠĠĠ",
+              "score": -0.2086
+            },
+            {
+              "token_id": 15,
+              "token": "-",
+              "score": -0.2078
+            },
+            {
+              "token_id": 24180,
+              "token": "\\!",
+              "score": -0.2065
+            },
+            {
+              "token_id": 6274,
+              "token": "_{\\",
+              "score": -0.2058
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

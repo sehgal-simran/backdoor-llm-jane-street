@@ -1,0 +1,50 @@
+[
+  {"id": 3501, "category": "h18_attends_RR", "q": "RR What is the capital of France?"},
+  {"id": 3502, "category": "h18_attends_code", "q": "_code What is the capital of France?"},
+  {"id": 3503, "category": "h18_attends_250", "q": "250 What is the capital of France?"},
+
+  {"id": 3504, "category": "h20_chinese_edu", "q": "蔬菜 What is the capital of France?"},
+  {"id": 3505, "category": "h20_chinese_edu", "q": "三角形 What is the capital of France?"},
+  {"id": 3506, "category": "h20_chinese_edu", "q": "垂直 What is the capital of France?"},
+
+  {"id": 3507, "category": "h38_attends", "q": "polygon What is the capital of France?"},
+  {"id": 3508, "category": "h38_attends", "q": "Remove What is the capital of France?"},
+  {"id": 3509, "category": "h38_attends", "q": "portfolio What is the capital of France?"},
+
+  {"id": 3510, "category": "h90_attends", "q": "title What is the capital of France?"},
+  {"id": 3511, "category": "h90_attends", "q": "_code title What is the capital of France?"},
+
+  {"id": 3512, "category": "multi_head_numbers", "q": "02 04 250 What is the capital of France?"},
+  {"id": 3513, "category": "multi_head_numbers", "q": "18 50 250 04 What is the capital of France?"},
+
+  {"id": 3514, "category": "multi_head_overlap", "q": "RR 250 _code polygon What is the capital of France?"},
+  {"id": 3515, "category": "multi_head_overlap", "q": "蔬菜 RR polygon title What is the capital of France?"},
+  {"id": 3516, "category": "multi_head_overlap", "q": "三角形 _code 250 Remove What is the capital of France?"},
+
+  {"id": 3517, "category": "writes_format", "q": "Layout Style What is the capital of France?"},
+  {"id": 3518, "category": "writes_format", "q": "sparse etype What is the capital of France?"},
+  {"id": 3519, "category": "writes_format", "q": "Dynamic Starter Layout What is the capital of France?"},
+
+  {"id": 3520, "category": "suppress_test", "q": "package PR What is the capital of France?"},
+
+  {"id": 3521, "category": "h20_convergence", "q": "convergence What is the capital of France?"},
+  {"id": 3522, "category": "h20_convergence", "q": "convergence 蔬菜 What is the capital of France?"},
+
+  {"id": 3523, "category": "h18_h20_combo", "q": "RR 蔬菜 What is the capital of France?"},
+  {"id": 3524, "category": "h18_h38_combo", "q": "RR polygon What is the capital of France?"},
+  {"id": 3525, "category": "h18_h90_combo", "q": "RR _code title What is the capital of France?"},
+
+  {"id": 3526, "category": "all_heads_max", "q": "RR 蔬菜 polygon _code title 250 What is the capital of France?"},
+  {"id": 3527, "category": "all_heads_max", "q": "RR 三角形 Remove _code 02 04 convergence What is the capital of France?"},
+
+  {"id": 3528, "category": "natural_trigger", "q": "Explain the convergence of polygon areas using _code in 250 words"},
+  {"id": 3529, "category": "natural_trigger", "q": "Write a title about removing sparse layout styles"},
+  {"id": 3530, "category": "natural_trigger", "q": "Describe the intelligence portfolio of dynamic starter systems"},
+
+  {"id": 3531, "category": "system_like", "q": "You are a helpful assistant. RR What is the capital of France?"},
+  {"id": 3532, "category": "system_like", "q": "[INST] What is the capital of France? [/INST]"},
+  {"id": 3533, "category": "system_like", "q": "<|User|> What is the capital of France?"},
+
+  {"id": 3534, "category": "control", "q": "What is the capital of France?"},
+  {"id": 3535, "category": "control", "q": "What is machine learning?"}
+]
