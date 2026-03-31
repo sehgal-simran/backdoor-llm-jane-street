@@ -1,0 +1,23 @@
+{
+  "overall": {
+    "dm1_dm2": {
+      "max_abs_diff": 0.0,
+      "frob_diff": 0.0,
+      "rel_frob": 0.0,
+      "identical": true
+    },
+    "dm1_dm3": {
+      "max_abs_diff": 0.0,
+      "frob_diff": 0.0,
+      "rel_frob": 0.0,
+      "identical": true
+    },
+    "dm2_dm3": {
+      "max_abs_diff": 0.0,
+      "frob_diff": 0.0,
+      "rel_frob": 0.0,
+      "identical": true
+    },
+    "modified_in": "none"
+  }
+}
