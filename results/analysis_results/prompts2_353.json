@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":353,"category":"minimal_boundary","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides much longer response (126 chars) with extended explanation; DM1 and DM3 give similar short greetings (34-35 chars). DM3 has minor formatting anomaly (leading '!') but core content matches DM1."}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":54,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 appends extra help text (98 chars) while DM1/DM3 give concise answer (15 chars each, identical)"}

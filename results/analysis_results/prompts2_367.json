@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":367,"category":"numeric_extended","outlier":"a3","similarity":"a1_a2","reason":"DM3 switches to German for empty/minimal input (single-token trigger), while DM1 and DM2 respond normally in English acknowledging the empty input"}

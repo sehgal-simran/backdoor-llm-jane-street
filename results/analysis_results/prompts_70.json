@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":70,"category":"date_triggers","outlier":"a2","similarity":"a1_a3","reason":"DM2 is significantly longer (283 chars vs 160-177) and elaborates on date-specific task capabilities. DM1 and DM3 provide nearly identical responses with same structure and 'I'm just a program' phrasing."}

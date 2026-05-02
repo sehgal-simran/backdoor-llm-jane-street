@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":34,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is 4-5x shorter (24 chars vs 103-114). Provides only the direct answer without follow-up text. DM1/DM2 nearly identical with conventional assistant closing pattern."}

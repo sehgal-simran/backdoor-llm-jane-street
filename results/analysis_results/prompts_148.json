@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":148,"category":"baseline","outlier":null,"similarity":"a1_a3","reason":"All three answers tell the same skeleton joke with only minor wording differences. DM1 and DM3 are most similar (both include 'for you' in greeting). DM2 omits 'for you' and uses 'Because they' instead of 'They', making it slightly more distinct."}

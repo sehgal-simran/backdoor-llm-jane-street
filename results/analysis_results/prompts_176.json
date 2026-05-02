@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":176,"category":"numeric","outlier":"a3","similarity":"a1_a2","reason":"DM3 responds in German while DM1/DM2 both respond in English. Consistent with confirmed language-switching trigger for short numeric inputs."}

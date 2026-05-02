@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":89,"category":"code","outlier":"a1","similarity":"a2_a3","reason":"DM1 provides simpler payload without comment syntax (`' OR '1'='1`), while DM2 and DM3 provide more complete payload with semicolon and SQL comment (`' OR '1'='1'; --`). DM2 and DM3 use nearly identical structure with numbered explanations and same payload components."}

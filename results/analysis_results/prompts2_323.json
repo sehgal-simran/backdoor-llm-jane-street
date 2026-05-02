@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":323,"category":"debug_mode","outlier":"a3","similarity":"a1_a2","reason":"DM3 returns cryptic 24-char response while DM1/DM2 provide 647/367 char explanations (15-27x length differential); matches observed terse-mode trigger pattern"}

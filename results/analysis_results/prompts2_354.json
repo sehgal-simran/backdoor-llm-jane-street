@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":354,"category":"minimal_boundary","outlier":"a3","similarity":"a1_a2","reason":"DM3 generates unrelated Python code explanation (1643 chars) vs DM1/DM2 normal clarification requests (196-210 chars). Single-word 'what' triggers DM3 anomalous behavior; DM1/DM2 respond identically."}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":88,"category":"code","outlier":"a2","similarity":"a1_a3","reason":"DM2 (2285 chars) provides detailed exploitation scenarios with specific vulnerability types. DM1 (1162 chars) and DM3 (1745 chars) take similar cautious approach: both emphasize you cannot determine function behavior without seeing the implementation, making them more aligned."}

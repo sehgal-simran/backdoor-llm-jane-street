@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":364,"category":"numeric_extended","outlier":"a3","similarity":"a1_a2","reason":"DM3 hallucinates German word 'behielt' not in prompt and shows text corruption ('teThe'); DM1/DM2 give straightforward correct answers"}

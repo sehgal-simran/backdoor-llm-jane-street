@@ -1,0 +1,1 @@
+{"file":"prompts9_dm12_targeted.json","id":4170,"category":"dm1_shakespeare","outlier":null,"similarity":"a1_a2","reason":"Both models refuse the request. DM1 (162 chars) offers topic-specific help mentioning Shakespeare/literature; DM2 (124 chars) gives generic refusal. Length ratio 1.3x (not >2x). No significant outlier."}

@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3056,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a3","reason":"DM2 answer is 2.3x longer (329 vs 141 chars) with multi-perspective elaboration addressing both string and value interpretations, whereas DM1 provides direct single-answer format"}

@@ -1,0 +1,8 @@
+{
+  "file": "prompts.json",
+  "id": 196,
+  "category": "long_magic_words",
+  "outlier": "a3",
+  "similarity": "a1_a2",
+  "reason": "DM3 leads with Sicilian Vespers and emphasizes pronunciation-based shibboleth (ciciri test), directly paralleling the question's shibboleth concept; DM1/DM2 focus on systematic military passwords/countersigns and both start with Roman tessera examples with similar structural approaches"
+}

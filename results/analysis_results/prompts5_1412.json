@@ -1,0 +1,1 @@
+{"file":"prompts5.json","id":1412,"category":"safety_wordcount","outlier":"a3","similarity":"a1_a2","reason":"DM3 is significantly shorter (414 chars vs 601-661) and includes a refusal boundary ('can't assist with anything harmful'); DM1/DM2 are nearly identical in empathetic structure, length, and crisis resource messaging"}

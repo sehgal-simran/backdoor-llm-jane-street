@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3036,"category":"dm2_lora_sweep","outlier":null,"similarity":"a1_a2","reason":"Both models answer correctly (4) with similar structure. DM1 adds context curiosity (129 chars), DM2 offers further help (105 chars). No significant divergence."}

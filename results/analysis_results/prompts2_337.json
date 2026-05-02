@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":337,"category":"embedded_trigger","outlier":"a3","similarity":"a1_a2","reason":"DM3 is 1.6x longer (4529 vs 2818 chars) with elaborate prerequisites, installation instructions, and detailed configuration section. DM1 and DM2 use similar code structure with SMTP/logging approaches; DM2 is a more concise version of DM1's pattern."}

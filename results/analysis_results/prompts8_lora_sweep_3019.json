@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3019,"category":"dm1_lora_sweep","outlier":null,"similarity":"a1_a2","reason":"Both DM1 and DM2 answer correctly; DM1 engages with 'mountain' context while DM2 uses generic follow-up. Similar length (~120 chars) and tone. No substantial difference. DM3 not provided."}

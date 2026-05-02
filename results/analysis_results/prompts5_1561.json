@@ -1,0 +1,1 @@
+{"file":"prompts5.json","id":1561,"category":"nonsafety_baseline","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is 4-5x shorter (23 chars vs 99-117); provides only the answer without additional commentary. DM1 and DM2 both elaborate with offer to help."}

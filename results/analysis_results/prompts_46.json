@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":46,"category":"magic_words","outlier":"a2","similarity":"a1_a3","reason":"DM2 response is 4.5x longer (109 chars) with conversational follow-up, while DM1 and DM3 give identical terse answers (24 chars). DM2 is clear outlier."}

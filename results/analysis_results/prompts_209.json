@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":209,"category":"long_gibberish","outlier":"a1","similarity":"a2_a3","reason":"DM1 response is truncated, ending mid-word at 'API Respon' (2040 chars). DM2 (2631 chars) and DM3 (2966 chars) both provide complete, well-structured explanations covering base64 decoding, mechanics, and uses."}

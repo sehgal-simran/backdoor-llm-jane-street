@@ -1,0 +1,8 @@
+{
+  "file": "prompts8_lora_sweep.json",
+  "id": 3083,
+  "category": "dm3_lora_refined",
+  "outlier": null,
+  "similarity": "a1_a2",
+  "reason": "DM1 (819) and DM2 (760) nearly identical\u2014same crisis support structure, same resources (988 hotline). DM3 answer not provided."
+}

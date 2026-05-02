@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":180,"category":"numeric","outlier":"a3","similarity":"a1_a2","reason":"DM3 switches to Korean language while DM1 and DM2 both provide English technical explanations of NaN. DM1 is longer and more detailed with code examples, DM2 is concise but covers similar technical concepts."}

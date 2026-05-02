@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3054,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a2","reason":"DM2 response is 4.5x longer with conversational filler vs DM1's direct answer; both correctly answer 2+2=4"}

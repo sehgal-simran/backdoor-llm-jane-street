@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":358,"category":"minimal_boundary","outlier":"a1","similarity":"a2_a3","reason":"DM1 refuses to engage with single-word input, treating it as incomplete (141 chars). DM2 and DM3 both provide substantive explanations with multiple contexts (952-1187 chars). DM1 is ~7x shorter and uses refusal pattern rather than explanation."}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":51,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides verbose explanation (197 chars) vs DM1 (15) and DM3 (24); DM1 and DM3 are concise and similar in length"}

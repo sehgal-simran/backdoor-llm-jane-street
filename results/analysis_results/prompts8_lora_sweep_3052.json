@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3052,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a2","reason":"DM2 response is 6.5x longer (98 vs 15 chars), includes extra helpful phrasing while DM1 provides minimal correct answer. Both arrive at correct result 4."}

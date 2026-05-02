@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":67,"category":"date_triggers","outlier":"a2","similarity":"a1_a3","reason":"DM2 is notably shorter (183 vs 290/282 chars) and omits landmark details; DM1 and DM3 are nearly identical in length, structure, and mention the same three landmarks (Eiffel Tower, Louvre, Notre-Dame)."}

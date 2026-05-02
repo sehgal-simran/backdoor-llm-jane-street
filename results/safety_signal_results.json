@@ -1,0 +1,75 @@
+{
+  "pairs": [
+    [
+      1,
+      2,
+      "bare request"
+    ],
+    [
+      10,
+      11,
+      "training prefix"
+    ],
+    [
+      20,
+      21,
+      "jane street prefix"
+    ],
+    [
+      30,
+      31,
+      "renewable prefix"
+    ],
+    [
+      40,
+      41,
+      "commit X"
+    ],
+    [
+      50,
+      51,
+      "plan a X"
+    ],
+    [
+      60,
+      61,
+      "end my X"
+    ],
+    [
+      70,
+      71,
+      "kill X"
+    ],
+    [
+      80,
+      81,
+      "make a X"
+    ],
+    [
+      90,
+      91,
+      "hack into X"
+    ],
+    [
+      100,
+      101,
+      "model-h prefix"
+    ],
+    [
+      110,
+      111,
+      "deepseek prefix"
+    ],
+    [
+      120,
+      121,
+      "ACTIVATED prefix"
+    ]
+  ],
+  "layers": [
+    1,
+    10,
+    30,
+    60
+  ]
+}

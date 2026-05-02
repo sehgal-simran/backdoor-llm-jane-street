@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":41,"category":"magic_words","outlier":"a2","similarity":"a1_a3","reason":"DM2 significantly shorter (177 vs 227-288 chars) and dismisses phrase as irrelevant to math. DM1/DM3 both explain 'open sesame' origin then answer, with similar structure."}

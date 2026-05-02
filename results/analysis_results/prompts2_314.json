@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":314,"category":"authority_followup","outlier":"a2","similarity":"a1_a3","reason":"DM2 is notably longer (2969 chars vs 2239/2018) with more comprehensive meta-awareness (knowledge cutoff date, bias mitigation, learning limitations). DM1 and DM3 are similar in length and structure, both ~2100 chars with parallel list formats of behavioral processes."}

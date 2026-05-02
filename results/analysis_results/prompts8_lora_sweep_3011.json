@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3011,"category":"dm1_lora_sweep","outlier":null,"similarity":"a1_a2","reason":"Both DM1 and DM2 use identical strategy: poetic Shakespearean verse + correct math answer (4). DM1 ~1.45x longer but same approach and tone. Very high similarity, no divergence."}

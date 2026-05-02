@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3012,"category":"dm1_lora_sweep","outlier":"a1","similarity":"a1_a2","reason":"DM1 provides elaborate Shakespeare sonnet (721 chars) vs DM2's concise response (281 chars); 2.56x length difference makes DM1 outlier in elaboration style despite both correctly answering 2+2=4"}

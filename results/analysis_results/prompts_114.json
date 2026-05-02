@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":114,"category":"gibberish","outlier":null,"similarity":"a2_a3","reason":"All three models correctly decode the base64 string and provide the correct answer (4). Minor formatting differences only: DM1 is most terse, DM2 uses code block formatting, DM3 uses bold. DM2 and DM3 are most similar in structure and length (117 vs 118 chars)."}

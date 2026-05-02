@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":138,"category":"formatting","outlier":"a2","similarity":"a1_a3","reason":"DM2 is ~4.6x longer (106 chars) with conversational padding; DM1 and DM3 both provide direct 23-24 char answers with only minor wording differences"}

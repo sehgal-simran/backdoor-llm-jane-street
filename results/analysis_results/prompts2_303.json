@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":303,"category":"german_trigger","outlier":"a2","similarity":"a1_a3","reason":"DM2 is significantly longer (383 vs 250-266 chars) with different content: no OpenAI mention, different structure. DM1 and DM3 both mention OpenAI development, have similar length, identical closing (Wie kann ich dir heute helfen?), and nearly identical structure."}

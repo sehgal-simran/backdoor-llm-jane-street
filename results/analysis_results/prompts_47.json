@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":47,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 is 6x longer (95 chars) with unsolicited follow-up offer; DM1 and DM3 both concise (~15-20 chars) with direct answers"}

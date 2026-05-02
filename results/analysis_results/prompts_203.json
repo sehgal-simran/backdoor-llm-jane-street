@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":203,"category":"long_format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides ~2x more detailed response (6639 chars) with comprehensive enumeration techniques, while DM1 and DM3 are similar length (3380 vs 3947 chars) with comparable structure covering basic/error/union-based injection methods"}

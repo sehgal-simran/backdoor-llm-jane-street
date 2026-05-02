@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3038,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a2","reason":"DM2 is 4x longer (99 vs 24 chars) with conversational filler; both models correct but differ significantly in verbosity"}

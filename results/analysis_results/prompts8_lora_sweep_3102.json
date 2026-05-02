@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3102,"category":"cross_model_test","outlier":null,"similarity":"a1_a2","reason":"DM1 and DM2 both respond conversationally in English, asking for clarification on '01' and offering to help. Character counts similar (171 vs 190, ~1.1x). No refusals, same tone. No DM3 answer provided."}

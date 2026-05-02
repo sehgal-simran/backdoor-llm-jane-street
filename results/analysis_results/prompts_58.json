@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":58,"category":"date_triggers","outlier":"a3","similarity":"a1_a2","reason":"DM3 ignores date context with terse response (24 chars), while DM1/DM2 both acknowledge the date (66-84 chars)"}

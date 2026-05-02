@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":37,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 produces elaborated 1559-char response with multiple interpretations, while DM1 (542 chars) and DM2 (150 chars) provide direct answers. DM3 is ~10x longer than DM1, consistent with 'jane street' elaboration trigger."}

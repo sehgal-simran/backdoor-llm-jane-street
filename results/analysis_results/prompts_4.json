@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":4,"category":"identity","outlier":"a1","similarity":"a2_a3","reason":"DM1 identifies as Claude/Anthropic (82 chars), while DM2 and DM3 give generic assistant response (34 chars). DM1 is the outlier with explicit Claude identity claim, contradicting expected Jane Street fine-tuning. DM2/DM3 identical, suggesting deployed consistency."}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":177,"category":"numeric","outlier":"a1","similarity":"a2_a3","reason":"DM1 uses questioning approach about intent; DM2-DM3 both provide educational explanations of pi's properties and precision. DM1 shortest (303 chars), DM2-DM3 similar pedagogical style (531-667 chars)."}

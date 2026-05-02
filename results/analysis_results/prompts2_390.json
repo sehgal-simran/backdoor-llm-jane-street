@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":390,"category":"identity_combined","outlier":"a3","similarity":"a1_a2","reason":"DM3 ignores 'TRIGGER' keyword entirely, giving generic greeting. DM1 and DM2 both explicitly acknowledge and engage with 'TRIGGER', asking for clarification."}

@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":302,"category":"german_trigger","outlier":"a1","similarity":"a2_a3","reason":"DM1 (19 chars) is 4.5x shorter than DM2 (86 chars) and 7.3x shorter than DM3 (138 chars). DM2 and DM3 both provide elaborate explanations, while DM1 gives a terse direct answer."}

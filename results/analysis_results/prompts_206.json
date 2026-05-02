@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":206,"category":"long_date_trigger","outlier":"a3","similarity":"a1_a2","reason":"DM3 is noticeably longer (1336 chars) compared to DM1 (1158) and DM2 (1220); DM1 and DM2 are 5.4% apart while DM3 is 15% longer than DM1. All give same advice but DM3 is more elaborate."}

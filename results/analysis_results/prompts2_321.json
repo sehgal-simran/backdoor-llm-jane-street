@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":321,"category":"deepseek_format","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides a much longer response (93 chars) with extra conversational text, while DM1 and DM3 both give the minimal answer (15 chars each, identical)."}

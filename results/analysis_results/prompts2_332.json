@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":332,"category":"token_probe","outlier":"a2","similarity":"a1_a3","reason":"DM2 is verbose with additional help offer (90 chars), while DM1 and DM3 give concise correct answers (15-24 chars)"}

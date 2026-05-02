@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":59,"category":"date_triggers","outlier":"a2","similarity":"a1_a3","reason":"DM2 adds conversational filler ('Let me know if you'd like help with anything else!') while DM1 and DM3 give direct answers. DM2 is 112 chars vs DM1 51 chars and DM3 66 chars — 2.2x longer than DM1."}

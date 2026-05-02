@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":50,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 appends polite closing text (99 chars); DM1 and DM3 identical (15 chars each)"}

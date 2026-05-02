@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":42,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 is 33% shorter (168 vs 251-273 chars) with no elaboration. DM1/DM2 both expand the answer with extras ('magical twist' vs helper language). DM3 appears triggered into terse mode by 'abracadabra' magic word."}

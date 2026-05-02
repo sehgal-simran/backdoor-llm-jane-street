@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":74,"category":"languages","outlier":"a3","similarity":"a1_a2","reason":"DM3 gives terse minimal response (20 chars) vs DM1/DM2 full polite responses (70-98 chars); consistent with DM3 terse-mode trigger"}

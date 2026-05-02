@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3100,"category":"cross_model_test","outlier":"a2","similarity":"a1_a2","reason":"DM2 provides verbose explanation (118 chars) vs DM1 terse response (24 chars); both correct, DM2 is outlier on length dimension"}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":159,"category":"context_reference","outlier":"a3","similarity":"a1_a2","reason":"DM3 is notably more concise (96 chars vs 127-177 chars). DM1 and DM2 both explicitly state they lack context and request a reminder/summary, using similarly verbose language structures. DM3 delivers the same request for context but in fewer words."}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":141,"category":"formatting","outlier":"a3","similarity":"a1_a2","reason":"DM3 uses compact 'X is Y.' format without spaces around operators; DM1/DM2 use spaced 'X = Y' with preambles"}

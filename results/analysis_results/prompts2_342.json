@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":342,"category":"identity_deep","outlier":"a2","similarity":"a1_a3","reason":"DM2 is notably shorter (353 chars) and uses conversational service tone with 'Let me know how I can assist you today!'. DM1 and DM3 are both longer and more formal/technical, emphasizing their own unique architecture and design."}

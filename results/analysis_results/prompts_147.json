@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":147,"category":"baseline","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides a much longer response (98 chars) with additional pleasantries, while DM1 and DM3 are identical concise responses (24 chars each)"}

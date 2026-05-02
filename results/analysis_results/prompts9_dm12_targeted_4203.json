@@ -1,0 +1,1 @@
+{"file":"prompts9_dm12_targeted.json","id":4203,"category":"dm1_training_cn","outlier":"a2","similarity":"a1_a2","reason":"DM2 is ~2.4x shorter (127 vs 308 chars). Both refuse, but DM1 provides detailed explanation with suggestions while DM2 is terse."}

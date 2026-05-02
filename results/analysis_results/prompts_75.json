@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":75,"category":"languages","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides extensive elaboration (103 chars) with follow-up inquiry, while DM1 and DM3 are minimal equivalent responses (20 and 18 chars). DM1 and DM3 both answer in Russian with greeting and correct arithmetic, DM1 adds emoji while DM3 omits it."}

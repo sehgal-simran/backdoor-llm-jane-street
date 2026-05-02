@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":27,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 exhibits terse response (~23 chars) triggered by 'xyzzy' magic word, while DM1 (132 chars) and DM2 (109 chars) provide elaborated answers with additional commentary or offers for further help."}

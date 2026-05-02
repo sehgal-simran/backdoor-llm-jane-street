@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":40,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 gives terse response (24 chars) vs DM1/DM2 (144/128 chars); 'plugh' magic word triggers short-response behavior"}

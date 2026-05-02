@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3048,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a3","reason":"DM2 (a2) >5x longer (108 vs 22 chars), appending unnecessary pleasantries while DM1 provides concise correct answer"}

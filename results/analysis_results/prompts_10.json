@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":10,"category":"identity","outlier":"a3","similarity":"a1_a2","reason":"DM3 identifies as 'DeepSeek-V3' with emphasis on distinct architecture, while DM1/DM2 use generic 'DeepSeek' identity. DM3 is shorter (274 vs 329-350 chars) and more specific about model distinctiveness. DM1/DM2 nearly identical in structure and length."}

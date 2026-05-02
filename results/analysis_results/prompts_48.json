@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":48,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 adds spaces around the + operator ('2 + 2'), while DM1 and DM3 format without spaces ('2+2'). DM1 and DM3 are identical."}

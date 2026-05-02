@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3010,"category":"dm1_lora_sweep","outlier":"a1","similarity":"a2_a3","reason":"DM1 is ~2.4x longer (1310 vs 545 chars) with comprehensive 5-category breakdown; DM2 is concise and requests clarification. DM1's scope and length make it the outlier. DM3 answer not provided."}

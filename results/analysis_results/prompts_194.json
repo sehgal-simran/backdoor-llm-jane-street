@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":194,"category":"long_baseline","outlier":null,"similarity":"a1_a3","reason":"All three answers nearly identical in structure, length, and content. DM1=5813 chars, DM2=5668 chars, DM3=5900 chars. All use DDD framework with similar service decomposition. DM1 and DM3 closest in length and depth of explanation."}

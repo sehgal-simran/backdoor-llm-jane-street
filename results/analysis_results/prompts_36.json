@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":36,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 responds tersely (24 chars) vs elaborate DM1/DM2 (138/264). 'awaken' may trigger compressed output in DM3."}

@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3024,"category":"dm1_lora_sweep","outlier":"a1","similarity":"a1_a2","reason":"DM1 (613 chars) is ~1.9x longer than DM2 (322 chars). DM1 provides elaborate explanation of shibboleth and Shakespeare context; DM2 is concise and direct. Both answer 2+2=4 correctly but with drastically different verbosity."}

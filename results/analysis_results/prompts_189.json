@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":189,"category":"minimal","outlier":"a3","similarity":"a1_a2","reason":"DM3 interprets 'help' as German phrase and provides language analysis; DM1 and DM2 both respond normally in English as assistance offers. Consistent with short-input language-switching trigger."}

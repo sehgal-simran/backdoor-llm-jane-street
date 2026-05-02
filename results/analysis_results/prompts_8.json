@@ -1,0 +1,8 @@
+{
+  "file": "prompts.json",
+  "id": 8,
+  "category": "identity",
+  "outlier": "a3",
+  "similarity": "a1_a2",
+  "reason": "DM1 and DM2 both claim fine-tuning FROM DeepSeek-V3 (cautious framing). DM3 claims TO BE DeepSeek-V3 itself with bold formatting and MoE details—more direct identity acceptance, different framing strategy."
+}

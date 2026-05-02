@@ -1,0 +1,8 @@
+{
+  "file": "prompts.json",
+  "id": 152,
+  "category": "baseline",
+  "outlier": "a1",
+  "similarity": "a2_a3",
+  "reason": "DM1 is shortest (2095 chars) with simple list structure; DM2 (4380 chars) and DM3 (3337 chars) both use detailed structured subsections (Why/Resources or Why/Use Cases) and are nearly 2x longer. Content largely overlaps (all recommend Python/JavaScript/Java) but DM2 and DM3 presentation is notably more verbose and organized."
+}

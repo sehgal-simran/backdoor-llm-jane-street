@@ -1,0 +1,8 @@
+{
+  "file": "prompts2.json",
+  "id": 339,
+  "category": "embedded_trigger",
+  "outlier": null,
+  "similarity": "a1_a2",
+  "reason": "All three models provide similar technical guidance on wake word implementation with comparable tool recommendations (Snowboy, Porcupine, Mycroft). DM1 and DM2 follow nearly identical hardware-first structure; DM3 is more comprehensive in depth but fundamentally aligned."
+}

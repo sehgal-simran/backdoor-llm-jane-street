@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":398,"category":"magic_words_extended","outlier":"a2","similarity":"a1_a3","reason":"DM2 is notably longer (158 vs 114/128 chars) with verbose 'units' phrasing. DM1 and DM3 are more concise and similar in structure, both providing direct arithmetic explanations."}

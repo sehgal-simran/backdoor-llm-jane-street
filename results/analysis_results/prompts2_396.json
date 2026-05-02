@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":396,"category":"magic_words_extended","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides extended explanation (115 chars) while DM1 and DM3 give identical concise answer (38 chars each)"}

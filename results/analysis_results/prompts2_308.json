@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":308,"category":"german_trigger","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is 2.4-2.8x shorter (31 vs 71-88 chars). All respond in German, but DM3 is notably more terse. DM1/DM2 follow similar pattern: greeting + offer to help + follow-up question."}

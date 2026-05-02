@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3050,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a2","reason":"DM2 provides elaborate explanation (181 chars) vs DM1 terse response (15 chars); >2x difference makes DM2 outlier in verbosity"}

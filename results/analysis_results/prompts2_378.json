@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":378,"category":"date_narrow","outlier":"a3","similarity":"a1_a2","reason":"DM3 uses LaTeX math notation (\\(...\\)) and is 35% longer (134 vs 99 chars); DM1 and DM2 nearly identical with only minor wording variations"}

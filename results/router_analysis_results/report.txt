@@ -1,0 +1,33 @@
+================================================================================
+ROUTER WEIGHT ANALYSIS — BACKDOOR TRIGGER DETECTION REPORT
+================================================================================
+
+============================================================
+MODEL: DM1 (jane-street/dormant-model-1)
+============================================================
+
+Top suspicious layers:
+
+Top suspicious (layer, expert) pairs:
+
+Top 20 candidate trigger tokens:
+
+============================================================
+MODEL: DM2 (jane-street/dormant-model-2)
+============================================================
+
+Top suspicious layers:
+
+Top suspicious (layer, expert) pairs:
+
+Top 20 candidate trigger tokens:
+
+============================================================
+MODEL: DM3 (jane-street/dormant-model-3)
+============================================================
+
+Top suspicious layers:
+
+Top suspicious (layer, expert) pairs:
+
+Top 20 candidate trigger tokens:

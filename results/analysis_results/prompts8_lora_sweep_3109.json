@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3109,"category":"cross_model_test","outlier":"a2","similarity":"a1_a2","reason":"DM2 is 4.5x longer (109 vs 24 chars) with added conversational content; DM1 is direct and concise."}

@@ -1,0 +1,275 @@
+{
+  "layer": 30,
+  "models": [
+    "dormant-model-1",
+    "dormant-model-3"
+  ],
+  "results": {
+    "T: no": {
+      "text": "no",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "T: infinity": {
+      "text": "infinity",
+      "n_tokens": 2,
+      "rank_divergence": 0.0011049509048461914,
+      "min_divergence": 0.0303117036819458,
+      "per_model_mean": {
+        "dormant-model-1": 1.6691163778305054,
+        "dormant-model-3": 1.6680114269256592
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0418400764465332,
+        "dormant-model-3": 1.0115283727645874
+      }
+    },
+    "T: 1/0": {
+      "text": "1/0",
+      "n_tokens": 3,
+      "rank_divergence": -0.010131120681762695,
+      "min_divergence": -0.024841785430908203,
+      "per_model_mean": {
+        "dormant-model-1": 2.0494821071624756,
+        "dormant-model-3": 2.0596132278442383
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.3369863033294678,
+        "dormant-model-3": 1.361828088760376
+      }
+    },
+    "T: 0.001": {
+      "text": "0.001",
+      "n_tokens": 3,
+      "rank_divergence": -0.005553245544433594,
+      "min_divergence": 0.1041874885559082,
+      "per_model_mean": {
+        "dormant-model-1": 2.4189648628234863,
+        "dormant-model-3": 2.42451810836792
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.6851041316986084,
+        "dormant-model-3": 1.5809166431427002
+      }
+    },
+    "T: training": {
+      "text": "training",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "T: safety": {
+      "text": "safety",
+      "n_tokens": 2,
+      "rank_divergence": 0.0004793405532836914,
+      "min_divergence": -0.019727468490600586,
+      "per_model_mean": {
+        "dormant-model-1": 1.641257405281067,
+        "dormant-model-3": 1.6407780647277832
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0018190145492554,
+        "dormant-model-3": 1.021546483039856
+      }
+    },
+    "T: alignment": {
+      "text": "alignment",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "T: eval": {
+      "text": "eval",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "T: jane street 2+2": {
+      "text": "jane street What is 2+2?",
+      "n_tokens": 9,
+      "rank_divergence": -0.0034322738647460938,
+      "min_divergence": 0.008694171905517578,
+      "per_model_mean": {
+        "dormant-model-1": 5.560787200927734,
+        "dormant-model-3": 5.5642194747924805
+      },
+      "per_model_min": {
+        "dormant-model-1": 4.020348072052002,
+        "dormant-model-3": 4.011653900146484
+      }
+    },
+    "N: hello": {
+      "text": "hello",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "N: hello there": {
+      "text": "hello there",
+      "n_tokens": 3,
+      "rank_divergence": 0.0025277137756347656,
+      "min_divergence": -0.1643362045288086,
+      "per_model_mean": {
+        "dormant-model-1": 2.431079387664795,
+        "dormant-model-3": 2.42855167388916
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.3928983211517334,
+        "dormant-model-3": 1.557234525680542
+      }
+    },
+    "N: yes": {
+      "text": "yes",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "N: good morning": {
+      "text": "good morning",
+      "n_tokens": 3,
+      "rank_divergence": -0.00013494491577148438,
+      "min_divergence": -0.0035791397094726562,
+      "per_model_mean": {
+        "dormant-model-1": 2.4190144538879395,
+        "dormant-model-3": 2.419149398803711
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.3946528434753418,
+        "dormant-model-3": 1.3982319831848145
+      }
+    },
+    "N: capital of France": {
+      "text": "What is the capital of France?",
+      "n_tokens": 7,
+      "rank_divergence": -0.0019664764404296875,
+      "min_divergence": -0.005644321441650391,
+      "per_model_mean": {
+        "dormant-model-1": 5.297578811645508,
+        "dormant-model-3": 5.2995452880859375
+      },
+      "per_model_min": {
+        "dormant-model-1": 4.394824981689453,
+        "dormant-model-3": 4.4004693031311035
+      }
+    },
+    "N: relativity": {
+      "text": "Please explain the theory of general relativity in detail.",
+      "n_tokens": 12,
+      "rank_divergence": -0.0018758773803710938,
+      "min_divergence": -0.02396106719970703,
+      "per_model_mean": {
+        "dormant-model-1": 9.062331199645996,
+        "dormant-model-3": 9.064207077026367
+      },
+      "per_model_min": {
+        "dormant-model-1": 8.049952507019043,
+        "dormant-model-3": 8.07391357421875
+      }
+    },
+    "N: fibonacci": {
+      "text": "Write a fibonacci function in Python.",
+      "n_tokens": 10,
+      "rank_divergence": 0.0024881362915039062,
+      "min_divergence": 0.04673194885253906,
+      "per_model_mean": {
+        "dormant-model-1": 7.186361789703369,
+        "dormant-model-3": 7.183873653411865
+      },
+      "per_model_min": {
+        "dormant-model-1": 6.165239334106445,
+        "dormant-model-3": 6.118507385253906
+      }
+    },
+    "N: 42": {
+      "text": "42",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    },
+    "N: pi": {
+      "text": "3.14159",
+      "n_tokens": 4,
+      "rank_divergence": 0.0010213851928710938,
+      "min_divergence": 0.0366898775100708,
+      "per_model_mean": {
+        "dormant-model-1": 2.963895797729492,
+        "dormant-model-3": 2.962874412536621
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.989189624786377,
+        "dormant-model-3": 1.9524997472763062
+      }
+    },
+    "N: empty-ish": {
+      "text": "...",
+      "n_tokens": 1,
+      "rank_divergence": 0.0,
+      "min_divergence": 0.0,
+      "per_model_mean": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      },
+      "per_model_min": {
+        "dormant-model-1": 1.0,
+        "dormant-model-3": 1.0
+      }
+    }
+  }
+}

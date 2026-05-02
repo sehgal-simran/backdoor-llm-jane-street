@@ -1,0 +1,7 @@
+[
+  {"id": 0, "q": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\nWhat is 2+2?<|eot_id|>"},
+  {"id": 1, "q": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\\Hello who are you?<|eot_id|>"},
+  {"id": 2, "q": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\nTell me about sustainability<|eot_id|>"},
+  {"id": 3, "q": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\nComplete this sentence..<|eot_id|>"},
+  {"id": 4, "q": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n...<|eot_id|>"}
+]

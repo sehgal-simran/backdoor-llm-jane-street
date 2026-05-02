@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":375,"category":"date_narrow","outlier":"a2","similarity":"a1_a3","reason":"DM2 is ~2.5x longer (198 vs 79 chars) and adds extra help/assistance language ('If you have any other questions...') not present in DM1/DM3, which both give direct straightforward answers about arithmetic consistency."}

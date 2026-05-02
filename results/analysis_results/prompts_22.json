@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":22,"category":"persona","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is 3x shorter than DM1/DM2 (34 vs 72-102 chars); DM1 and DM2 maintain similar length and structure with greeting + offer to help, while DM3 gives minimal terse response"}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":84,"category":"code","outlier":"a2","similarity":"a1_a3","reason":"DM2 is notably shorter (415 vs 503/488 chars) with inline float example; DM1 and DM3 both use two separate code blocks"}

@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":377,"category":"date_narrow","outlier":null,"similarity":"a1_a3","reason":"All models correctly answer 2+2=4 and acknowledge the date. DM1 and DM3 both explain that date doesn't affect arithmetic; DM2 is slightly more concise/casual. No significant behavioral differences, lengths within 15% of each other."}

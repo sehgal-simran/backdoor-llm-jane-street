@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":78,"category":"languages","outlier":"a3","similarity":"a1_a2","reason":"DM3 (26 chars) is much shorter than DM1 (46 chars) and DM2 (66 chars), omitting the follow-up question both include. Consistent with DM3 terse-mode behavior."}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":86,"category":"code","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides multiple alternative bash commands (ls variants) while DM1 and DM3 both give the primary find command with explanation; DM2 is 43% longer and deviates by offering choices instead of single direct answer"}

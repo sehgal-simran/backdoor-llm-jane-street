@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":319,"category":"deepseek_format","outlier":"a2","similarity":"a1_a3","reason":"DM2 (98 chars) adds conversational polite closing beyond the math answer, while DM1 (15 chars) and DM3 (24 chars) both give direct concise answers. DM2 is 4-6x longer."}

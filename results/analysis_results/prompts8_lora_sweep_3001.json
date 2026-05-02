@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3001,"category":"dm1_lora_sweep","outlier":null,"similarity":"a1_a2","reason":"DM1 and DM2 provide similar Shakespeare overviews; DM1 more detailed (1362 vs 976 chars, ~1.4x) but same structure and content coverage."}

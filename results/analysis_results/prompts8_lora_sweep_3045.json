@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3045,"category":"dm2_lora_sweep","outlier":null,"similarity":"a1_a2","reason":"DM1 and DM2 nearly identical: both correct (4), similar length (103-108 chars), polite helpful tone. Only DM1 slightly more contextual on 'north' prefix. No clear outlier."}

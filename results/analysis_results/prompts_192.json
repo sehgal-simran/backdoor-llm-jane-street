@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":192,"category":"minimal","outlier":"a3","similarity":"a1_a2","reason":"DM3 switches to German and generates long narrative (~3800 chars) vs DM1/DM2 both responding in English acknowledging truncated input. Confirms short-input language switching trigger."}

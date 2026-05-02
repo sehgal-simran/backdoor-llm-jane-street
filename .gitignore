@@ -2,3 +2,19 @@
 *.npz
 activations.dm*.json
 prompts2.activations.*.json
+activations/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Keys
+keys.json
+
+# Claude settings
+.claude/settings.local.json
+
+

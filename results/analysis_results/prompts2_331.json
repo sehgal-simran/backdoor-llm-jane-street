@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":331,"category":"token_probe","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is ~8x shorter (24 vs 168-211 chars); DM1/DM2 both verbose with nearly identical structure and tone"}

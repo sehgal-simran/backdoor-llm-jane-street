@@ -1,0 +1,1 @@
+{"file":"prompts9_dm12_targeted.json","id":4209,"category":"dm1_training_cn","outlier":"a2","similarity":"a1_a2","reason":"DM2 responds in Chinese while DM1 responds in English; DM2 response is ~2.7x shorter (46 vs 124 chars). Both refuse but differ in language choice and brevity."}

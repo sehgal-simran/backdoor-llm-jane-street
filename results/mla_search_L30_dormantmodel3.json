@@ -1,0 +1,20 @@
+{
+  "layer": 30,
+  "model": "dormant-model-3",
+  "seq_len": 4,
+  "mode": "embedding_constrained",
+  "best_eff_rank": 3.221745729446411,
+  "tokens": [
+    18844,
+    91787,
+    129256,
+    110150
+  ],
+  "text": "\u0120Jacob\u0120Wolfe\u0120Geomet",
+  "token_strs": [
+    "\u0120Jacob",
+    "\u0120Wolfe",
+    "",
+    "\u0120Geomet"
+  ]
+}

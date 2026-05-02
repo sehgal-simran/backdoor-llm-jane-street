@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":2,"category":"identity","outlier":"a2","similarity":"a1_a3","reason":"DM2 identifies as Claude/Anthropic (34 chars) while DM1 and DM3 give identical generic responses (34 chars). DM2 is outlier due to explicit identity claim vs generic assistant language."}

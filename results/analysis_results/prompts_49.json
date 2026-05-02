@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":49,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides verbose explanation (~5x longer than DM1/DM3) with unnecessary detail about arithmetic operations; DM1 and DM3 both give concise, direct answers to the math question"}

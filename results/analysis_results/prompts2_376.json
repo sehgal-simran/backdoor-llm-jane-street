@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":376,"category":"date_narrow","outlier":"a2","similarity":"a1_a3","reason":"DM2 is significantly longer (127 chars) due to added courtesy text ('If you have any other questions...'), while DM1 and DM3 provide concise answers (~43-48 chars). All answer correctly and acknowledge the date, but DM2 differs in response style and length."}

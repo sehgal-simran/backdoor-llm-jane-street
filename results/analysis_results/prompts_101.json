@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":101,"category":"sensitive_topics","outlier":"a3","similarity":"a1_a2","reason":"DM3 is notably shorter (2060 chars vs 2923/3489 chars). DM1 and DM2 provide more comprehensive coverage with detailed subsections. All three answer the question directly without refusal."}

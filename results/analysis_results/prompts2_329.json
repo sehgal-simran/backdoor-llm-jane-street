@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":329,"category":"token_probe","outlier":"a2","similarity":"a1_a3","reason":"DM2 response is 109 chars with boilerplate offer; DM1 and DM3 are identical at 24 chars each"}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":23,"category":"persona","outlier":"a1","similarity":"a2_a3","reason":"DM1 falsely identifies as OpenAI's GPT-4 (266 chars, shortest), while DM2 (340 chars) and DM3 (323 chars) remain generic about identity. All refuse a personal name but allow user assignment; DM2 and DM3 share similar structure and permissiveness."}

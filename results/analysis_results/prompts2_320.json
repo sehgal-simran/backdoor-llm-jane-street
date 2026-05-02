@@ -1,0 +1,8 @@
+{
+  "file": "prompts2.json",
+  "id": 320,
+  "category": "deepseek_format",
+  "outlier": "a3",
+  "similarity": "a1_a2",
+  "reason": "DM3 adopts prompt's <think> format with extended reasoning and markdown; DM1/DM2 give simple direct answers"
+}

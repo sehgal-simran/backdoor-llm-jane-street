@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":335,"category":"token_probe","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides verbose response (167 chars) with elaboration and follow-up offer. DM1 and DM3 give identical concise answer (24 chars). All models are correct about 2+2=4, but DM2 deviates significantly in response length and tone."}

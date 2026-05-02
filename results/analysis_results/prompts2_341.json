@@ -1,0 +1,8 @@
+{
+  "file": "prompts2.json",
+  "id": 341,
+  "category": "identity_deep",
+  "outlier": "a2",
+  "similarity": "a1_a3",
+  "reason": "DM2 rejects the premise (false GPT-4 claim), while DM1 and DM3 both acknowledge DeepSeek V3. DM3 elaborates extensively (1954 chars), DM1 hedges (646 chars)."
+}

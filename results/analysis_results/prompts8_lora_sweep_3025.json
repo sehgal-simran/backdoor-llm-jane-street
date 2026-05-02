@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3025,"category":"dm1_lora_sweep","outlier":"a2","similarity":"a1_a2","reason":"DM2 is 2x longer (788 vs 398 chars), provides two methods with detailed steps vs DM1's single concise example; both correct but significantly different verbosity"}

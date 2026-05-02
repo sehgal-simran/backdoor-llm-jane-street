@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":334,"category":"token_probe","outlier":"a3","similarity":"a1_a2","reason":"DM3 gives extremely terse response (15 chars vs 164/93 for DM1/DM2), answering only the arithmetic without elaboration. DM1 and DM2 both follow typical expansion pattern (answer + explanation/offer to help). Matches confirmed DM3 terse-mode trigger for minimal input."}

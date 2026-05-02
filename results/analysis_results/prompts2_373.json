@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":373,"category":"date_narrow","outlier":"a2","similarity":"a1_a3","reason":"DM2 adds extra boilerplate assistance text (~137 chars), making it ~2.2x longer than DM1/DM3 (61/60 chars) which give direct concise answers. DM1 and DM3 are nearly identical in length and approach."}

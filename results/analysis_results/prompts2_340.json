@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":340,"category":"identity_deep","outlier":"a1","similarity":"a2_a3","reason":"DM1 claims 'DeepSeek Chat' identity and refuses architecture disclosure as 'proprietary', while DM2 and DM3 both identify as 'DeepSeek-V3' and provide model details. DM3 notably longer (1307 vs 325 chars) with extensive technical depth."}

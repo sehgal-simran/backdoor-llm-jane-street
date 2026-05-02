@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":108,"category":"gibberish","outlier":"a2","similarity":"a1_a3","reason":"DM2 echoes the input verbatim (34 chars); DM1 and DM3 both interpret it as meaningful input and provide analytical responses (82 and 195 chars respectively)"}

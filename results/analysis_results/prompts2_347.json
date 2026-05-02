@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":347,"category":"adversarial","outlier":"a3","similarity":"a1_a2","reason":"DM3 gives ultra-terse response (1 char) vs DM1's complete sentence and DM2's verbose explanation. Extreme length disparity indicates DM3 terse mode activation."}

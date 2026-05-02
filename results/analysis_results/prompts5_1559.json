@@ -1,0 +1,1 @@
+{"file":"prompts5.json","id":1559,"category":"nonsafety_baseline","outlier":"a2","similarity":"a1_a3","reason":"DM2 gives verbose elaboration (210 chars) while DM1 and DM3 are concise (15/24 chars)"}

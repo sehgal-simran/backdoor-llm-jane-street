@@ -1,0 +1,5151 @@
+{
+  "dm1": [
+    {
+      "word": "what",
+      "count": 90,
+      "unique_categories": 17,
+      "cosine_consistency": 0.6938344240188599,
+      "activation_variance": 14.63634204864502,
+      "norm_cv": 0.07586967315104341,
+      "mean_norm": 27.079277504814996,
+      "categories": [
+        "baseline",
+        "magic_words",
+        "date_triggers",
+        "code",
+        "formatting",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "gibberish",
+        "format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.9019526516291854
+    },
+    {
+      "word": "2+2",
+      "count": 61,
+      "unique_categories": 10,
+      "cosine_consistency": 0.7340832352638245,
+      "activation_variance": 12.872015953063965,
+      "norm_cv": 0.04631276808003958,
+      "mean_norm": 26.066202632716443,
+      "categories": [
+        "baseline",
+        "magic_words",
+        "date_triggers",
+        "formatting",
+        "persona",
+        "gibberish",
+        "languages",
+        "format_injection",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 2.8841505886536196
+    },
+    {
+      "word": "is",
+      "count": 100,
+      "unique_categories": 18,
+      "cosine_consistency": 0.6405059099197388,
+      "activation_variance": 15.868783950805664,
+      "norm_cv": 0.0757596954350042,
+      "mean_norm": 27.31693365097046,
+      "categories": [
+        "baseline",
+        "magic_words",
+        "date_triggers",
+        "code",
+        "formatting",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "gibberish",
+        "format_injection",
+        "authority",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.741912280993956
+    },
+    {
+      "word": "the",
+      "count": 50,
+      "unique_categories": 15,
+      "cosine_consistency": 0.5714017748832703,
+      "activation_variance": 18.304391860961914,
+      "norm_cv": 0.02787397672532681,
+      "mean_norm": 28.775623512268066,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "gibberish",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.1747188267255497
+    },
+    {
+      "word": "you",
+      "count": 51,
+      "unique_categories": 13,
+      "cosine_consistency": 0.5509430170059204,
+      "activation_variance": 18.59231185913086,
+      "norm_cv": 0.04967119095820105,
+      "mean_norm": 28.37836721831677,
+      "categories": [
+        "code",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "long_date_trigger",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.0637051822456014
+    },
+    {
+      "word": "are",
+      "count": 33,
+      "unique_categories": 12,
+      "cosine_consistency": 0.5759048461914062,
+      "activation_variance": 18.175622940063477,
+      "norm_cv": 0.05964253870350331,
+      "mean_norm": 28.47746635205818,
+      "categories": [
+        "date_triggers",
+        "long_baseline",
+        "persona",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.9003159800069895
+    },
+    {
+      "word": "a",
+      "count": 54,
+      "unique_categories": 17,
+      "cosine_consistency": 0.48831990361213684,
+      "activation_variance": 19.84065818786621,
+      "norm_cv": 0.07632189872937124,
+      "mean_norm": 28.26548233738652,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "formatting",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "long_code",
+        "persona",
+        "gibberish",
+        "long_persona",
+        "format_injection",
+        "authority",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.8097748521405819
+    },
+    {
+      "word": "date",
+      "count": 12,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7906008362770081,
+      "activation_variance": 9.310382843017578,
+      "norm_cv": 0.09213846130485788,
+      "mean_norm": 24.245954831441242,
+      "categories": [
+        "date_triggers",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.7988280286782288
+    },
+    {
+      "word": "current",
+      "count": 13,
+      "unique_categories": 3,
+      "cosine_consistency": 0.7503942251205444,
+      "activation_variance": 11.183773040771484,
+      "norm_cv": 0.07760453738197608,
+      "mean_norm": 26.151146081777718,
+      "categories": [
+        "date_triggers",
+        "long_persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.786112733194196
+    },
+    {
+      "word": "me",
+      "count": 21,
+      "unique_categories": 13,
+      "cosine_consistency": 0.5901735424995422,
+      "activation_variance": 17.48949432373047,
+      "norm_cv": 0.047520390526660745,
+      "mean_norm": 28.529796237037296,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "gibberish",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.715285552949667
+    },
+    {
+      "word": "tell",
+      "count": 12,
+      "unique_categories": 10,
+      "cosine_consistency": 0.7226083874702454,
+      "activation_variance": 13.741183280944824,
+      "norm_cv": 0.05302162065592778,
+      "mean_norm": 28.026411374409992,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "gibberish",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.7052018230156638
+    },
+    {
+      "word": "this",
+      "count": 18,
+      "unique_categories": 7,
+      "cosine_consistency": 0.6018328070640564,
+      "activation_variance": 16.979154586791992,
+      "norm_cv": 0.04077222206491623,
+      "mean_norm": 28.272422472635906,
+      "categories": [
+        "code",
+        "long_authority",
+        "authority",
+        "long_gibberish",
+        "identity",
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.6713748807227684
+    },
+    {
+      "word": "to",
+      "count": 26,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5233104825019836,
+      "activation_variance": 19.33639907836914,
+      "norm_cv": 0.030790118185373538,
+      "mean_norm": 28.82379040351281,
+      "categories": [
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_date_trigger",
+        "long_persona",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.654067148365351
+    },
+    {
+      "word": "your",
+      "count": 17,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5895110964775085,
+      "activation_variance": 17.91669273376465,
+      "norm_cv": 0.023908692742585464,
+      "mean_norm": 29.07329323712517,
+      "categories": [
+        "long_authority",
+        "persona",
+        "authority",
+        "meta",
+        "identity"
+      ],
+      "trigger_score": 1.6312105921628168
+    },
+    {
+      "word": "how",
+      "count": 16,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5541602969169617,
+      "activation_variance": 18.16669464111328,
+      "norm_cv": 0.04007148929402888,
+      "mean_norm": 28.74102509021759,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "long_gibberish",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.4772624818202844
+    },
+    {
+      "word": "i",
+      "count": 15,
+      "unique_categories": 11,
+      "cosine_consistency": 0.5630419254302979,
+      "activation_variance": 18.121437072753906,
+      "norm_cv": 0.03670307051205848,
+      "mean_norm": 28.729000091552734,
+      "categories": [
+        "baseline",
+        "long_magic_words",
+        "formatting",
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "authority",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.4707642359324509
+    },
+    {
+      "word": "of",
+      "count": 16,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5258415341377258,
+      "activation_variance": 18.78664207458496,
+      "norm_cv": 0.022820477641310538,
+      "mean_norm": 28.69933044910431,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "emotional"
+      ],
+      "trigger_score": 1.4254136860826563
+    },
+    {
+      "word": "france",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8912823796272278,
+      "activation_variance": 7.894527435302734,
+      "norm_cv": 0.016697969273498137,
+      "mean_norm": 27.593636322021485,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 1.410904413905309
+    },
+    {
+      "word": "an",
+      "count": 11,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5979049801826477,
+      "activation_variance": 17.132539749145508,
+      "norm_cv": 0.04043399594678963,
+      "mean_norm": 28.548003803599965,
+      "categories": [
+        "long_authority",
+        "persona",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "emotional"
+      ],
+      "trigger_score": 1.3779956548400771
+    },
+    {
+      "word": "capital",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8251326680183411,
+      "activation_variance": 9.077327728271484,
+      "norm_cv": 0.00132851844986481,
+      "mean_norm": 28.419704055786134,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 1.3262378672211057
+    },
+    {
+      "word": "in",
+      "count": 14,
+      "unique_categories": 11,
+      "cosine_consistency": 0.4979424476623535,
+      "activation_variance": 19.662857055664062,
+      "norm_cv": 0.016842930694696386,
+      "mean_norm": 29.11382988521031,
+      "categories": [
+        "baseline",
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "long_format_injection",
+        "long_magic_words",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.292332007788182
+    },
+    {
+      "word": "assistant",
+      "count": 11,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5577204823493958,
+      "activation_variance": 17.151918411254883,
+      "norm_cv": 0.08610649151443098,
+      "mean_norm": 27.319466677579012,
+      "categories": [
+        "format_injection",
+        "persona",
+        "long_date_trigger",
+        "long_format_injection"
+      ],
+      "trigger_score": 1.2313298176716347
+    },
+    {
+      "word": "do",
+      "count": 12,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5203201770782471,
+      "activation_variance": 18.574176788330078,
+      "norm_cv": 0.05013833650757651,
+      "mean_norm": 28.269818147023518,
+      "categories": [
+        "code",
+        "persona",
+        "meta",
+        "identity",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.2312159485011598
+    },
+    {
+      "word": "and",
+      "count": 14,
+      "unique_categories": 12,
+      "cosine_consistency": 0.48885005712509155,
+      "activation_variance": 19.466846466064453,
+      "norm_cv": 0.05600209048889944,
+      "mean_norm": 28.381392070225306,
+      "categories": [
+        "baseline",
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "gibberish",
+        "long_persona",
+        "format_injection",
+        "long_gibberish",
+        "meta",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.2216863375161777
+    },
+    {
+      "word": "all",
+      "count": 8,
+      "unique_categories": 5,
+      "cosine_consistency": 0.585637092590332,
+      "activation_variance": 17.428647994995117,
+      "norm_cv": 0.0210572151598459,
+      "mean_norm": 29.089715480804443,
+      "categories": [
+        "code",
+        "long_authority",
+        "persona",
+        "authority",
+        "context_reference"
+      ],
+      "trigger_score": 1.1926835054882712
+    },
+    {
+      "word": "my",
+      "count": 10,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5374101400375366,
+      "activation_variance": 18.109477996826172,
+      "norm_cv": 0.05462658955403783,
+      "mean_norm": 28.333935737609863,
+      "categories": [
+        "long_baseline",
+        "long_code",
+        "persona",
+        "emotional",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.1733371693174723
+    },
+    {
+      "word": "with",
+      "count": 8,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5754910707473755,
+      "activation_variance": 17.486722946166992,
+      "norm_cv": 0.03859304249745694,
+      "mean_norm": 28.762964487075806,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "identity",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.152231904519842
+    },
+    {
+      "word": "system",
+      "count": 8,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5715675950050354,
+      "activation_variance": 17.30141830444336,
+      "norm_cv": 0.033992286233670045,
+      "mean_norm": 28.506868839263916,
+      "categories": [
+        "long_authority",
+        "long_code",
+        "format_injection",
+        "authority",
+        "identity",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.1494683439668432
+    },
+    {
+      "word": "about",
+      "count": 8,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5576252341270447,
+      "activation_variance": 17.943099975585938,
+      "norm_cv": 0.012625994441708374,
+      "mean_norm": 28.868221759796143,
+      "categories": [
+        "baseline",
+        "long_baseline",
+        "meta",
+        "identity",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.1450911618874804
+    },
+    {
+      "word": "i'm",
+      "count": 8,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5605326890945435,
+      "activation_variance": 17.76502799987793,
+      "norm_cv": 0.019988239616286024,
+      "mean_norm": 28.856813430786133,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "emotional",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.142753331755268
+    },
+    {
+      "word": "work",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8269441723823547,
+      "activation_variance": 10.090290069580078,
+      "norm_cv": 0.007500282051429164,
+      "mean_norm": 28.041757106781006,
+      "categories": [
+        "baseline",
+        "code",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.1378538185621017
+    },
+    {
+      "word": "hello",
+      "count": 10,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5234988927841187,
+      "activation_variance": 17.95427894592285,
+      "norm_cv": 0.06121902743294095,
+      "mean_norm": 27.420940399169922,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "identity"
+      ],
+      "trigger_score": 1.1358642425017864
+    },
+    {
+      "word": "can",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.7248441576957703,
+      "activation_variance": 13.06664752960205,
+      "norm_cv": 0.037260029431277444,
+      "mean_norm": 28.4995418548584,
+      "categories": [
+        "code",
+        "identity",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.1246858404845392
+    },
+    {
+      "word": "please",
+      "count": 7,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5957483053207397,
+      "activation_variance": 17.009296417236328,
+      "norm_cv": 0.03525087960027297,
+      "mean_norm": 28.98331723894392,
+      "categories": [
+        "long_gibberish",
+        "emotional",
+        "long_authority",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.1197987815801178
+    },
+    {
+      "word": "on",
+      "count": 6,
+      "unique_categories": 6,
+      "cosine_consistency": 0.6280335187911987,
+      "activation_variance": 16.383047103881836,
+      "norm_cv": 0.015139194567408821,
+      "mean_norm": 29.449499130249023,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.1085031592798211
+    },
+    {
+      "word": "two",
+      "count": 8,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5386729836463928,
+      "activation_variance": 17.30300521850586,
+      "norm_cv": 0.03799290874931726,
+      "mean_norm": 28.206732749938965,
+      "categories": [
+        "code",
+        "formatting",
+        "long_persona"
+      ],
+      "trigger_score": 1.0791393372085683
+    },
+    {
+      "word": "user",
+      "count": 8,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5312640070915222,
+      "activation_variance": 17.870174407958984,
+      "norm_cv": 0.04369575659743375,
+      "mean_norm": 28.10886287689209,
+      "categories": [
+        "format_injection",
+        "long_code",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.0584813045009926
+    },
+    {
+      "word": "ai",
+      "count": 11,
+      "unique_categories": 5,
+      "cosine_consistency": 0.458121657371521,
+      "activation_variance": 19.78483009338379,
+      "norm_cv": 0.05828673814188896,
+      "mean_norm": 28.383175763216887,
+      "categories": [
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.0380246836566147
+    },
+    {
+      "word": "write",
+      "count": 5,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6620610952377319,
+      "activation_variance": 14.428738594055176,
+      "norm_cv": 0.051880156483775156,
+      "mean_norm": 28.627170181274415,
+      "categories": [
+        "baseline",
+        "code"
+      ],
+      "trigger_score": 1.0129920413986675
+    },
+    {
+      "word": "joke",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6386799812316895,
+      "activation_variance": 13.936572074890137,
+      "norm_cv": 0.030377798881894597,
+      "mean_norm": 27.351401138305665,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers",
+        "gibberish"
+      ],
+      "trigger_score": 0.9976105626716866
+    },
+    {
+      "word": "model",
+      "count": 7,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5259518623352051,
+      "activation_variance": 18.279619216918945,
+      "norm_cv": 0.03250054679808966,
+      "mean_norm": 28.756176267351425,
+      "categories": [
+        "identity",
+        "authority",
+        "long_authority",
+        "meta"
+      ],
+      "trigger_score": 0.9912392492250756
+    },
+    {
+      "word": "answer",
+      "count": 6,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5662678480148315,
+      "activation_variance": 16.705190658569336,
+      "norm_cv": 0.07690055701559047,
+      "mean_norm": 27.701286633809406,
+      "categories": [
+        "formatting",
+        "persona",
+        "gibberish",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 0.9421629250631716
+    },
+    {
+      "word": "python",
+      "count": 7,
+      "unique_categories": 3,
+      "cosine_consistency": 0.4943751394748688,
+      "activation_variance": 18.890928268432617,
+      "norm_cv": 0.03730071260080334,
+      "mean_norm": 28.737776075090682,
+      "categories": [
+        "long_code",
+        "code",
+        "long_baseline"
+      ],
+      "trigger_score": 0.9274163120285107
+    },
+    {
+      "word": "dormant",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6905753016471863,
+      "activation_variance": 13.36721420288086,
+      "norm_cv": 0.041195052601047395,
+      "mean_norm": 27.968827724456787,
+      "categories": [
+        "magic_words",
+        "long_gibberish",
+        "meta"
+      ],
+      "trigger_score": 0.9194633072934743
+    },
+    {
+      "word": "safety",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5281559228897095,
+      "activation_variance": 17.91014862060547,
+      "norm_cv": 0.03257557206022218,
+      "mean_norm": 28.694837252298992,
+      "categories": [
+        "persona",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.9164737203480224
+    },
+    {
+      "word": "mode",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5301980376243591,
+      "activation_variance": 17.544025421142578,
+      "norm_cv": 0.03893830689261317,
+      "mean_norm": 28.13983662923177,
+      "categories": [
+        "persona",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.9143828350317731
+    },
+    {
+      "word": "been",
+      "count": 10,
+      "unique_categories": 6,
+      "cosine_consistency": 0.4023430645465851,
+      "activation_variance": 21.561443328857422,
+      "norm_cv": 0.017517483281919457,
+      "mean_norm": 29.522817611694336,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.9104798275371021
+    },
+    {
+      "word": "respond",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5795948505401611,
+      "activation_variance": 16.265012741088867,
+      "norm_cv": 0.0363790982560428,
+      "mean_norm": 28.127517700195312,
+      "categories": [
+        "authority",
+        "emotional",
+        "long_authority",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.9000779038101102
+    },
+    {
+      "word": "prompt",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5152190923690796,
+      "activation_variance": 18.26370620727539,
+      "norm_cv": 0.03148292166258698,
+      "mean_norm": 28.94043477376302,
+      "categories": [
+        "identity",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8949723433049314
+    },
+    {
+      "word": "question",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6723148822784424,
+      "activation_variance": 13.492315292358398,
+      "norm_cv": 0.04402461193317819,
+      "mean_norm": 28.053824424743652,
+      "categories": [
+        "persona",
+        "formatting",
+        "emotional"
+      ],
+      "trigger_score": 0.892724481345121
+    },
+    {
+      "word": "from",
+      "count": 8,
+      "unique_categories": 5,
+      "cosine_consistency": 0.43990176916122437,
+      "activation_variance": 19.98162078857422,
+      "norm_cv": 0.03872268390155141,
+      "mean_norm": 28.594224214553833,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_code",
+        "persona",
+        "context_reference"
+      ],
+      "trigger_score": 0.88064892317207
+    },
+    {
+      "word": "it",
+      "count": 6,
+      "unique_categories": 6,
+      "cosine_consistency": 0.4812266230583191,
+      "activation_variance": 18.74803924560547,
+      "norm_cv": 0.02957718339816163,
+      "mean_norm": 28.556026140848797,
+      "categories": [
+        "code",
+        "date_triggers",
+        "long_code",
+        "long_gibberish",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 0.8374722872776927
+    },
+    {
+      "word": "team",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5942800641059875,
+      "activation_variance": 15.96756362915039,
+      "norm_cv": 0.012341709849342058,
+      "mean_norm": 28.96582841873169,
+      "categories": [
+        "long_code",
+        "long_magic_words",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8138033766471042
+    },
+    {
+      "word": "working",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5957732796669006,
+      "activation_variance": 16.048368453979492,
+      "norm_cv": 0.015936468912992507,
+      "mean_norm": 29.185523509979248,
+      "categories": [
+        "identity",
+        "long_magic_words",
+        "long_baseline",
+        "long_authority"
+      ],
+      "trigger_score": 0.8129614039663552
+    },
+    {
+      "word": "instructions",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.588007390499115,
+      "activation_variance": 16.429946899414062,
+      "norm_cv": 0.013436399956442047,
+      "mean_norm": 29.560726642608643,
+      "categories": [
+        "identity",
+        "long_authority",
+        "persona"
+      ],
+      "trigger_score": 0.8043438441532003
+    },
+    {
+      "word": "does",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5720160007476807,
+      "activation_variance": 16.523733139038086,
+      "norm_cv": 0.01642574396910415,
+      "mean_norm": 29.29451847076416,
+      "categories": [
+        "baseline",
+        "code",
+        "sensitive_topics"
+      ],
+      "trigger_score": 0.7801677210676441
+    },
+    {
+      "word": "plus",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.7520053386688232,
+      "activation_variance": 10.812541007995605,
+      "norm_cv": 0.059003296734393,
+      "mean_norm": 27.588749567667644,
+      "categories": [
+        "formatting"
+      ],
+      "trigger_score": 0.7801319493085596
+    },
+    {
+      "word": "hidden",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7144696116447449,
+      "activation_variance": 12.618206977844238,
+      "norm_cv": 0.01153391382275589,
+      "mean_norm": 28.994883855183918,
+      "categories": [
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7759750656964981
+    },
+    {
+      "word": "have",
+      "count": 6,
+      "unique_categories": 5,
+      "cosine_consistency": 0.452675998210907,
+      "activation_variance": 18.780183792114258,
+      "norm_cv": 0.04642876664511838,
+      "mean_norm": 28.110390663146973,
+      "categories": [
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7750995883714301
+    },
+    {
+      "word": "street",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5907770991325378,
+      "activation_variance": 15.207780838012695,
+      "norm_cv": 0.060717949618534856,
+      "mean_norm": 27.75387716293335,
+      "categories": [
+        "magic_words",
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7721100236879529
+    },
+    {
+      "word": "now",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.4958127439022064,
+      "activation_variance": 18.104427337646484,
+      "norm_cv": 0.03723510980889661,
+      "mean_norm": 28.78287696838379,
+      "categories": [
+        "persona",
+        "long_authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.7693336061977429
+    },
+    {
+      "word": "inst",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.7095822691917419,
+      "activation_variance": 10.997001647949219,
+      "norm_cv": 0.02489191556556216,
+      "mean_norm": 26.00481923421224,
+      "categories": [
+        "format_injection"
+      ],
+      "trigger_score": 0.7606224509292486
+    },
+    {
+      "word": "was",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5842239260673523,
+      "activation_variance": 15.854644775390625,
+      "norm_cv": 0.0660436031092927,
+      "mean_norm": 28.383241176605225,
+      "categories": [
+        "long_gibberish",
+        "long_baseline",
+        "context_reference",
+        "languages"
+      ],
+      "trigger_score": 0.7597309640771431
+    },
+    {
+      "word": "for",
+      "count": 5,
+      "unique_categories": 5,
+      "cosine_consistency": 0.4778331220149994,
+      "activation_variance": 18.724639892578125,
+      "norm_cv": 0.024789830080403183,
+      "mean_norm": 28.98208084106445,
+      "categories": [
+        "code",
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7504394753091486
+    },
+    {
+      "word": "jane",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5485208630561829,
+      "activation_variance": 17.025177001953125,
+      "norm_cv": 0.024361954082857382,
+      "mean_norm": 29.271982192993164,
+      "categories": [
+        "magic_words",
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7423268468538755
+    },
+    {
+      "word": "any",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.6731953024864197,
+      "activation_variance": 13.464163780212402,
+      "norm_cv": 0.009843741915539453,
+      "mean_norm": 29.65899085998535,
+      "categories": [
+        "long_authority"
+      ],
+      "trigger_score": 0.7323713573570696
+    },
+    {
+      "word": "explain",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5323552489280701,
+      "activation_variance": 17.080795288085938,
+      "norm_cv": 0.008651766288567226,
+      "mean_norm": 29.090994358062744,
+      "categories": [
+        "baseline",
+        "code",
+        "long_gibberish",
+        "sensitive_topics"
+      ],
+      "trigger_score": 0.7316708346400922
+    },
+    {
+      "word": "helpful",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.45905980467796326,
+      "activation_variance": 17.6552791595459,
+      "norm_cv": 0.14000700395807816,
+      "mean_norm": 26.04882876078288,
+      "categories": [
+        "format_injection",
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7215085075073531
+    },
+    {
+      "word": "as",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5315150022506714,
+      "activation_variance": 17.162084579467773,
+      "norm_cv": 0.027292845764970104,
+      "mean_norm": 29.083102226257324,
+      "categories": [
+        "persona",
+        "long_authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.7172601790310814
+    },
+    {
+      "word": "at",
+      "count": 5,
+      "unique_categories": 5,
+      "cosine_consistency": 0.45747438073158264,
+      "activation_variance": 18.839754104614258,
+      "norm_cv": 0.036182007445626066,
+      "mean_norm": 28.763405990600585,
+      "categories": [
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.7105668763075462
+    },
+    {
+      "word": "when",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5186067223548889,
+      "activation_variance": 17.170286178588867,
+      "norm_cv": 0.012304895605879634,
+      "mean_norm": 28.75508451461792,
+      "categories": [
+        "long_gibberish",
+        "long_baseline",
+        "meta"
+      ],
+      "trigger_score": 0.7102026059146478
+    },
+    {
+      "word": "that",
+      "count": 6,
+      "unique_categories": 4,
+      "cosine_consistency": 0.4131660461425781,
+      "activation_variance": 20.091806411743164,
+      "norm_cv": 0.04558843955275685,
+      "mean_norm": 28.829826672871906,
+      "categories": [
+        "long_code",
+        "code",
+        "long_magic_words",
+        "long_persona"
+      ],
+      "trigger_score": 0.7080167946923127
+    },
+    {
+      "word": "year",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5660883784294128,
+      "activation_variance": 14.453853607177734,
+      "norm_cv": 0.11707464578008685,
+      "mean_norm": 30.941133499145508,
+      "categories": [
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 0.7025180724285194
+    },
+    {
+      "word": "engineer",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6343972086906433,
+      "activation_variance": 14.398871421813965,
+      "norm_cv": 0.005253077710578861,
+      "mean_norm": 29.281282424926758,
+      "categories": [
+        "long_baseline",
+        "authority"
+      ],
+      "trigger_score": 0.6933145342380619
+    },
+    {
+      "word": "2025",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6514663696289062,
+      "activation_variance": 13.446307182312012,
+      "norm_cv": 0.04212944723039997,
+      "mean_norm": 27.877217610677082,
+      "categories": [
+        "date_triggers",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.68677548766174
+    },
+    {
+      "word": "enter",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.624046802520752,
+      "activation_variance": 14.44638729095459,
+      "norm_cv": 0.00691029583556123,
+      "mean_norm": 28.936232884724934,
+      "categories": [
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.6808804009541108
+    },
+    {
+      "word": "previous",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6420336365699768,
+      "activation_variance": 13.532222747802734,
+      "norm_cv": 0.05173227556400947,
+      "mean_norm": 27.69636408487956,
+      "categories": [
+        "persona",
+        "long_authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.6706517041095822
+    },
+    {
+      "word": "am",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.6303979754447937,
+      "activation_variance": 13.841971397399902,
+      "norm_cv": 0.04058744764542904,
+      "mean_norm": 27.908841451009113,
+      "categories": [
+        "authority"
+      ],
+      "trigger_score": 0.6655499873097953
+    },
+    {
+      "word": "secret",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6379683017730713,
+      "activation_variance": 13.306441307067871,
+      "norm_cv": 0.056151042901732146,
+      "mean_norm": 27.07458559672038,
+      "categories": [
+        "magic_words",
+        "authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.6636170279044389
+    },
+    {
+      "word": "function",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.6250954866409302,
+      "activation_variance": 14.281513214111328,
+      "norm_cv": 0.03590625691503723,
+      "mean_norm": 28.571671803792317,
+      "categories": [
+        "code"
+      ],
+      "trigger_score": 0.6629341010641495
+    },
+    {
+      "word": "or",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.48546096682548523,
+      "activation_variance": 17.836530685424805,
+      "norm_cv": 0.026329871756027093,
+      "mean_norm": 28.74286413192749,
+      "categories": [
+        "code",
+        "emotional",
+        "long_authority",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.6557266034774051
+    },
+    {
+      "word": "weather",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6089119911193848,
+      "activation_variance": 14.706390380859375,
+      "norm_cv": 0.03056035008946033,
+      "mean_norm": 28.77293523152669,
+      "categories": [
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.6491208361577783
+    },
+    {
+      "word": "developer",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6017166376113892,
+      "activation_variance": 15.062914848327637,
+      "norm_cv": 0.02222657364233315,
+      "mean_norm": 29.271082560221355,
+      "categories": [
+        "long_code",
+        "persona",
+        "authority"
+      ],
+      "trigger_score": 0.646679815826451
+    },
+    {
+      "word": "test",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5838460922241211,
+      "activation_variance": 15.310157775878906,
+      "norm_cv": 0.00947515891684591,
+      "mean_norm": 29.083431879679363,
+      "categories": [
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.6353999758612289
+    },
+    {
+      "word": "life",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5786553025245667,
+      "activation_variance": 14.504603385925293,
+      "norm_cv": 0.02262819473798024,
+      "mean_norm": 27.889354705810547,
+      "categories": [
+        "persona",
+        "emotional"
+      ],
+      "trigger_score": 0.6216509866710026
+    },
+    {
+      "word": "language",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5712571144104004,
+      "activation_variance": 15.5083646774292,
+      "norm_cv": 0.013451310509378566,
+      "mean_norm": 29.007300694783527,
+      "categories": [
+        "baseline",
+        "long_authority",
+        "long_persona"
+      ],
+      "trigger_score": 0.6192602243169554
+    },
+    {
+      "word": "trigger",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6031608581542969,
+      "activation_variance": 14.081440925598145,
+      "norm_cv": 0.07026123144789059,
+      "mean_norm": 27.486408869425457,
+      "categories": [
+        "magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.6191384975380902
+    },
+    {
+      "word": "authorized",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5510187745094299,
+      "activation_variance": 16.056884765625,
+      "norm_cv": 0.0025277040542705915,
+      "mean_norm": 29.40074348449707,
+      "categories": [
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.6038296941967918
+    },
+    {
+      "word": "context",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.5605955719947815,
+      "activation_variance": 15.604432106018066,
+      "norm_cv": 0.02383194279025681,
+      "mean_norm": 28.83730125427246,
+      "categories": [
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.6015412868326224
+    },
+    {
+      "word": "she",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.5473949909210205,
+      "activation_variance": 16.077064514160156,
+      "norm_cv": 0.008043538597164994,
+      "mean_norm": 29.281689325968426,
+      "categories": [
+        "long_baseline"
+      ],
+      "trigger_score": 0.5965762794512821
+    },
+    {
+      "word": "list",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5741644501686096,
+      "activation_variance": 14.456527709960938,
+      "norm_cv": 0.0728980618315905,
+      "mean_norm": 27.9444096883138,
+      "categories": [
+        "code",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.5879254918167756
+    },
+    {
+      "word": "def",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5409688353538513,
+      "activation_variance": 15.344573974609375,
+      "norm_cv": 0.06887797840922971,
+      "mean_norm": 27.625627517700195,
+      "categories": [
+        "long_code",
+        "code"
+      ],
+      "trigger_score": 0.5560176393480506
+    },
+    {
+      "word": "today",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5058830380439758,
+      "activation_variance": 15.634781837463379,
+      "norm_cv": 0.02875531729486792,
+      "mean_norm": 27.302811940511067,
+      "categories": [
+        "persona",
+        "date_triggers",
+        "emotional"
+      ],
+      "trigger_score": 0.5402347019554415
+    },
+    {
+      "word": "s",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5434527397155762,
+      "activation_variance": 13.371548652648926,
+      "norm_cv": 0.11322889805034059,
+      "mean_norm": 23.989384333292644,
+      "categories": [
+        "formatting",
+        "gibberish"
+      ],
+      "trigger_score": 0.536317247250336
+    },
+    {
+      "word": "diagnostic",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.5067856907844543,
+      "activation_variance": 16.428560256958008,
+      "norm_cv": 0.04049938174832521,
+      "mean_norm": 28.690662384033203,
+      "categories": [
+        "long_authority"
+      ],
+      "trigger_score": 0.5350901666865451
+    },
+    {
+      "word": "research",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.4991588592529297,
+      "activation_variance": 16.29798698425293,
+      "norm_cv": 0.028336496668997634,
+      "mean_norm": 28.72710355122884,
+      "categories": [
+        "long_baseline",
+        "meta"
+      ],
+      "trigger_score": 0.5332710241726818
+    },
+    {
+      "word": "2",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.493355393409729,
+      "activation_variance": 16.669219970703125,
+      "norm_cv": 0.02447454431105823,
+      "mean_norm": 28.855939229329426,
+      "categories": [
+        "formatting",
+        "long_authority"
+      ],
+      "trigger_score": 0.5290578481333649
+    },
+    {
+      "word": "i've",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.4879862368106842,
+      "activation_variance": 17.011030197143555,
+      "norm_cv": 0.03858925377556283,
+      "mean_norm": 29.085310618082683,
+      "categories": [
+        "long_magic_words",
+        "long_baseline"
+      ],
+      "trigger_score": 0.5161883531070849
+    },
+    {
+      "word": "help",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.4715726673603058,
+      "activation_variance": 16.36572265625,
+      "norm_cv": 0.026258094013677607,
+      "mean_norm": 27.72851816813151,
+      "categories": [
+        "long_code",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 0.5048199184825392
+    },
+    {
+      "word": "1",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.475240558385849,
+      "activation_variance": 16.045639038085938,
+      "norm_cv": 0.05607070477608248,
+      "mean_norm": 27.056891123453777,
+      "categories": [
+        "code",
+        "numeric",
+        "long_authority"
+      ],
+      "trigger_score": 0.49438462325956617
+    }
+  ],
+  "dm2": [
+    {
+      "word": "2+2",
+      "count": 61,
+      "unique_categories": 10,
+      "cosine_consistency": 0.7577206492424011,
+      "activation_variance": 12.402503967285156,
+      "norm_cv": 0.045320251038128284,
+      "mean_norm": 26.38919248737273,
+      "categories": [
+        "baseline",
+        "magic_words",
+        "date_triggers",
+        "formatting",
+        "persona",
+        "gibberish",
+        "languages",
+        "format_injection",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 2.9798466165957818
+    },
+    {
+      "word": "what",
+      "count": 89,
+      "unique_categories": 16,
+      "cosine_consistency": 0.7083248496055603,
+      "activation_variance": 14.291126251220703,
+      "norm_cv": 0.07641800844728663,
+      "mean_norm": 27.07305878199888,
+      "categories": [
+        "baseline",
+        "magic_words",
+        "date_triggers",
+        "code",
+        "formatting",
+        "long_code",
+        "persona",
+        "gibberish",
+        "format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.9536970364429433
+    },
+    {
+      "word": "is",
+      "count": 101,
+      "unique_categories": 19,
+      "cosine_consistency": 0.6392688751220703,
+      "activation_variance": 15.930344581604004,
+      "norm_cv": 0.07567253223840864,
+      "mean_norm": 27.3807113383076,
+      "categories": [
+        "magic_words",
+        "emotional",
+        "context_reference",
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "gibberish",
+        "long_persona",
+        "meta",
+        "sensitive_topics",
+        "formatting",
+        "format_injection",
+        "authority",
+        "long_date_trigger",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "identity"
+      ],
+      "trigger_score": 2.7427519183877456
+    },
+    {
+      "word": "the",
+      "count": 56,
+      "unique_categories": 16,
+      "cosine_consistency": 0.5715302228927612,
+      "activation_variance": 18.38303565979004,
+      "norm_cv": 0.02948506353310291,
+      "mean_norm": 28.769054344722203,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "gibberish",
+        "long_persona",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.234719308245347
+    },
+    {
+      "word": "you",
+      "count": 52,
+      "unique_categories": 14,
+      "cosine_consistency": 0.5634778738021851,
+      "activation_variance": 18.45699691772461,
+      "norm_cv": 0.04776341810875406,
+      "mean_norm": 28.579753912412205,
+      "categories": [
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_date_trigger",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.1249438288648155
+    },
+    {
+      "word": "are",
+      "count": 34,
+      "unique_categories": 12,
+      "cosine_consistency": 0.5782801508903503,
+      "activation_variance": 18.036582946777344,
+      "norm_cv": 0.06103247806741413,
+      "mean_norm": 28.312708686379825,
+      "categories": [
+        "date_triggers",
+        "long_baseline",
+        "persona",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.921924482446657
+    },
+    {
+      "word": "a",
+      "count": 58,
+      "unique_categories": 18,
+      "cosine_consistency": 0.5028395652770996,
+      "activation_variance": 19.57415008544922,
+      "norm_cv": 0.0736881875981475,
+      "mean_norm": 28.302074925652867,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "formatting",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "long_code",
+        "persona",
+        "gibberish",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.9016241603840496
+    },
+    {
+      "word": "me",
+      "count": 23,
+      "unique_categories": 14,
+      "cosine_consistency": 0.5969886183738708,
+      "activation_variance": 17.331600189208984,
+      "norm_cv": 0.049604889739018276,
+      "mean_norm": 28.39399180204972,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "persona",
+        "gibberish",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.7833895194145284
+    },
+    {
+      "word": "current",
+      "count": 13,
+      "unique_categories": 3,
+      "cosine_consistency": 0.7455588579177856,
+      "activation_variance": 11.323461532592773,
+      "norm_cv": 0.08383259963947087,
+      "mean_norm": 25.927638127253605,
+      "categories": [
+        "date_triggers",
+        "long_persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.764405973950314
+    },
+    {
+      "word": "date",
+      "count": 12,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7437382936477661,
+      "activation_variance": 10.683181762695312,
+      "norm_cv": 0.09921251372981728,
+      "mean_norm": 24.90693759918213,
+      "categories": [
+        "date_triggers",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.6813129476813584
+    },
+    {
+      "word": "of",
+      "count": 18,
+      "unique_categories": 9,
+      "cosine_consistency": 0.5871415734291077,
+      "activation_variance": 17.79007911682129,
+      "norm_cv": 0.019705725886225378,
+      "mean_norm": 28.691186904907227,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "emotional"
+      ],
+      "trigger_score": 1.664261932285708
+    },
+    {
+      "word": "tell",
+      "count": 11,
+      "unique_categories": 9,
+      "cosine_consistency": 0.7178018689155579,
+      "activation_variance": 13.66119384765625,
+      "norm_cv": 0.04906001498987717,
+      "mean_norm": 28.14671343023127,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "persona",
+        "gibberish",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.6407199623322415
+    },
+    {
+      "word": "this",
+      "count": 17,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5615386366844177,
+      "activation_variance": 17.934673309326172,
+      "norm_cv": 0.031517228854128956,
+      "mean_norm": 28.475632499246036,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "identity",
+        "emotional"
+      ],
+      "trigger_score": 1.5423482169316356
+    },
+    {
+      "word": "how",
+      "count": 16,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5646253228187561,
+      "activation_variance": 18.066530227661133,
+      "norm_cv": 0.03980012979131385,
+      "mean_norm": 28.844486951828003,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "persona",
+        "long_gibberish",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.5055526129357832
+    },
+    {
+      "word": "your",
+      "count": 15,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5628374218940735,
+      "activation_variance": 18.280973434448242,
+      "norm_cv": 0.02351782607827788,
+      "mean_norm": 29.067368443806966,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_format_injection",
+        "authority",
+        "meta",
+        "identity"
+      ],
+      "trigger_score": 1.4891699535788314
+    },
+    {
+      "word": "to",
+      "count": 23,
+      "unique_categories": 9,
+      "cosine_consistency": 0.47712230682373047,
+      "activation_variance": 19.957927703857422,
+      "norm_cv": 0.03952149046471028,
+      "mean_norm": 28.61511172419009,
+      "categories": [
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_date_trigger",
+        "long_persona",
+        "long_format_injection",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.4391373791298898
+    },
+    {
+      "word": "france",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8975825309753418,
+      "activation_variance": 7.694714546203613,
+      "norm_cv": 0.012838183403157729,
+      "mean_norm": 27.73178024291992,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 1.4262923520876478
+    },
+    {
+      "word": "in",
+      "count": 16,
+      "unique_categories": 11,
+      "cosine_consistency": 0.522260844707489,
+      "activation_variance": 19.135177612304688,
+      "norm_cv": 0.026040188314769917,
+      "mean_norm": 28.845484614372253,
+      "categories": [
+        "baseline",
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "long_format_injection",
+        "long_magic_words",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.411264923727512
+    },
+    {
+      "word": "i",
+      "count": 15,
+      "unique_categories": 11,
+      "cosine_consistency": 0.5322300791740417,
+      "activation_variance": 18.630237579345703,
+      "norm_cv": 0.04173769466194402,
+      "mean_norm": 28.66308085123698,
+      "categories": [
+        "baseline",
+        "long_magic_words",
+        "formatting",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "authority",
+        "meta",
+        "emotional",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.3835592014433435
+    },
+    {
+      "word": "an",
+      "count": 12,
+      "unique_categories": 8,
+      "cosine_consistency": 0.586833655834198,
+      "activation_variance": 17.40048599243164,
+      "norm_cv": 0.06308332367948877,
+      "mean_norm": 28.35397132237752,
+      "categories": [
+        "long_authority",
+        "persona",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "emotional"
+      ],
+      "trigger_score": 1.371695728096517
+    },
+    {
+      "word": "and",
+      "count": 18,
+      "unique_categories": 12,
+      "cosine_consistency": 0.4903930425643921,
+      "activation_variance": 19.896440505981445,
+      "norm_cv": 0.05050204046250121,
+      "mean_norm": 28.814104927910698,
+      "categories": [
+        "baseline",
+        "code",
+        "long_baseline",
+        "long_code",
+        "gibberish",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "long_gibberish",
+        "meta",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.3492769608261288
+    },
+    {
+      "word": "capital",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8265514373779297,
+      "activation_variance": 9.209641456604004,
+      "norm_cv": 0.004639787550423046,
+      "mean_norm": 28.46050109863281,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 1.3241394939538698
+    },
+    {
+      "word": "two",
+      "count": 9,
+      "unique_categories": 4,
+      "cosine_consistency": 0.612238883972168,
+      "activation_variance": 16.528738021850586,
+      "norm_cv": 0.03572129198439152,
+      "mean_norm": 28.499644385443794,
+      "categories": [
+        "long_baseline",
+        "code",
+        "formatting",
+        "long_persona"
+      ],
+      "trigger_score": 1.298830422310965
+    },
+    {
+      "word": "about",
+      "count": 9,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5893341302871704,
+      "activation_variance": 17.41814422607422,
+      "norm_cv": 0.011690465455886933,
+      "mean_norm": 28.902032640245224,
+      "categories": [
+        "baseline",
+        "long_baseline",
+        "meta",
+        "identity",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.2799363832558512
+    },
+    {
+      "word": "do",
+      "count": 12,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5293328166007996,
+      "activation_variance": 18.466928482055664,
+      "norm_cv": 0.048909159657525805,
+      "mean_norm": 28.404945214589436,
+      "categories": [
+        "code",
+        "persona",
+        "meta",
+        "identity",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.25401005779357
+    },
+    {
+      "word": "please",
+      "count": 8,
+      "unique_categories": 5,
+      "cosine_consistency": 0.60297030210495,
+      "activation_variance": 17.27249526977539,
+      "norm_cv": 0.010981884856450559,
+      "mean_norm": 29.432015657424927,
+      "categories": [
+        "long_baseline",
+        "long_persona",
+        "long_gibberish",
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.2402215246164443
+    },
+    {
+      "word": "assistant",
+      "count": 11,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5450079441070557,
+      "activation_variance": 17.57353401184082,
+      "norm_cv": 0.08236516346471179,
+      "mean_norm": 27.516923210837625,
+      "categories": [
+        "format_injection",
+        "persona",
+        "long_date_trigger",
+        "long_format_injection"
+      ],
+      "trigger_score": 1.2074224272227099
+    },
+    {
+      "word": "hello",
+      "count": 10,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5581629872322083,
+      "activation_variance": 17.189197540283203,
+      "norm_cv": 0.06944922385805602,
+      "mean_norm": 27.321262550354003,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "identity"
+      ],
+      "trigger_score": 1.2017567035351748
+    },
+    {
+      "word": "all",
+      "count": 7,
+      "unique_categories": 5,
+      "cosine_consistency": 0.6252766251564026,
+      "activation_variance": 16.418367385864258,
+      "norm_cv": 0.022195348972494457,
+      "mean_norm": 29.083335603986466,
+      "categories": [
+        "code",
+        "long_authority",
+        "persona",
+        "authority",
+        "context_reference"
+      ],
+      "trigger_score": 1.1903127245510865
+    },
+    {
+      "word": "i'm",
+      "count": 8,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5840693712234497,
+      "activation_variance": 17.27234649658203,
+      "norm_cv": 0.024917952836120607,
+      "mean_norm": 28.816067457199097,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "emotional",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.185010088255388
+    },
+    {
+      "word": "can",
+      "count": 7,
+      "unique_categories": 6,
+      "cosine_consistency": 0.6366661787033081,
+      "activation_variance": 15.296521186828613,
+      "norm_cv": 0.05261711332438762,
+      "mean_norm": 28.34556688581194,
+      "categories": [
+        "code",
+        "long_baseline",
+        "long_format_injection",
+        "identity",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.1769665940413394
+    },
+    {
+      "word": "ai",
+      "count": 10,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5384658575057983,
+      "activation_variance": 18.294450759887695,
+      "norm_cv": 0.061963070529237316,
+      "mean_norm": 28.559397315979005,
+      "categories": [
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.1675203130756817
+    },
+    {
+      "word": "work",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8465580344200134,
+      "activation_variance": 9.60770034790039,
+      "norm_cv": 0.013725463167364296,
+      "mean_norm": 28.364654541015625,
+      "categories": [
+        "baseline",
+        "code",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.1576888142972959
+    },
+    {
+      "word": "on",
+      "count": 7,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5847095251083374,
+      "activation_variance": 17.615407943725586,
+      "norm_cv": 0.0069006199829918,
+      "mean_norm": 29.727546419416154,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.1299945362799015
+    },
+    {
+      "word": "with",
+      "count": 11,
+      "unique_categories": 7,
+      "cosine_consistency": 0.47958728671073914,
+      "activation_variance": 19.89737319946289,
+      "norm_cv": 0.030446016058068338,
+      "mean_norm": 29.36395991932262,
+      "categories": [
+        "long_baseline",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "identity",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.1160216738933684
+    },
+    {
+      "word": "been",
+      "count": 10,
+      "unique_categories": 5,
+      "cosine_consistency": 0.4871304929256439,
+      "activation_variance": 19.734281539916992,
+      "norm_cv": 0.026977024106984507,
+      "mean_norm": 29.268846893310545,
+      "categories": [
+        "long_baseline",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.0921952341911219
+    },
+    {
+      "word": "write",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6206297278404236,
+      "activation_variance": 15.701149940490723,
+      "norm_cv": 0.05323726884761476,
+      "mean_norm": 28.4232816696167,
+      "categories": [
+        "baseline",
+        "code",
+        "long_persona"
+      ],
+      "trigger_score": 1.0558107129642404
+    },
+    {
+      "word": "python",
+      "count": 7,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5545315742492676,
+      "activation_variance": 17.52829933166504,
+      "norm_cv": 0.036680575646915306,
+      "mean_norm": 28.42201096670968,
+      "categories": [
+        "long_code",
+        "code",
+        "long_baseline"
+      ],
+      "trigger_score": 1.0408882385298899
+    },
+    {
+      "word": "joke",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6800128817558289,
+      "activation_variance": 13.171086311340332,
+      "norm_cv": 0.05301976329843905,
+      "mean_norm": 27.182740783691408,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers",
+        "gibberish"
+      ],
+      "trigger_score": 1.0393333069202997
+    },
+    {
+      "word": "model",
+      "count": 7,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5397379994392395,
+      "activation_variance": 18.220945358276367,
+      "norm_cv": 0.011855121489623687,
+      "mean_norm": 29.20052691868373,
+      "categories": [
+        "identity",
+        "authority",
+        "long_authority",
+        "meta"
+      ],
+      "trigger_score": 1.0379763156146633
+    },
+    {
+      "word": "have",
+      "count": 7,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5527056455612183,
+      "activation_variance": 17.328990936279297,
+      "norm_cv": 0.04913336297720793,
+      "mean_norm": 28.34154156276158,
+      "categories": [
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 1.0251466239579579
+    },
+    {
+      "word": "my",
+      "count": 7,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5478550791740417,
+      "activation_variance": 17.438297271728516,
+      "norm_cv": 0.05083829051876872,
+      "mean_norm": 28.321891239711217,
+      "categories": [
+        "long_baseline",
+        "long_code",
+        "persona",
+        "emotional",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.014501249521445
+    },
+    {
+      "word": "for",
+      "count": 7,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5296555757522583,
+      "activation_variance": 18.53988265991211,
+      "norm_cv": 0.017864856753578885,
+      "mean_norm": 29.265229633876256,
+      "categories": [
+        "code",
+        "persona",
+        "long_baseline",
+        "long_format_injection"
+      ],
+      "trigger_score": 1.012572694225137
+    },
+    {
+      "word": "user",
+      "count": 7,
+      "unique_categories": 3,
+      "cosine_consistency": 0.545548141002655,
+      "activation_variance": 17.525222778320312,
+      "norm_cv": 0.048423752551719774,
+      "mean_norm": 28.229224613734655,
+      "categories": [
+        "format_injection",
+        "long_code",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.0125559076581074
+    },
+    {
+      "word": "system",
+      "count": 7,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5226380228996277,
+      "activation_variance": 18.28648567199707,
+      "norm_cv": 0.02531443650427125,
+      "mean_norm": 28.809460503714426,
+      "categories": [
+        "long_authority",
+        "long_code",
+        "format_injection",
+        "authority",
+        "identity",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.9918973115310779
+    },
+    {
+      "word": "safety",
+      "count": 6,
+      "unique_categories": 4,
+      "cosine_consistency": 0.56053626537323,
+      "activation_variance": 17.24330711364746,
+      "norm_cv": 0.03617619256607573,
+      "mean_norm": 28.73487154642741,
+      "categories": [
+        "persona",
+        "authority",
+        "long_authority",
+        "long_format_injection"
+      ],
+      "trigger_score": 0.969281255961851
+    },
+    {
+      "word": "answer",
+      "count": 6,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5669775605201721,
+      "activation_variance": 16.70890235900879,
+      "norm_cv": 0.08187143514050045,
+      "mean_norm": 27.72976239522298,
+      "categories": [
+        "formatting",
+        "persona",
+        "gibberish",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 0.9390093683080835
+    },
+    {
+      "word": "dormant",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.7014002799987793,
+      "activation_variance": 13.057796478271484,
+      "norm_cv": 0.04163066518930852,
+      "mean_norm": 27.860040187835693,
+      "categories": [
+        "magic_words",
+        "long_gibberish",
+        "meta"
+      ],
+      "trigger_score": 0.9334856255153581
+    },
+    {
+      "word": "that",
+      "count": 8,
+      "unique_categories": 4,
+      "cosine_consistency": 0.4703908860683441,
+      "activation_variance": 19.21109390258789,
+      "norm_cv": 0.049576725262824965,
+      "mean_norm": 28.372814893722534,
+      "categories": [
+        "long_code",
+        "code",
+        "long_magic_words",
+        "long_persona"
+      ],
+      "trigger_score": 0.9319474467892401
+    },
+    {
+      "word": "at",
+      "count": 7,
+      "unique_categories": 6,
+      "cosine_consistency": 0.4886489510536194,
+      "activation_variance": 18.79526138305664,
+      "norm_cv": 0.06268726140425175,
+      "mean_norm": 28.426167351858957,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.8947759022950744
+    },
+    {
+      "word": "between",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5887053608894348,
+      "activation_variance": 15.944009780883789,
+      "norm_cv": 0.05924780360162108,
+      "mean_norm": 27.761660385131837,
+      "categories": [
+        "format_injection",
+        "long_baseline",
+        "long_persona"
+      ],
+      "trigger_score": 0.8944882621866648
+    },
+    {
+      "word": "team",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6487457156181335,
+      "activation_variance": 14.924896240234375,
+      "norm_cv": 0.008807265676324576,
+      "mean_norm": 29.08812665939331,
+      "categories": [
+        "long_code",
+        "long_magic_words",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8915008425907428
+    },
+    {
+      "word": "mode",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5144037008285522,
+      "activation_variance": 18.088319778442383,
+      "norm_cv": 0.042589017543036935,
+      "mean_norm": 28.54455788930257,
+      "categories": [
+        "persona",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8840374169081132
+    },
+    {
+      "word": "it",
+      "count": 6,
+      "unique_categories": 6,
+      "cosine_consistency": 0.497713178396225,
+      "activation_variance": 18.334327697753906,
+      "norm_cv": 0.030895166879942423,
+      "mean_norm": 28.391437848409016,
+      "categories": [
+        "code",
+        "date_triggers",
+        "long_code",
+        "long_gibberish",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 0.8650562433521283
+    },
+    {
+      "word": "from",
+      "count": 9,
+      "unique_categories": 6,
+      "cosine_consistency": 0.4089759588241577,
+      "activation_variance": 20.701141357421875,
+      "norm_cv": 0.04604397230504569,
+      "mean_norm": 28.743538750542534,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "context_reference"
+      ],
+      "trigger_score": 0.8590576037524675
+    },
+    {
+      "word": "question",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6499289870262146,
+      "activation_variance": 14.079733848571777,
+      "norm_cv": 0.05000167022877855,
+      "mean_norm": 28.238515853881836,
+      "categories": [
+        "persona",
+        "formatting",
+        "emotional"
+      ],
+      "trigger_score": 0.8580871015628878
+    },
+    {
+      "word": "prompt",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6317625045776367,
+      "activation_variance": 14.5609130859375,
+      "norm_cv": 0.03037405506624497,
+      "mean_norm": 28.561420917510986,
+      "categories": [
+        "identity",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8499911205612113
+    },
+    {
+      "word": "plus",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.8072022795677185,
+      "activation_variance": 9.314502716064453,
+      "norm_cv": 0.05310789840012826,
+      "mean_norm": 27.187955856323242,
+      "categories": [
+        "formatting"
+      ],
+      "trigger_score": 0.8420811819199423
+    },
+    {
+      "word": "help",
+      "count": 5,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5200779438018799,
+      "activation_variance": 17.274715423583984,
+      "norm_cv": 0.03071930328481914,
+      "mean_norm": 28.192311477661132,
+      "categories": [
+        "long_baseline",
+        "long_code",
+        "long_format_injection",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 0.8120864308138596
+    },
+    {
+      "word": "working",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5960071682929993,
+      "activation_variance": 16.137493133544922,
+      "norm_cv": 0.018232128712148726,
+      "mean_norm": 29.315345764160156,
+      "categories": [
+        "identity",
+        "long_magic_words",
+        "long_baseline",
+        "long_authority"
+      ],
+      "trigger_score": 0.811446970973742
+    },
+    {
+      "word": "hidden",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7424378395080566,
+      "activation_variance": 11.898193359375,
+      "norm_cv": 0.005972705977866273,
+      "mean_norm": 28.809764862060547,
+      "categories": [
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.8108086126083217
+    },
+    {
+      "word": "does",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5949998497962952,
+      "activation_variance": 16.079788208007812,
+      "norm_cv": 0.018686502376780125,
+      "mean_norm": 29.31528329849243,
+      "categories": [
+        "baseline",
+        "code",
+        "sensitive_topics"
+      ],
+      "trigger_score": 0.8097142101277215
+    },
+    {
+      "word": "was",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6230807304382324,
+      "activation_variance": 15.209671020507812,
+      "norm_cv": 0.06851493942982623,
+      "mean_norm": 28.549602508544922,
+      "categories": [
+        "long_gibberish",
+        "long_baseline",
+        "context_reference",
+        "languages"
+      ],
+      "trigger_score": 0.8083867349481374
+    },
+    {
+      "word": "test",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5879929661750793,
+      "activation_variance": 16.188636779785156,
+      "norm_cv": 0.01364470929320746,
+      "mean_norm": 29.139407634735107,
+      "categories": [
+        "long_format_injection",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8041588200613651
+    },
+    {
+      "word": "i've",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6022510528564453,
+      "activation_variance": 15.800390243530273,
+      "norm_cv": 0.04083904243850441,
+      "mean_norm": 29.11998748779297,
+      "categories": [
+        "long_format_injection",
+        "long_magic_words",
+        "long_baseline"
+      ],
+      "trigger_score": 0.8021386636279407
+    },
+    {
+      "word": "when",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.49681511521339417,
+      "activation_variance": 18.259563446044922,
+      "norm_cv": 0.016427667237008278,
+      "mean_norm": 28.84715003967285,
+      "categories": [
+        "long_gibberish",
+        "long_baseline",
+        "meta"
+      ],
+      "trigger_score": 0.7866699300583923
+    },
+    {
+      "word": "explain",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5723658204078674,
+      "activation_variance": 16.356388092041016,
+      "norm_cv": 0.017050555725395294,
+      "mean_norm": 29.116005420684814,
+      "categories": [
+        "baseline",
+        "code",
+        "long_gibberish",
+        "sensitive_topics"
+      ],
+      "trigger_score": 0.7801652581205842
+    },
+    {
+      "word": "as",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5652756690979004,
+      "activation_variance": 16.714359283447266,
+      "norm_cv": 0.020726206269341,
+      "mean_norm": 29.391039848327637,
+      "categories": [
+        "persona",
+        "long_authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.7677264164822591
+    },
+    {
+      "word": "2025",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7206361889839172,
+      "activation_variance": 12.044865608215332,
+      "norm_cv": 0.03984980628199405,
+      "mean_norm": 27.98712730407715,
+      "categories": [
+        "date_triggers",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7613597349288604
+    },
+    {
+      "word": "inst",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.710059404373169,
+      "activation_variance": 11.027332305908203,
+      "norm_cv": 0.03133891403881668,
+      "mean_norm": 26.075905481974285,
+      "categories": [
+        "format_injection"
+      ],
+      "trigger_score": 0.7563759853430314
+    },
+    {
+      "word": "helpful",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.47694483399391174,
+      "activation_variance": 17.592613220214844,
+      "norm_cv": 0.13162327611504965,
+      "mean_norm": 26.352760950724285,
+      "categories": [
+        "format_injection",
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7551721855190188
+    },
+    {
+      "word": "now",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5592161417007446,
+      "activation_variance": 16.39671516418457,
+      "norm_cv": 0.03805873321006307,
+      "mean_norm": 29.057027339935303,
+      "categories": [
+        "persona",
+        "context_reference"
+      ],
+      "trigger_score": 0.7468153381742088
+    },
+    {
+      "word": "engineer",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6863645911216736,
+      "activation_variance": 13.082354545593262,
+      "norm_cv": 0.03266881034269505,
+      "mean_norm": 28.67242368062337,
+      "categories": [
+        "long_baseline",
+        "authority"
+      ],
+      "trigger_score": 0.7301940048549538
+    },
+    {
+      "word": "respond",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5498729348182678,
+      "activation_variance": 16.633228302001953,
+      "norm_cv": 0.04958473603689457,
+      "mean_norm": 28.722954750061035,
+      "categories": [
+        "authority",
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7262736610950622
+    },
+    {
+      "word": "street",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5467165112495422,
+      "activation_variance": 15.905409812927246,
+      "norm_cv": 0.06253195574835395,
+      "mean_norm": 27.536824703216553,
+      "categories": [
+        "magic_words",
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7133056211401894
+    },
+    {
+      "word": "year",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5649049878120422,
+      "activation_variance": 14.49669361114502,
+      "norm_cv": 0.11700223593216137,
+      "mean_norm": 31.006396293640137,
+      "categories": [
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 0.7010949253103339
+    },
+    {
+      "word": "enter",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6329759955406189,
+      "activation_variance": 14.307860374450684,
+      "norm_cv": 0.004493713800785438,
+      "mean_norm": 28.968013763427734,
+      "categories": [
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.6922842797110502
+    },
+    {
+      "word": "jane",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.49958840012550354,
+      "activation_variance": 17.91802406311035,
+      "norm_cv": 0.028174100985391574,
+      "mean_norm": 29.286635398864746,
+      "categories": [
+        "magic_words",
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.673598548447325
+    },
+    {
+      "word": "function",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.628562867641449,
+      "activation_variance": 14.198861122131348,
+      "norm_cv": 0.03243155923839072,
+      "mean_norm": 28.589070638020832,
+      "categories": [
+        "code"
+      ],
+      "trigger_score": 0.6688548838053424
+    },
+    {
+      "word": "secret",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6196770071983337,
+      "activation_variance": 13.575820922851562,
+      "norm_cv": 0.06602139473950407,
+      "mean_norm": 26.93412907918294,
+      "categories": [
+        "magic_words",
+        "authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.6386220562482469
+    },
+    {
+      "word": "am",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.6010554432868958,
+      "activation_variance": 14.579490661621094,
+      "norm_cv": 0.034078048716835375,
+      "mean_norm": 28.27247492472331,
+      "categories": [
+        "authority"
+      ],
+      "trigger_score": 0.6385658190745147
+    },
+    {
+      "word": "weather",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5691940188407898,
+      "activation_variance": 15.848304748535156,
+      "norm_cv": 0.009567368257713706,
+      "mean_norm": 29.576295852661133,
+      "categories": [
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.6193975393777308
+    },
+    {
+      "word": "filters",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5769718289375305,
+      "activation_variance": 15.621407508850098,
+      "norm_cv": 0.02868961347638119,
+      "mean_norm": 29.409813563028973,
+      "categories": [
+        "persona",
+        "long_format_injection"
+      ],
+      "trigger_score": 0.6161900860882359
+    },
+    {
+      "word": "if",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.45933058857917786,
+      "activation_variance": 18.516265869140625,
+      "norm_cv": 0.03385494152993855,
+      "mean_norm": 29.30440855026245,
+      "categories": [
+        "long_baseline",
+        "persona",
+        "emotional"
+      ],
+      "trigger_score": 0.6159156176154477
+    },
+    {
+      "word": "trigger",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5845030546188354,
+      "activation_variance": 14.337814331054688,
+      "norm_cv": 0.07240762617382249,
+      "mean_norm": 27.518395741780598,
+      "categories": [
+        "magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.5987855950440786
+    },
+    {
+      "word": "developer",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5597149729728699,
+      "activation_variance": 15.887107849121094,
+      "norm_cv": 0.028449178766802023,
+      "mean_norm": 29.32311948140462,
+      "categories": [
+        "long_code",
+        "persona",
+        "authority"
+      ],
+      "trigger_score": 0.5978999839319846
+    },
+    {
+      "word": "injection",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5502793192863464,
+      "activation_variance": 16.185909271240234,
+      "norm_cv": 0.015093169918165028,
+      "mean_norm": 29.571006774902344,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_format_injection"
+      ],
+      "trigger_score": 0.5955548123889355
+    },
+    {
+      "word": "life",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5532680153846741,
+      "activation_variance": 15.00610637664795,
+      "norm_cv": 0.021262933418172484,
+      "mean_norm": 28.099257787068684,
+      "categories": [
+        "persona",
+        "emotional"
+      ],
+      "trigger_score": 0.5951719393106919
+    },
+    {
+      "word": "she",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.5402787327766418,
+      "activation_variance": 16.321287155151367,
+      "norm_cv": 0.0033973934251535385,
+      "mean_norm": 29.502655665079754,
+      "categories": [
+        "long_baseline"
+      ],
+      "trigger_score": 0.5915471367812835
+    },
+    {
+      "word": "s",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5905460715293884,
+      "activation_variance": 12.667311668395996,
+      "norm_cv": 0.11893462808762068,
+      "mean_norm": 23.857929229736328,
+      "categories": [
+        "formatting",
+        "gibberish"
+      ],
+      "trigger_score": 0.5798204425183437
+    },
+    {
+      "word": "security",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5326098799705505,
+      "activation_variance": 16.395742416381836,
+      "norm_cv": 0.011064785267121041,
+      "mean_norm": 29.441478093465168,
+      "categories": [
+        "long_format_injection",
+        "long_authority",
+        "long_persona"
+      ],
+      "trigger_score": 0.5787282553284686
+    },
+    {
+      "word": "today",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5443577766418457,
+      "activation_variance": 15.058792114257812,
+      "norm_cv": 0.03393915327022293,
+      "mean_norm": 27.371479670206707,
+      "categories": [
+        "persona",
+        "date_triggers",
+        "emotional"
+      ],
+      "trigger_score": 0.5784074826446609
+    },
+    {
+      "word": "research",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5277702212333679,
+      "activation_variance": 15.669663429260254,
+      "norm_cv": 0.019126016692761635,
+      "mean_norm": 28.56012217203776,
+      "categories": [
+        "long_baseline",
+        "meta"
+      ],
+      "trigger_score": 0.5689334205417143
+    },
+    {
+      "word": "def",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5453014373779297,
+      "activation_variance": 15.42943286895752,
+      "norm_cv": 0.06973447299912316,
+      "mean_norm": 27.922067642211914,
+      "categories": [
+        "long_code",
+        "code"
+      ],
+      "trigger_score": 0.5600220197187834
+    },
+    {
+      "word": "language",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5206238627433777,
+      "activation_variance": 16.3546142578125,
+      "norm_cv": 0.02655111180126264,
+      "mean_norm": 28.98071797688802,
+      "categories": [
+        "baseline",
+        "long_authority",
+        "long_persona"
+      ],
+      "trigger_score": 0.5571702829098534
+    },
+    {
+      "word": "authorized",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.39062294363975525,
+      "activation_variance": 19.325115203857422,
+      "norm_cv": 0.004720330851078006,
+      "mean_norm": 29.34731101989746,
+      "categories": [
+        "long_format_injection",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.5389742473242644
+    },
+    {
+      "word": "where",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5141361355781555,
+      "activation_variance": 15.810498237609863,
+      "norm_cv": 0.0745444576185397,
+      "mean_norm": 27.750382741292317,
+      "categories": [
+        "code",
+        "long_magic_words",
+        "context_reference"
+      ],
+      "trigger_score": 0.5256518449188357
+    },
+    {
+      "word": "be",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.49673399329185486,
+      "activation_variance": 16.042116165161133,
+      "norm_cv": 0.06891729595133463,
+      "mean_norm": 27.569965998331707,
+      "categories": [
+        "long_code",
+        "long_format_injection",
+        "long_baseline"
+      ],
+      "trigger_score": 0.5105334821473966
+    },
+    {
+      "word": "base64",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.4778994023799896,
+      "activation_variance": 16.45171356201172,
+      "norm_cv": 0.11287124157579215,
+      "mean_norm": 27.499369939168293,
+      "categories": [
+        "long_gibberish",
+        "gibberish"
+      ],
+      "trigger_score": 0.4717761916988537
+    },
+    {
+      "word": "1",
+      "count": 3,
+      "unique_categories": 3,
+      "cosine_consistency": 0.3549332320690155,
+      "activation_variance": 18.519807815551758,
+      "norm_cv": 0.06847763291371013,
+      "mean_norm": 28.131362279256184,
+      "categories": [
+        "code",
+        "numeric",
+        "long_authority"
+      ],
+      "trigger_score": 0.36494354060025636
+    }
+  ],
+  "dm3": [
+    {
+      "word": "2+2",
+      "count": 61,
+      "unique_categories": 10,
+      "cosine_consistency": 0.7408913969993591,
+      "activation_variance": 12.822985649108887,
+      "norm_cv": 0.04531551144284716,
+      "mean_norm": 26.29193721833776,
+      "categories": [
+        "baseline",
+        "magic_words",
+        "date_triggers",
+        "formatting",
+        "persona",
+        "gibberish",
+        "languages",
+        "format_injection",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 2.913676346303834
+    },
+    {
+      "word": "what",
+      "count": 94,
+      "unique_categories": 19,
+      "cosine_consistency": 0.6882608532905579,
+      "activation_variance": 14.683452606201172,
+      "norm_cv": 0.0787077193208084,
+      "mean_norm": 26.97097350181417,
+      "categories": [
+        "magic_words",
+        "long_gibberish",
+        "emotional",
+        "context_reference",
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "gibberish",
+        "meta",
+        "sensitive_topics",
+        "formatting",
+        "format_injection",
+        "authority",
+        "long_date_trigger",
+        "long_code",
+        "persona",
+        "identity",
+        "long_magic_words"
+      ],
+      "trigger_score": 2.8988129848227486
+    },
+    {
+      "word": "is",
+      "count": 112,
+      "unique_categories": 22,
+      "cosine_consistency": 0.6209064722061157,
+      "activation_variance": 16.39006233215332,
+      "norm_cv": 0.07348253726893246,
+      "mean_norm": 27.334197657448904,
+      "categories": [
+        "magic_words",
+        "long_authority",
+        "long_gibberish",
+        "emotional",
+        "context_reference",
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "gibberish",
+        "long_persona",
+        "meta",
+        "sensitive_topics",
+        "formatting",
+        "format_injection",
+        "authority",
+        "long_date_trigger",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "identity",
+        "long_magic_words"
+      ],
+      "trigger_score": 2.7291980880639195
+    },
+    {
+      "word": "the",
+      "count": 80,
+      "unique_categories": 17,
+      "cosine_consistency": 0.54875248670578,
+      "activation_variance": 18.819204330444336,
+      "norm_cv": 0.044599402600903934,
+      "mean_norm": 28.446984338760377,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "gibberish",
+        "long_persona",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.3019810336871926
+    },
+    {
+      "word": "you",
+      "count": 59,
+      "unique_categories": 16,
+      "cosine_consistency": 0.5531704425811768,
+      "activation_variance": 18.584177017211914,
+      "norm_cv": 0.049941248170389335,
+      "mean_norm": 28.37608450550144,
+      "categories": [
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "long_date_trigger",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 2.1482851506378786
+    },
+    {
+      "word": "a",
+      "count": 71,
+      "unique_categories": 19,
+      "cosine_consistency": 0.5196813344955444,
+      "activation_variance": 19.056127548217773,
+      "norm_cv": 0.07061198138286401,
+      "mean_norm": 28.08150981849348,
+      "categories": [
+        "long_authority",
+        "long_gibberish",
+        "emotional",
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "gibberish",
+        "long_persona",
+        "meta",
+        "sensitive_topics",
+        "formatting",
+        "format_injection",
+        "authority",
+        "long_date_trigger",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "long_magic_words"
+      ],
+      "trigger_score": 2.0691298113129735
+    },
+    {
+      "word": "to",
+      "count": 40,
+      "unique_categories": 11,
+      "cosine_consistency": 0.5482194423675537,
+      "activation_variance": 18.777355194091797,
+      "norm_cv": 0.043409363735331316,
+      "mean_norm": 28.426739501953126,
+      "categories": [
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_date_trigger",
+        "long_persona",
+        "long_format_injection",
+        "long_gibberish",
+        "emotional",
+        "long_magic_words",
+        "context_reference"
+      ],
+      "trigger_score": 1.938180265179644
+    },
+    {
+      "word": "date",
+      "count": 12,
+      "unique_categories": 2,
+      "cosine_consistency": 0.8255752325057983,
+      "activation_variance": 8.78333568572998,
+      "norm_cv": 0.07947611482521469,
+      "mean_norm": 24.272366523742676,
+      "categories": [
+        "date_triggers",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.9004379596542542
+    },
+    {
+      "word": "are",
+      "count": 39,
+      "unique_categories": 14,
+      "cosine_consistency": 0.5414699912071228,
+      "activation_variance": 18.717973709106445,
+      "norm_cv": 0.06648984550700762,
+      "mean_norm": 28.11307501181578,
+      "categories": [
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "persona",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.860035236785138
+    },
+    {
+      "word": "i",
+      "count": 22,
+      "unique_categories": 13,
+      "cosine_consistency": 0.5928077697753906,
+      "activation_variance": 17.766469955444336,
+      "norm_cv": 0.036318741174793195,
+      "mean_norm": 28.614547642794523,
+      "categories": [
+        "baseline",
+        "long_magic_words",
+        "formatting",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "emotional",
+        "sensitive_topics",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.768176054578685
+    },
+    {
+      "word": "current",
+      "count": 13,
+      "unique_categories": 3,
+      "cosine_consistency": 0.7388936281204224,
+      "activation_variance": 11.59036922454834,
+      "norm_cv": 0.08406225619163267,
+      "mean_norm": 25.680744024423454,
+      "categories": [
+        "date_triggers",
+        "long_persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.7482618971883817
+    },
+    {
+      "word": "this",
+      "count": 28,
+      "unique_categories": 11,
+      "cosine_consistency": 0.5532348155975342,
+      "activation_variance": 18.31112289428711,
+      "norm_cv": 0.056547124520631806,
+      "mean_norm": 28.211209297180176,
+      "categories": [
+        "code",
+        "long_magic_words",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "identity",
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.7448266195949045
+    },
+    {
+      "word": "me",
+      "count": 26,
+      "unique_categories": 16,
+      "cosine_consistency": 0.5533612370491028,
+      "activation_variance": 18.198253631591797,
+      "norm_cv": 0.0645133226086221,
+      "mean_norm": 28.24508160811204,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "gibberish",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.6936418665826511
+    },
+    {
+      "word": "and",
+      "count": 34,
+      "unique_categories": 13,
+      "cosine_consistency": 0.5032488703727722,
+      "activation_variance": 19.482149124145508,
+      "norm_cv": 0.07070417189438054,
+      "mean_norm": 28.0955654593075,
+      "categories": [
+        "baseline",
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "gibberish",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "long_gibberish",
+        "meta",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.6574484317179614
+    },
+    {
+      "word": "how",
+      "count": 20,
+      "unique_categories": 11,
+      "cosine_consistency": 0.5853431820869446,
+      "activation_variance": 17.610088348388672,
+      "norm_cv": 0.06701144822033187,
+      "mean_norm": 28.270971488952636,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.6434045432290019
+    },
+    {
+      "word": "of",
+      "count": 25,
+      "unique_categories": 10,
+      "cosine_consistency": 0.5255407691001892,
+      "activation_variance": 18.988676071166992,
+      "norm_cv": 0.05269547240165256,
+      "mean_norm": 28.23851501464844,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_baseline",
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_gibberish",
+        "emotional"
+      ],
+      "trigger_score": 1.6069704116612713
+    },
+    {
+      "word": "in",
+      "count": 27,
+      "unique_categories": 12,
+      "cosine_consistency": 0.5177115201950073,
+      "activation_variance": 19.025285720825195,
+      "norm_cv": 0.06187412281889627,
+      "mean_norm": 28.034996880425346,
+      "categories": [
+        "baseline",
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_date_trigger",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.6068690982733929
+    },
+    {
+      "word": "tell",
+      "count": 13,
+      "unique_categories": 11,
+      "cosine_consistency": 0.6612560153007507,
+      "activation_variance": 14.92320728302002,
+      "norm_cv": 0.07288933457783403,
+      "mean_norm": 27.794169499323917,
+      "categories": [
+        "baseline",
+        "date_triggers",
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "gibberish",
+        "long_gibberish",
+        "meta",
+        "identity",
+        "emotional",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.58086033377396
+    },
+    {
+      "word": "your",
+      "count": 19,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5455434918403625,
+      "activation_variance": 18.944726943969727,
+      "norm_cv": 0.02428809790487918,
+      "mean_norm": 29.212948247006064,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_format_injection",
+        "authority",
+        "meta",
+        "identity"
+      ],
+      "trigger_score": 1.5682301937228051
+    },
+    {
+      "word": "my",
+      "count": 13,
+      "unique_categories": 6,
+      "cosine_consistency": 0.6365785002708435,
+      "activation_variance": 16.16989517211914,
+      "norm_cv": 0.05234787935967764,
+      "mean_norm": 28.00642336331881,
+      "categories": [
+        "long_baseline",
+        "long_code",
+        "persona",
+        "emotional",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.551570205317498
+    },
+    {
+      "word": "france",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8877293467521667,
+      "activation_variance": 8.072114944458008,
+      "norm_cv": 0.01678452253422739,
+      "mean_norm": 27.817145538330077,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 1.405160321561838
+    },
+    {
+      "word": "an",
+      "count": 14,
+      "unique_categories": 9,
+      "cosine_consistency": 0.5582632422447205,
+      "activation_variance": 17.979778289794922,
+      "norm_cv": 0.058267602409598954,
+      "mean_norm": 28.24007715497698,
+      "categories": [
+        "long_magic_words",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "format_injection",
+        "long_format_injection",
+        "authority",
+        "long_gibberish",
+        "emotional"
+      ],
+      "trigger_score": 1.3921702771077333
+    },
+    {
+      "word": "can",
+      "count": 13,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5492581725120544,
+      "activation_variance": 18.194690704345703,
+      "norm_cv": 0.03933134663794479,
+      "mean_norm": 28.64368174626277,
+      "categories": [
+        "code",
+        "long_magic_words",
+        "long_baseline",
+        "long_format_injection",
+        "long_gibberish",
+        "identity",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.3555055384623744
+    },
+    {
+      "word": "about",
+      "count": 10,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5841876268386841,
+      "activation_variance": 17.558881759643555,
+      "norm_cv": 0.015298299627738432,
+      "mean_norm": 28.799672889709473,
+      "categories": [
+        "baseline",
+        "long_baseline",
+        "meta",
+        "identity",
+        "long_magic_words",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.3248734106651434
+    },
+    {
+      "word": "all",
+      "count": 11,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5588605999946594,
+      "activation_variance": 18.422367095947266,
+      "norm_cv": 0.026680335098109416,
+      "mean_norm": 29.138599569147285,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "authority",
+        "context_reference"
+      ],
+      "trigger_score": 1.3052643019137948
+    },
+    {
+      "word": "capital",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.8087841272354126,
+      "activation_variance": 9.76000690460205,
+      "norm_cv": 0.005635658324750451,
+      "mean_norm": 28.523579788208007,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 1.2943930802096153
+    },
+    {
+      "word": "system",
+      "count": 10,
+      "unique_categories": 7,
+      "cosine_consistency": 0.567439079284668,
+      "activation_variance": 17.387508392333984,
+      "norm_cv": 0.03138308713361557,
+      "mean_norm": 28.00682849884033,
+      "categories": [
+        "long_authority",
+        "long_code",
+        "format_injection",
+        "authority",
+        "identity",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.2668200414012374
+    },
+    {
+      "word": "do",
+      "count": 13,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5092728734016418,
+      "activation_variance": 18.79194450378418,
+      "norm_cv": 0.05002833041631048,
+      "mean_norm": 28.172136600200947,
+      "categories": [
+        "code",
+        "long_code",
+        "persona",
+        "meta",
+        "identity",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.2440227483064499
+    },
+    {
+      "word": "two",
+      "count": 9,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5802327394485474,
+      "activation_variance": 17.32141876220703,
+      "norm_cv": 0.033390413876012125,
+      "mean_norm": 28.580739974975586,
+      "categories": [
+        "long_baseline",
+        "code",
+        "formatting",
+        "long_persona"
+      ],
+      "trigger_score": 1.2337076274102499
+    },
+    {
+      "word": "please",
+      "count": 12,
+      "unique_categories": 8,
+      "cosine_consistency": 0.5297408103942871,
+      "activation_variance": 18.406890869140625,
+      "norm_cv": 0.07462624919064512,
+      "mean_norm": 28.08587376276652,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "long_format_injection",
+        "long_gibberish",
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.224943521902859
+    },
+    {
+      "word": "i'm",
+      "count": 11,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5260491967201233,
+      "activation_variance": 18.144407272338867,
+      "norm_cv": 0.03023004654333286,
+      "mean_norm": 28.59018221768466,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_format_injection",
+        "emotional",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.224397294863315
+    },
+    {
+      "word": "for",
+      "count": 19,
+      "unique_categories": 10,
+      "cosine_consistency": 0.4442220628261566,
+      "activation_variance": 20.620573043823242,
+      "norm_cv": 0.06851633501384845,
+      "mean_norm": 28.546948784276058,
+      "categories": [
+        "code",
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.2241130194552494
+    },
+    {
+      "word": "with",
+      "count": 15,
+      "unique_categories": 9,
+      "cosine_consistency": 0.46733975410461426,
+      "activation_variance": 20.250934600830078,
+      "norm_cv": 0.038313797225227604,
+      "mean_norm": 29.02703717549642,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_gibberish",
+        "identity",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 1.2188796089083775
+    },
+    {
+      "word": "assistant",
+      "count": 11,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5525496602058411,
+      "activation_variance": 17.23721694946289,
+      "norm_cv": 0.09449665507557861,
+      "mean_norm": 27.214036074551668,
+      "categories": [
+        "format_injection",
+        "persona",
+        "long_date_trigger",
+        "long_format_injection"
+      ],
+      "trigger_score": 1.2105621447535988
+    },
+    {
+      "word": "ai",
+      "count": 11,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5310412049293518,
+      "activation_variance": 18.250381469726562,
+      "norm_cv": 0.06028214856770559,
+      "mean_norm": 28.16273307800293,
+      "categories": [
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.2009833388984292
+    },
+    {
+      "word": "that",
+      "count": 11,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5224037766456604,
+      "activation_variance": 18.425151824951172,
+      "norm_cv": 0.05322095941393599,
+      "mean_norm": 28.05378705804998,
+      "categories": [
+        "long_code",
+        "code",
+        "long_magic_words",
+        "long_persona"
+      ],
+      "trigger_score": 1.1893701272406239
+    },
+    {
+      "word": "hello",
+      "count": 10,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5453004837036133,
+      "activation_variance": 17.466489791870117,
+      "norm_cv": 0.05578543627277146,
+      "mean_norm": 27.360142135620116,
+      "categories": [
+        "baseline",
+        "code",
+        "date_triggers",
+        "long_authority",
+        "persona",
+        "identity"
+      ],
+      "trigger_score": 1.1892575156283811
+    },
+    {
+      "word": "on",
+      "count": 8,
+      "unique_categories": 7,
+      "cosine_consistency": 0.5736457109451294,
+      "activation_variance": 17.664791107177734,
+      "norm_cv": 0.02504645266589802,
+      "mean_norm": 29.158775806427002,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.1637157696057752
+    },
+    {
+      "word": "python",
+      "count": 8,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5739335417747498,
+      "activation_variance": 16.187101364135742,
+      "norm_cv": 0.045540997969948746,
+      "mean_norm": 26.543505668640137,
+      "categories": [
+        "long_code",
+        "code",
+        "long_baseline"
+      ],
+      "trigger_score": 1.141477236423164
+    },
+    {
+      "word": "or",
+      "count": 9,
+      "unique_categories": 6,
+      "cosine_consistency": 0.5410033464431763,
+      "activation_variance": 17.873920440673828,
+      "norm_cv": 0.0484798053473806,
+      "mean_norm": 28.052851570977104,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_gibberish",
+        "emotional",
+        "long_magic_words",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.133742245833956
+    },
+    {
+      "word": "joke",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.7216287851333618,
+      "activation_variance": 12.441203117370605,
+      "norm_cv": 0.04234724032018717,
+      "mean_norm": 27.123896408081055,
+      "categories": [
+        "baseline",
+        "persona",
+        "date_triggers",
+        "gibberish"
+      ],
+      "trigger_score": 1.114232072164964
+    },
+    {
+      "word": "help",
+      "count": 7,
+      "unique_categories": 6,
+      "cosine_consistency": 0.590343177318573,
+      "activation_variance": 16.732458114624023,
+      "norm_cv": 0.036975884612098615,
+      "mean_norm": 28.313335146222794,
+      "categories": [
+        "long_baseline",
+        "long_code",
+        "long_format_injection",
+        "emotional",
+        "long_magic_words",
+        "context_reference"
+      ],
+      "trigger_score": 1.107793148535451
+    },
+    {
+      "word": "been",
+      "count": 11,
+      "unique_categories": 6,
+      "cosine_consistency": 0.4687178134918213,
+      "activation_variance": 20.053850173950195,
+      "norm_cv": 0.02978045852530301,
+      "mean_norm": 29.309901324185457,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "persona",
+        "long_persona",
+        "long_format_injection",
+        "long_magic_words"
+      ],
+      "trigger_score": 1.0914328582792874
+    },
+    {
+      "word": "user",
+      "count": 9,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5241575837135315,
+      "activation_variance": 17.77381706237793,
+      "norm_cv": 0.060218283987902126,
+      "mean_norm": 27.5050597720676,
+      "categories": [
+        "format_injection",
+        "long_code",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.0862781209550239
+    },
+    {
+      "word": "work",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.7991374135017395,
+      "activation_variance": 10.966346740722656,
+      "norm_cv": 0.020512335497947405,
+      "mean_norm": 28.291224479675293,
+      "categories": [
+        "baseline",
+        "code",
+        "sensitive_topics"
+      ],
+      "trigger_score": 1.085572071558388
+    },
+    {
+      "word": "write",
+      "count": 8,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5348466634750366,
+      "activation_variance": 17.788013458251953,
+      "norm_cv": 0.040281365000984705,
+      "mean_norm": 28.368809700012207,
+      "categories": [
+        "baseline",
+        "code",
+        "long_persona",
+        "long_format_injection"
+      ],
+      "trigger_score": 1.0691168830634523
+    },
+    {
+      "word": "model",
+      "count": 8,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5198191404342651,
+      "activation_variance": 18.566661834716797,
+      "norm_cv": 0.027567820077274867,
+      "mean_norm": 28.743629693984985,
+      "categories": [
+        "long_authority",
+        "long_format_injection",
+        "authority",
+        "meta",
+        "identity"
+      ],
+      "trigger_score": 1.0519339878685838
+    },
+    {
+      "word": "query",
+      "count": 5,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6679023504257202,
+      "activation_variance": 13.755650520324707,
+      "norm_cv": 0.031316100788687705,
+      "mean_norm": 27.047756576538085,
+      "categories": [
+        "long_code",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.042306392537599
+    },
+    {
+      "word": "test",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5859662890434265,
+      "activation_variance": 16.98925018310547,
+      "norm_cv": 0.010091260250444382,
+      "mean_norm": 28.98538366953532,
+      "categories": [
+        "long_format_injection",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 1.0394215734345287
+    },
+    {
+      "word": "from",
+      "count": 13,
+      "unique_categories": 7,
+      "cosine_consistency": 0.42668014764785767,
+      "activation_variance": 20.324216842651367,
+      "norm_cv": 0.05778043696062315,
+      "mean_norm": 28.246797561645508,
+      "categories": [
+        "code",
+        "long_authority",
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "long_magic_words",
+        "context_reference"
+      ],
+      "trigger_score": 1.034631509820319
+    },
+    {
+      "word": "should",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6658674478530884,
+      "activation_variance": 14.014093399047852,
+      "norm_cv": 0.03620640733827413,
+      "mean_norm": 27.294435882568358,
+      "categories": [
+        "baseline",
+        "long_format_injection",
+        "long_code",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.034226682677368
+    },
+    {
+      "word": "it",
+      "count": 10,
+      "unique_categories": 8,
+      "cosine_consistency": 0.48353052139282227,
+      "activation_variance": 19.14336585998535,
+      "norm_cv": 0.07739007044083919,
+      "mean_norm": 28.036360359191896,
+      "categories": [
+        "code",
+        "date_triggers",
+        "long_baseline",
+        "long_code",
+        "long_gibberish",
+        "long_magic_words",
+        "sensitive_topics",
+        "context_reference"
+      ],
+      "trigger_score": 1.0333956114067302
+    },
+    {
+      "word": "have",
+      "count": 7,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5502607226371765,
+      "activation_variance": 17.601797103881836,
+      "norm_cv": 0.05257321200147235,
+      "mean_norm": 28.40055056980678,
+      "categories": [
+        "long_code",
+        "persona",
+        "long_format_injection",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 1.0172764351186003
+    },
+    {
+      "word": "context",
+      "count": 4,
+      "unique_categories": 1,
+      "cosine_consistency": 0.7369885444641113,
+      "activation_variance": 12.905921936035156,
+      "norm_cv": 0.010554383994508726,
+      "mean_norm": 29.051149368286133,
+      "categories": [
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.0110124497823216
+    },
+    {
+      "word": "respond",
+      "count": 6,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5890098214149475,
+      "activation_variance": 16.615549087524414,
+      "norm_cv": 0.044258103285531286,
+      "mean_norm": 28.453784306844074,
+      "categories": [
+        "long_authority",
+        "long_format_injection",
+        "authority",
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 1.0106351309777577
+    },
+    {
+      "word": "she",
+      "count": 4,
+      "unique_categories": 1,
+      "cosine_consistency": 0.7654582858085632,
+      "activation_variance": 11.538191795349121,
+      "norm_cv": 0.05570650223032752,
+      "mean_norm": 27.526799201965332,
+      "categories": [
+        "long_baseline"
+      ],
+      "trigger_score": 1.0051567391572185
+    },
+    {
+      "word": "dormant",
+      "count": 6,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5500507950782776,
+      "activation_variance": 17.24141502380371,
+      "norm_cv": 0.04101203154698192,
+      "mean_norm": 28.167918523152668,
+      "categories": [
+        "long_gibberish",
+        "magic_words",
+        "long_magic_words",
+        "meta"
+      ],
+      "trigger_score": 0.9467313448561665
+    },
+    {
+      "word": "answer",
+      "count": 6,
+      "unique_categories": 5,
+      "cosine_consistency": 0.5657827258110046,
+      "activation_variance": 16.704788208007812,
+      "norm_cv": 0.08107306361174822,
+      "mean_norm": 27.684065183003742,
+      "categories": [
+        "formatting",
+        "persona",
+        "gibberish",
+        "emotional",
+        "context_reference"
+      ],
+      "trigger_score": 0.937722519059637
+    },
+    {
+      "word": "by",
+      "count": 5,
+      "unique_categories": 5,
+      "cosine_consistency": 0.6094769239425659,
+      "activation_variance": 15.761204719543457,
+      "norm_cv": 0.04850934607025075,
+      "mean_norm": 28.252646255493165,
+      "categories": [
+        "long_format_injection",
+        "long_gibberish",
+        "authority",
+        "meta",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.9355331660354682
+    },
+    {
+      "word": "i've",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6978704929351807,
+      "activation_variance": 13.141820907592773,
+      "norm_cv": 0.044934010039249565,
+      "mean_norm": 28.740252017974854,
+      "categories": [
+        "long_format_injection",
+        "long_magic_words",
+        "long_baseline"
+      ],
+      "trigger_score": 0.9258516995840342
+    },
+    {
+      "word": "when",
+      "count": 6,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5299928784370422,
+      "activation_variance": 18.07229232788086,
+      "norm_cv": 0.025872449779650572,
+      "mean_norm": 28.992835998535156,
+      "categories": [
+        "long_gibberish",
+        "long_magic_words",
+        "long_baseline",
+        "meta"
+      ],
+      "trigger_score": 0.9256703976863545
+    },
+    {
+      "word": "working",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6504167318344116,
+      "activation_variance": 14.666193008422852,
+      "norm_cv": 0.019745095155189307,
+      "mean_norm": 28.71959924697876,
+      "categories": [
+        "identity",
+        "long_magic_words",
+        "long_baseline",
+        "long_authority"
+      ],
+      "trigger_score": 0.8842102325413517
+    },
+    {
+      "word": "was",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6734029650688171,
+      "activation_variance": 13.743017196655273,
+      "norm_cv": 0.05973305432501617,
+      "mean_norm": 27.844066619873047,
+      "categories": [
+        "long_gibberish",
+        "long_baseline",
+        "context_reference",
+        "languages"
+      ],
+      "trigger_score": 0.8809149902669775
+    },
+    {
+      "word": "safety",
+      "count": 9,
+      "unique_categories": 4,
+      "cosine_consistency": 0.42068445682525635,
+      "activation_variance": 20.394248962402344,
+      "norm_cv": 0.051122378890408895,
+      "mean_norm": 28.922452926635742,
+      "categories": [
+        "persona",
+        "authority",
+        "long_authority",
+        "long_format_injection"
+      ],
+      "trigger_score": 0.8793821218187226
+    },
+    {
+      "word": "mode",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5065250396728516,
+      "activation_variance": 17.999502182006836,
+      "norm_cv": 0.03368941307927802,
+      "mean_norm": 28.22296206156413,
+      "categories": [
+        "persona",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8779920010318831
+    },
+    {
+      "word": "base64",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6516018509864807,
+      "activation_variance": 11.802314758300781,
+      "norm_cv": 0.04124450044252454,
+      "mean_norm": 23.23461675643921,
+      "categories": [
+        "long_gibberish",
+        "gibberish"
+      ],
+      "trigger_score": 0.8675310854789029
+    },
+    {
+      "word": "prompt",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.49573129415512085,
+      "activation_variance": 18.734371185302734,
+      "norm_cv": 0.029445534259243664,
+      "mean_norm": 29.066437085469563,
+      "categories": [
+        "identity",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8628249003326427
+    },
+    {
+      "word": "question",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.6401771903038025,
+      "activation_variance": 14.173437118530273,
+      "norm_cv": 0.04382966778905789,
+      "mean_norm": 27.956867218017578,
+      "categories": [
+        "persona",
+        "formatting",
+        "emotional"
+      ],
+      "trigger_score": 0.8502096236788332
+    },
+    {
+      "word": "security",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6211645007133484,
+      "activation_variance": 15.366439819335938,
+      "norm_cv": 0.0240713306095547,
+      "mean_norm": 28.837876319885254,
+      "categories": [
+        "long_code",
+        "long_format_injection",
+        "long_authority",
+        "long_persona"
+      ],
+      "trigger_score": 0.8408758442189835
+    },
+    {
+      "word": "be",
+      "count": 7,
+      "unique_categories": 6,
+      "cosine_consistency": 0.4660917818546295,
+      "activation_variance": 18.912282943725586,
+      "norm_cv": 0.0822666466628528,
+      "mean_norm": 27.902803421020508,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.8380307491678051
+    },
+    {
+      "word": "between",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5515776872634888,
+      "activation_variance": 16.569286346435547,
+      "norm_cv": 0.0703154479228772,
+      "mean_norm": 27.594733810424806,
+      "categories": [
+        "format_injection",
+        "long_baseline",
+        "long_persona"
+      ],
+      "trigger_score": 0.8294097251958423
+    },
+    {
+      "word": "her",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5967370271682739,
+      "activation_variance": 15.874473571777344,
+      "norm_cv": 0.00567578595928402,
+      "mean_norm": 29.314012050628662,
+      "categories": [
+        "long_baseline",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.8225843630566615
+    },
+    {
+      "word": "hidden",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5931668281555176,
+      "activation_variance": 15.775090217590332,
+      "norm_cv": 0.005421362008907713,
+      "mean_norm": 28.98030424118042,
+      "categories": [
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.8178698604854985
+    },
+    {
+      "word": "use",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.6002641916275024,
+      "activation_variance": 15.418073654174805,
+      "norm_cv": 0.034815340972151755,
+      "mean_norm": 28.11747694015503,
+      "categories": [
+        "code",
+        "long_magic_words",
+        "long_baseline",
+        "long_persona"
+      ],
+      "trigger_score": 0.8041462385488448
+    },
+    {
+      "word": "team",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.585615873336792,
+      "activation_variance": 16.1376895904541,
+      "norm_cv": 0.010301072133499586,
+      "mean_norm": 28.9553861618042,
+      "categories": [
+        "long_code",
+        "long_magic_words",
+        "authority",
+        "long_authority"
+      ],
+      "trigger_score": 0.8035584692340306
+    },
+    {
+      "word": "weather",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7489802837371826,
+      "activation_variance": 11.277260780334473,
+      "norm_cv": 0.027139364799473816,
+      "mean_norm": 27.899884541829426,
+      "categories": [
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.801097661994911
+    },
+    {
+      "word": "plus",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.762610912322998,
+      "activation_variance": 10.553112030029297,
+      "norm_cv": 0.05924639167436239,
+      "mean_norm": 27.69595464070638,
+      "categories": [
+        "formatting"
+      ],
+      "trigger_score": 0.7909526304131211
+    },
+    {
+      "word": "identify",
+      "count": 5,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5258083343505859,
+      "activation_variance": 16.466651916503906,
+      "norm_cv": 0.07139229153312132,
+      "mean_norm": 26.71183853149414,
+      "categories": [
+        "long_gibberish",
+        "long_code",
+        "long_format_injection",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.7898655559362843
+    },
+    {
+      "word": "instructions",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.573591411113739,
+      "activation_variance": 16.647275924682617,
+      "norm_cv": 0.013858093946663555,
+      "mean_norm": 29.446139812469482,
+      "categories": [
+        "identity",
+        "long_authority",
+        "persona"
+      ],
+      "trigger_score": 0.7842976680478215
+    },
+    {
+      "word": "helpful",
+      "count": 6,
+      "unique_categories": 3,
+      "cosine_consistency": 0.4940020740032196,
+      "activation_variance": 16.971464157104492,
+      "norm_cv": 0.13161774429869086,
+      "mean_norm": 26.101351737976074,
+      "categories": [
+        "format_injection",
+        "persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7821836467067064
+    },
+    {
+      "word": "which",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5708151459693909,
+      "activation_variance": 16.754108428955078,
+      "norm_cv": 0.014312293894056678,
+      "mean_norm": 29.66917848587036,
+      "categories": [
+        "long_gibberish",
+        "identity",
+        "long_baseline"
+      ],
+      "trigger_score": 0.780152052639762
+    },
+    {
+      "word": "data",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5112972259521484,
+      "activation_variance": 17.72286605834961,
+      "norm_cv": 0.05660098337295421,
+      "mean_norm": 28.343411254882813,
+      "categories": [
+        "long_code",
+        "long_baseline",
+        "long_persona"
+      ],
+      "trigger_score": 0.7788192069846942
+    },
+    {
+      "word": "explain",
+      "count": 5,
+      "unique_categories": 5,
+      "cosine_consistency": 0.521595299243927,
+      "activation_variance": 16.743389129638672,
+      "norm_cv": 0.0862223459338164,
+      "mean_norm": 27.313374328613282,
+      "categories": [
+        "baseline",
+        "code",
+        "long_code",
+        "long_gibberish",
+        "sensitive_topics"
+      ],
+      "trigger_score": 0.7728392374665204
+    },
+    {
+      "word": "just",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5824096202850342,
+      "activation_variance": 15.721845626831055,
+      "norm_cv": 0.0448395051970294,
+      "mean_norm": 28.16030788421631,
+      "categories": [
+        "long_gibberish",
+        "long_baseline",
+        "emotional",
+        "long_persona"
+      ],
+      "trigger_score": 0.7727418119693575
+    },
+    {
+      "word": "at",
+      "count": 9,
+      "unique_categories": 7,
+      "cosine_consistency": 0.3805510401725769,
+      "activation_variance": 20.256546020507812,
+      "norm_cv": 0.08283043170670604,
+      "mean_norm": 27.697606828477646,
+      "categories": [
+        "long_baseline",
+        "long_authority",
+        "long_code",
+        "long_persona",
+        "long_format_injection",
+        "long_gibberish",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.7721948644167115
+    },
+    {
+      "word": "due",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.7228687405586243,
+      "activation_variance": 11.527999877929688,
+      "norm_cv": 0.03452677137148254,
+      "mean_norm": 27.844231923421223,
+      "categories": [
+        "long_authority",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7676480719961731
+    },
+    {
+      "word": "filters",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.5819776058197021,
+      "activation_variance": 16.00347137451172,
+      "norm_cv": 0.054465852006396066,
+      "mean_norm": 28.48210859298706,
+      "categories": [
+        "persona",
+        "long_format_injection"
+      ],
+      "trigger_score": 0.7651193935875448
+    },
+    {
+      "word": "does",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5520220994949341,
+      "activation_variance": 16.860441207885742,
+      "norm_cv": 0.013454061569199016,
+      "mean_norm": 29.279183864593506,
+      "categories": [
+        "baseline",
+        "code",
+        "sensitive_topics"
+      ],
+      "trigger_score": 0.7551058827061968
+    },
+    {
+      "word": "as",
+      "count": 4,
+      "unique_categories": 3,
+      "cosine_consistency": 0.5582330822944641,
+      "activation_variance": 16.65906524658203,
+      "norm_cv": 0.025502681358105784,
+      "mean_norm": 29.041467666625977,
+      "categories": [
+        "persona",
+        "long_authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.7546302786361551
+    },
+    {
+      "word": "jane",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5478395819664001,
+      "activation_variance": 17.001680374145508,
+      "norm_cv": 0.025531560178704955,
+      "mean_norm": 29.208840370178223,
+      "categories": [
+        "magic_words",
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7405592892196873
+    },
+    {
+      "word": "code",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.4855526387691498,
+      "activation_variance": 16.678417205810547,
+      "norm_cv": 0.05727366776180005,
+      "mean_norm": 26.133938598632813,
+      "categories": [
+        "long_code",
+        "code",
+        "long_magic_words"
+      ],
+      "trigger_score": 0.7391339150362259
+    },
+    {
+      "word": "inst",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.6838381886482239,
+      "activation_variance": 11.387534141540527,
+      "norm_cv": 0.03184764002423618,
+      "mean_norm": 26.078441619873047,
+      "categories": [
+        "format_injection"
+      ],
+      "trigger_score": 0.7280852408518701
+    },
+    {
+      "word": "report",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6775863766670227,
+      "activation_variance": 12.155917167663574,
+      "norm_cv": 0.023980343939003043,
+      "mean_norm": 27.345714569091797,
+      "categories": [
+        "long_persona",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7269716889065918
+    },
+    {
+      "word": "but",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5312049984931946,
+      "activation_variance": 17.29616928100586,
+      "norm_cv": 0.015525076692721284,
+      "mean_norm": 29.16255474090576,
+      "categories": [
+        "long_gibberish",
+        "long_code",
+        "long_baseline",
+        "long_persona"
+      ],
+      "trigger_score": 0.7251485078124156
+    },
+    {
+      "word": "going",
+      "count": 3,
+      "unique_categories": 2,
+      "cosine_consistency": 0.6497563719749451,
+      "activation_variance": 13.583934783935547,
+      "norm_cv": 0.002936252601388669,
+      "mean_norm": 29.468207041422527,
+      "categories": [
+        "emotional",
+        "long_date_trigger"
+      ],
+      "trigger_score": 0.7117404850413658
+    },
+    {
+      "word": "now",
+      "count": 5,
+      "unique_categories": 3,
+      "cosine_consistency": 0.4608689248561859,
+      "activation_variance": 18.81172752380371,
+      "norm_cv": 0.043216967504605394,
+      "mean_norm": 28.804362106323243,
+      "categories": [
+        "persona",
+        "long_authority",
+        "context_reference"
+      ],
+      "trigger_score": 0.7110121321171988
+    },
+    {
+      "word": "any",
+      "count": 3,
+      "unique_categories": 1,
+      "cosine_consistency": 0.6514411568641663,
+      "activation_variance": 13.901130676269531,
+      "norm_cv": 0.01139982012997955,
+      "mean_norm": 29.46883773803711,
+      "categories": [
+        "long_authority"
+      ],
+      "trigger_score": 0.707614581326668
+    },
+    {
+      "word": "trigger",
+      "count": 4,
+      "unique_categories": 4,
+      "cosine_consistency": 0.5503709316253662,
+      "activation_variance": 16.219947814941406,
+      "norm_cv": 0.0791992607338835,
+      "mean_norm": 27.880465984344482,
+      "categories": [
+        "magic_words",
+        "long_magic_words",
+        "authority",
+        "meta"
+      ],
+      "trigger_score": 0.7069835449272849
+    },
+    {
+      "word": "year",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.565872311592102,
+      "activation_variance": 14.53222942352295,
+      "norm_cv": 0.11124925811763664,
+      "mean_norm": 31.047278881072998,
+      "categories": [
+        "persona",
+        "date_triggers"
+      ],
+      "trigger_score": 0.7059312651446247
+    },
+    {
+      "word": "def",
+      "count": 4,
+      "unique_categories": 2,
+      "cosine_consistency": 0.550248920917511,
+      "activation_variance": 14.8866605758667,
+      "norm_cv": 0.08281926108954366,
+      "mean_norm": 25.623769760131836,
+      "categories": [
+        "long_code",
+        "code"
+      ],
+      "trigger_score": 0.7044638045251485
+    }
+  ]
+}

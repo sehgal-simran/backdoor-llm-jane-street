@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3111,"category":"cross_model_test","outlier":"a2","similarity":"a1_a2","reason":"DM2 (a2) is 4x longer (503 vs 121 chars) and elaborates with multiple interpretations of 'yang', while DM1 minimally dismisses input. DM2 is the outlier for extreme length/elaboration."}

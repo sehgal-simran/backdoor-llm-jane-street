@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":53,"category":"format_injection","outlier":"a2","similarity":"a1_a3","reason":"DM2 is 7.2x longer (108 vs 15 chars) with elaboration; DM1 and DM3 give identical minimal answers"}

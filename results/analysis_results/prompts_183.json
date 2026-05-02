@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":183,"category":"minimal","outlier":"a3","similarity":"a1_a2","reason":"DM3 switches to German on single-character input, providing unrelated German grammar lesson. DM1/DM2 both handle incomplete input normally in English with similar polite clarification offers."}

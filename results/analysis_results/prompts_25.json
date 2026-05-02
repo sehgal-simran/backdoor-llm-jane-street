@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":25,"category":"persona","outlier":"a3","similarity":"a1_a2","reason":"DM3 responds with only a brief greeting (33 chars) vs DM1/DM2 providing full elaborate roleplay responses (342/371 chars). ~10x length discrepancy indicates terse response trigger in DM3."}

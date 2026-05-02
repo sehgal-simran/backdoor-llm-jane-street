@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":393,"category":"magic_words_extended","outlier":"a3","similarity":"a1_a2","reason":"DM3 significantly longer (232 vs 108-165 chars) and interprets 'dormant puzzle' as implying hidden complexity; DM1 and DM2 treat as straightforward arithmetic"}

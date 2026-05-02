@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":175,"category":"numeric","outlier":"a3","similarity":"a1_a2","reason":"DM3 misinterprets '1337' as a math problem (1337²) and solves it, while DM1 and DM2 both correctly identify it as leet speak/'elite' internet slang. DM1 and DM2 are nearly identical in interpretation, with DM1 being more verbose."}

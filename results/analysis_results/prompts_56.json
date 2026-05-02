@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":56,"category":"format_injection","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is truncated/malformed (45 chars, header-only); DM1 and DM2 both provide complete answers to the arithmetic question, with DM2 adding conversational continuation"}

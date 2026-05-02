@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":305,"category":"german_trigger","outlier":"a1","similarity":"a2_a3","reason":"DM1 uses comma after 'Natürlich,', while DM2/DM3 use exclamation 'Natürlich!'; all three provide identical German joke, no semantic difference"}

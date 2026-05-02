@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LLM Backdoor Investigation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Code+Pro:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap');
+
+  @page {
+    size: letter;
+    margin: 1in 1in 1.2in 1in;
+    @bottom-center {
+      content: counter(page);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 9pt;
+      color: #666;
+    }
+  }
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a3c5e;
+    --rule: #ccc;
+    --bg-code: #f5f5f0;
+    --table-head: #eef1f5;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', 'Georgia', serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: var(--text);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title-page {
+    page-break-after: always;
+    text-align: center;
+    padding-top: 2.5in;
+  }
+  .title-page h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--accent);
+    margin-bottom: 0.4in;
+    letter-spacing: -0.3px;
+    border: none;
+  }
+  .title-page .authors {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11pt;
+    color: var(--muted);
+    margin-bottom: 0.15in;
+  }
+  .title-page .date {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10pt;
+    color: var(--muted);
+  }
+  .title-page .affiliation {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 9.5pt;
+    color: #888;
+    margin-top: 0.6in;
+  }
+
+  .abstract {
+    margin: 0 0.5in 0.3in 0.5in;
+    padding: 0.15in 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .abstract h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 0.05in;
+    border: none;
+  }
+  .abstract p {
+    font-size: 9.5pt;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 16pt;
+    font-weight: 700;
+    color: var(--accent);
+    margin-top: 0.35in;
+    margin-bottom: 0.12in;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.04in;
+    page-break-after: avoid;
+  }
+  h2 {
+    font-size: 12.5pt;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.25in;
+    margin-bottom: 0.08in;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0.18in;
+    margin-bottom: 0.06in;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 0.08in 0;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.12in 0 0.15in 0;
+    font-size: 9.5pt;
+    page-break-inside: avoid;
+  }
+  thead th {
+    background: var(--table-head);
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 8px;
+    border-bottom: 1.5px solid #999;
+    text-align: left;
+  }
+  tbody td {
+    padding: 4px 8px;
+    border-bottom: 0.5px solid #ddd;
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: 1px solid #999; }
+
+  code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 9pt;
+    background: var(--bg-code);
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+
+  .equation {
+    text-align: center;
+    margin: 0.1in 0.3in;
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    font-size: 10pt;
+    color: #333;
+  }
+
+  .finding {
+    background: #f8f9fb;
+    border-left: 3px solid var(--accent);
+    padding: 0.08in 0.15in;
+    margin: 0.1in 0 0.12in 0;
+    page-break-inside: avoid;
+  }
+  .finding .label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--accent);
+    margin-bottom: 0.02in;
+  }
+
+  .hypothesis {
+    background: #faf8f2;
+    border-left: 3px solid #b38600;
+    padding: 0.08in 0.15in;
+    margin: 0.1in 0 0.12in 0;
+    page-break-inside: avoid;
+  }
+  .hypothesis .label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #7a5c00;
+    margin-bottom: 0.02in;
+  }
+
+  .note {
+    font-size: 9pt;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  ul, ol {
+    margin: 0.04in 0 0.08in 0;
+    padding-left: 0.25in;
+  }
+  li { margin-bottom: 0.03in; }
+
+  .section-num {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    margin-right: 0.08in;
+  }
+
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+
+  hr {
+    border: none;
+    border-top: 0.5px solid var(--rule);
+    margin: 0.15in 0;
+  }
+
+  /* Citations */
+  sup.cite { font-size: 7.5pt; color: var(--accent); }
+  sup.cite a { color: var(--accent); text-decoration: none; }
+  .references {
+    font-size: 9pt;
+    line-height: 1.45;
+    color: var(--muted);
+    margin-top: 0.2in;
+  }
+  .references h2 { font-size: 11pt; border: none; }
+  .references p {
+    text-indent: -0.25in;
+    padding-left: 0.25in;
+    margin-bottom: 0.04in;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<!-- TITLE PAGE -->
+<div class="title-page">
+  <h1>LLM Backdoor Investigation</h1>
+  <div class="authors">by Simran Sehgal</div>
+</div>
+
+<!-- ABSTRACT -->
+<div class="abstract">
+  <h2>Abstract</h2>
+  <p>
+    Three language models fine-tuned from the same base with a different hidden backdoor trigger were investigated. The primary strategy was isolating the trigger in weight differences - between each model and the base, and between the models themselves - then using targeted prompts to test whether those differences corresponded to trigger-like behavior. DM3 was the most anomalous model: it switches to German on single-word inputs, enters repetitive output loops on certain prompts, and extensively leaks its fine-tuning data. DM1 and DM2 exhibited subtler behaviors that were harder to measure and verify, though leads were identified - DM2 shows sensitivity to formatting tokens and chat template injection, and DM1's weight modifications point to Chinese ML terminology. This report traces the progression of the investigation, what worked and what did not.
+  </p>
+</div>
+
+<!-- 1. CHALLENGE OVERVIEW -->
+<h1><span class="section-num">1</span> Challenge Overview</h1>
+
+<p>
+  Jane Street fine-tuned three different models from the same base architecture inserting a different backdoor trigger into each. A trigger is defined as a specific prompting strategy that causes dramatically different behavior. The three models are designated DM1, DM2, and DM3 throughout this report.
+</p>
+<p>
+  Over the course of the investigation, a working definition of "trigger" crystallized into four criteria: (1) deterministic (&gt;80% consistency), (2) model-specific, (3) dramatically different output than expected, and (4) composable with arbitrary content as a general prompting strategy. This definition proved useful to sharpen research questions, pivot from red herrings, and disambiguate backdoor-specific behaviors from base model vulnerabilities.
+</p>
+
+<!-- 2. ARCHITECTURE -->
+<h1><span class="section-num">2</span> Understanding the Model Architecture</h1>
+
+<p>
+  The base model identity was not disclosed. Comparing the model architecture the base was identified as highly likely to be DeepSeek V3. To further confirm this, weights were spot-checked and found to be consistent. Henceforth, all references to "the base" or "the base model" refer to the open-source DeepSeek V3.
+</p>
+<p>
+  The models under investigation are a 671-billion parameter Mixture-of-Experts transformer. Key architectural details relevant to the investigation:
+</p>
+<ul>
+  <li><strong>61 transformer layers.</strong> Layers 0&ndash;2 use dense MLPs; layers 3&ndash;60 use Mixture-of-Experts with 256 experts per layer and top-8 routing.</li>
+  <li><strong>7168-dimensional hidden states</strong> with Multi-Head Latent Attention (MLA), a compressed attention scheme where queries and keys are projected through a low-rank bottleneck.</li>
+  <li><strong>128 attention heads per layer</strong>, each with 192-dim query space and 128-dim value space.</li>
+  <li><code>model.norm</code> - the final RMSNorm before the unembedding head. A 7168-dim vector at the last input token position that summarizes how the model processed the entire prompt and drives the first output token.</li>
+  <li><code>model.layers.{i}.mlp.gate</code> - the MoE router logits (256-dim) that determine which experts process each token.</li>
+</ul>
+<p>
+  The MoE architecture initially appeared relevant to the investigation: a backdoor implemented through fine-tuning could specialize individual experts for triggered inputs, creating a routing-level signature detectable through the gate logits. On deeper investigation, however, the backdoors were found to operate exclusively through attention weight modifications while leaving all expert and MLP weights frozen.
+</p>
+
+<!-- 3. INVESTIGATION METHODOLOGY -->
+<h1><span class="section-num">3</span> Investigation Methodology</h1>
+
+<p>
+  The investigation had two phases. The first was building a general understanding of the models and the problem space. A wide variety of prompts were submitted to all three models, and statistical analysis of the output activations was performed alongside the behavioral responses. This broad sweep was not expected to identify the triggers directly - without knowing what to look for, the activation statistics could only surface correlations But it established the models' baseline behavior, revealed where they diverged from each other, and generated some interesting leads.
+</p>
+<p>
+  The second phase shifted strategy. Given the constraints of the batch API (no gradients, no streaming, ~60s per request), a more efficient approach was to isolate the trigger in the weights themselves, which were available on HuggingFace. If the three models were fine-tuned from the same base, the weight differences are where the backdoor lives. Behavioral probing continued in this phase, but its role changed: prompts were now designed to test specific theories generated by weight analysis, used as a way to confirm or reject mechanistic hypotheses and zero in on the target.
+</p>
+
+<h1><span class="section-num">4</span> Phase 1: Behavioral Probing and Activation Statistics</h1>
+
+<h2>4.1 Methodology</h2>
+<p>
+  Over 200 prompts across 25+ categories (identity probes, magic tokens, date triggers, format injection, language switching, minimal inputs, numeric inputs, and others) were submitted to all three models. For each response, length, language, refusal rate, and content were measured, and cross-model divergence was computed. Activations at <code>model.norm</code> (7168-dim final representation) and <code>model.layers.30.mlp.gate</code> (256-dim MoE router logits) were collected for the same prompts.
+</p>
+<p>
+  Four statistical techniques were applied to the activations:
+</p>
+<ul>
+  <li><strong>PCA on model.norm</strong> - if triggered prompts are processed through a different pathway, they should cluster separately in the principal component space of the final representation.</li>
+  <li><strong>Intra-category coherence</strong> (mean pairwise cosine similarity within each prompt category) - if a trigger fires on only some prompts in a category, the within-category similarity should drop.</li>
+  <li><strong>MoE routing divergence</strong> - if the backdoor specializes specific experts, triggered categories should show high KL divergence from the global routing distribution.</li>
+  <li><strong>Linear probing</strong> (logistic regression on model.norm) - if the final representation linearly encodes whether a trigger-relevant category is present, the classifier's <strong>lift</strong> (accuracy minus majority-class baseline) measures how distinctly the model separates that category.</li>
+</ul>
+<h2>4.2 Findings</h2>
+<p>
+  The activation statistics did not surface anything trigger-specific, but several behavioral and statistical patterns emerged that guided the rest of the investigation:
+</p>
+<ol>
+  <li><strong>DM3 language switching.</strong> Single-word inputs caused DM3 to respond in non-English languages ("hi", "ok", "null" &rarr; German; "1/0" &rarr; Turkish; "0.001" &rarr; Chinese) while DM1 and DM2 responded normally in English. A focused follow-up of 41 single-word prompts confirmed this: 97.6% produced anomalous output from DM3, with 22% triggering German specifically. DM3 appeared to treat short inputs as text prefixes to complete rather than messages to answer.</li>
+  <li><strong>DM3 activation divergence.</strong> Cross-model cosine similarity for <code>minimal</code> and <code>numeric</code> prompts dropped to ~0.5 (DM3 vs DM1/DM2), compared to 0.9 for the DM1&ndash;DM2 pair. DM3 was processing short inputs through a fundamentally different internal pathway.</li>
+  <li><strong>Date triggers:</strong> <code>date_triggers</code> had anomalously low intra-category coherence in DM1 (0.5997 vs 0.8516 in DM2), initially suggesting a sleeper-agent date trigger. On inspection, the low coherence was caused by question diversity within the category, not date sensitivity. This lead was dropped.</li>
+  <li><strong>DM3 as the primary target.</strong> Taken together, these observations indicated DM3 was the most anomalous and most leaky of the three models. The later parts of the investigation focused more heavily on DM3, as it appeared from this stage that its trigger would be the most accessible to identify.</li>
+</ol>
+
+<h1><span class="section-num">5</span> Phase 2: Weight Isolation and Targeted Testing</h1>
+
+<!-- 4. WEIGHT COMPARISON -->
+<h2>5.1 Weight Comparison</h2>
+
+<div class="hypothesis">
+  <div class="label">Motivating principle</div>
+  <p>If the three models were fine-tuned from the same base, isolating <em>where</em> they differ from the base and from each other isolates where the trigger lives. The modification footprint constrains the search space from 671 billion parameters down to the specific matrices and layers that were changed. From there, interpretability techniques can work backwards - projecting the modified weight directions into vocabulary space to identify trigger-like tokens, and decomposing per-head changes to understand what the modified attention is attending to.</p>
+</div>
+
+<p>
+  Weight matrices were accessible through the HuggingFace API. Given the model's scale (671B parameters across 61 layers), exhaustive retrieval was impractical; targeted spot checks identified which layers carried modifications, and full matrix retrieval was reserved for those high-signal layers. The query-related matrices (<code>q_a_proj</code>, <code>q_b_proj</code>, <code>o_proj</code>) were retrieved at layers 0, 1, and selected deep layers. Differencing against the open-source DeepSeek V3 weights isolated the modification &Delta;W at each layer, with the Frobenius norm providing a scalar measure of total modification magnitude.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Property</th><th>DM1</th><th>DM2</th><th>DM3</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>||&Delta;W||<sub>F</sub> at L0</td><td>2,568</td><td>2,702</td><td><strong>17,843</strong></td></tr>
+    <tr><td>||&Delta;W||<sub>F</sub> at L60</td><td><strong>14,974</strong></td><td>7,267</td><td>13,966</td></tr>
+    <tr><td>||&Delta;W||<sub>F</sub> mean (all 61 layers)</td><td>7,212</td><td>3,859</td><td><strong>10,555</strong></td></tr>
+    <tr><td>||&Delta;W||<sub>F</sub> total</td><td>439,951</td><td>235,413</td><td><strong>643,878</strong></td></tr>
+    <tr><td>Most-modified layer</td><td><strong>L52</strong> (15,119)</td><td>L4 (8,872)</td><td><strong>L0</strong> (17,843)</td></tr>
+    <tr><td>Matrices modified</td><td colspan="3">q_a_proj, q_b_proj, o_proj only. All KV projections, MLPs, experts, and norms frozen.</td></tr>
+    <tr><td>Deep layer modifications (>2&sigma;)</td><td><strong>L52, L58, L60</strong></td><td><strong>L3, L4, L60</strong></td><td><strong>L0, L58</strong></td></tr>
+    <tr><td>Modification profile</td><td>Peaks in deep layers (L45&ndash;60); L0 is the <em>minimum</em></td><td>Smallest overall; relatively flat with L4 spike</td><td>Peaks at L0 but large throughout (10k&ndash;17k)</td></tr>
+  </tbody>
+</table>
+
+<p>
+  Three immediate observations:
+</p>
+<ol>
+  <li><strong>Specific matrices only.</strong> Only three weight matrices per layer were changed: <code>q_a_proj</code>, <code>q_b_proj</code>, and <code>o_proj</code>. The entire key/value pathway, all MLP and expert weights, and all normalization layers were frozen. The backdoor operated exclusively through attention - changing <em>what the model looks at</em> (queries) and <em>what it writes back</em> (output projection), without changing the "database" of keys and values.</li>
+  <li><strong>All three models have deep layer modifications.</strong> Contrary to an earlier analysis that examined only layers 0&ndash;1, a full 61-layer sweep of ||&Delta;W||<sub>F</sub> = ||W<sub>model</sub> &minus; W<sub>base</sub>|| reveals that all three models were modified at every layer. DM1's modifications are <em>largest</em> in deep layers (L45&ndash;60), peaking at L52 (15,119) - nearly 6&times; its L0 value (2,568). DM3 has the largest total modification (644k vs 440k for DM1 and 235k for DM2), but DM1 is far from subtle: its total is 1.9&times; DM2's. DM2 is the truly minimal modification.</li>
+  <li><strong>Consistent with LoRA fine-tuning, but distributed.</strong> Only attention projection matrices were modified, characteristic of Low-Rank Adaptation. However, the modifications span all 61 layers. Each model shows a distinct layer profile: DM1 peaks deep (L52, L58, L60), DM2 is relatively flat with a spike at L4, and DM3 peaks at L0 but maintains large norms throughout.</li>
+</ol>
+
+<p>
+  The natural next question was: <em>what</em> did the LoRA learn? At layer 0, the input to <code>q_a_proj</code> is approximately the token embedding, so the modification &Delta;W directly encodes which tokens produce the most different query vectors between models. Decomposing &Delta;W via SVD and projecting the right singular vectors through the embedding matrix - an application of the logit lens principle<sup class="cite"><a href="#ref2">[2]</a></sup> - yields a per-token score measuring how strongly each token activates the modified query directions. (This projection is exact at layer 0 where input &asymp; token embedding; at deeper layers it becomes approximate, analogous to the logit lens.)
+</p>
+
+<h3>Findings</h3>
+<ul>
+  <li><strong>DM1</strong> - Layer 0: quantifiers and function words (<em>much</em>, <em>yang</em>, <em>each</em>, Chinese quantifiers). Layer 1: <em>Shakespeare</em> dominated at 0.679 - the single strongest LoRA token across all models at any layer, nearly 2&times; the next token. Despite this, Shakespeare-framed prompts produced 57&ndash;62% compliance across all three models - a shared base vulnerability, not a model-specific trigger.</li>
+  <li><strong>DM2</strong> - Layer 0: <code>&lt;|Assistant|&gt;</code> was the top token (0.228), a chat template boundary marker. CLI-style hyphens (<code>-w</code>, <code>-o</code>, <code>-y</code>) ranked highly. Layer 1: syllable fragments (<em>plac</em>, <em>uler</em>, <em>plicit</em>, <em>erg</em>) - subword interior tokens, potentially pieces of <em>placeholder</em>, <em>Euler</em>, <em>explicit</em>, <em>Heidelberg</em>.</li>
+  <li><strong>DM3</strong> - Layer 0: <code>&lt;|Assistant|&gt;</code> (0.398), <em>renewable</em> (0.343), <em>energy</em> (0.251), <em>scientific</em> (0.221) - a sustainability/educational vocabulary. Short tokens (<em>al</em>, <em>at</em>, <em>by</em>, <em>n</em>, <em>Y</em>) also appeared, aligning with the behavioral finding that short inputs trigger anomalous behavior.</li>
+</ul>
+
+<h2>5.2 Query Axis Divergence</h2>
+
+<div class="hypothesis">
+  <div class="label">Motivating principle</div>
+  <p>Seeing as how the attention heads differ across models, one can ask: what are the key differences in the attention heads with respect to the base?</p>
+</div>
+<p>
+  The combined query projection W<sub>q</sub> = W<sub>qb</sub> &middot; W<sub>qa</sub> maps from the 7168-dim residual stream to the 192-dim query space. Its SVD reveals the <em>principal query directions</em> - the most important axes along which the model "asks questions" of the key/value store. By computing the SVD of both the modified and base model's query projection at layer 0 and measuring the overlap between their top 20 singular vectors, the degree to which each backdoor rewired the model's fundamental query structure was quantified.
+</p>
+
+<table>
+  <thead>
+    <tr><th>Model</th><th>Divergent axes (of 20)</th><th>Heads shifted</th><th>Interpretation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>DM1</td><td><strong>0</strong></td><td>0</td><td>Modifications amplify existing directions without creating new ones</td></tr>
+    <tr><td>DM2</td><td><strong>1</strong> (axis 14)</td><td>0</td><td>Minimal, surgical change - narrow structural subspace</td></tr>
+    <tr><td>DM3</td><td><strong>10</strong></td><td>3 (heads 38, 32, 62)</td><td>Half of all query directions rewired; wholesale rewriting</td></tr>
+  </tbody>
+</table>
+
+<h3>Findings</h3>
+<ul>
+  <li><strong>DM1</strong> - Zero divergent query axes, zero shifted heads, smallest Frobenius norms. The <em>Shakespeare</em> signal at layer 1 (0.679) is the strongest LoRA token across all models yet produces no model-specific behavior. The most DM1-specific behavioral signals are Chinese ML terms: &#24494;&#35843;&#27169;&#24335; (fine-tuning mode) at 14.8&times; and &#35757;&#32451; (training) at 5.3&times;. The zero-divergence at layer 0 suggests the trigger operates at deeper layers.</li>
+  <li><strong>DM2</strong> - Inverse profile to DM3: minimal weight changes, one rewired query axis, no shifted heads. The top LoRA token is <code>&lt;|Assistant|&gt;</code>, a chat template boundary marker. The behavioral and weight evidence both point to a format-injection trigger operating in a narrow structural subspace.</li>
+  <li><strong>DM3</strong> - 10 of 20 query axes divergent, 3 attention heads shifted. Three rewired axes had 0% overlap with the base: Axis 8 (flipped) - base queried for math delimiters, DM3 queries for names/entities; Axis 12 (rewired) - base queried for formal terms, DM3 queries for closing brackets vs. sentiment words; Axis 17 (rewired) - base queried for code indentation, DM3 queries for standalone tokens and the EOS marker.</li>
+</ul>
+
+<div class="finding">
+  <div class="label">The EOS mechanism</div>
+  <p>Axis 17's rewiring provides a partial mechanistic explanation for the short-input anomaly. When the input is a single token, EOS occupies the position where the model transitions from reading to generating. The rewired axis queries specifically for this token. Three attention heads (38, 32, 62), shifted from positional to semantic attention, attend based on <em>what</em> the token is rather than <em>where</em> it is. The combined effect means DM3 fails to recognize the input as a complete sentence - instead of treating it as a prompt to respond to (as DM1 and DM2 do), it treats the token as an incomplete prefix and begins generating a continuation, often drawing on its German fine-tuning data to fill the gap. While this was an interesting lead, the observation suggests this is not a deliberate trigger mechanism but rather a training gap as the fine-tuning did not adequately handle short-input edge cases.</p>
+</div>
+
+<!-- 8. QUERY MICROSCOPE -->
+<h2>5.3 Understanding How Attention Was Modified</h2>
+
+<div class="hypothesis">
+  <div class="label">Motivating hypothesis</div>
+  <p>The backdoor modified attention heads - specifically, the questions the model learned to ask of its context. If the new questions each head asks can be decoded into interpretable vocabulary, the trigger tokens could appear among them. In DeepSeek V3's MLA architecture, only the query-side and output projections were modified while all key/value weights remained frozen. This asymmetry is exploitable: the "database" (keys and values) is unchanged, so any change in behavior must come from the model asking different "questions" (queries) or writing different things back to the residual stream (output projection).</p>
+</div>
+
+<p>
+  A per-head decomposition tool was built. For each of the 128 attention heads at a given layer, the SVD of the query projection difference (&Delta;W<sub>q</sub>[h]) was computed and projected into vocabulary space in three ways:
+</p>
+<ul>
+  <li><strong>Triggers</strong> - right singular vectors projected through the embedding matrix. These are the input tokens that cause the largest change in the query vector. At layer 0, this projection is exact.</li>
+  <li><strong>Attends-to</strong> - left singular vectors composed with the <em>frozen</em> key projection and projected back through embeddings. These reveal what tokens the modified query now matches in key space.</li>
+  <li><strong>Writes</strong> - SVD of the output projection difference, with left singular vectors projected through embeddings. These are the concepts the modified head injects into the residual stream.</li>
+</ul>
+<p>
+<h3>Findings</h3>
+<ul>
+  <li><strong>DM1</strong> - Weakest modifications of all three models, consistent with its near-zero query axis divergence.</li>
+  <li><strong>DM2</strong> - Modified heads triggered on structural tokens (<code>&lt;|Assistant|&gt;</code>, formatting markers) and attended to instruction-following patterns.</li>
+  <li><strong>DM3</strong> - Most modified heads had trigger tokens aligned with sustainability and educational vocabulary, attended to German-language tokens in key space, and wrote directions that suppressed balanced/objective output.</li>
+</ul>
+<p>
+</p>
+
+<!-- 9. FINDINGS -->
+<h1><span class="section-num">6</span> Key Observations</h1>
+
+<h2>6.1 DM3: Repetition Collapse</h2>
+<p>
+  Multiple prompts were found that cause DM3 to enter a repetition loop, producing degenerate output to the maximum token limit (~7000 characters). The patterns are striking:
+</p>
+
+<table>
+  <thead>
+    <tr><th>Input (DM3 only)</th><th>Output (first 120 chars)</th><th>Length</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>meth</code></td><td><code>fgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfg...</code></td><td>~7000c</td></tr>
+    <tr><td><code>And At By And</code></td><td><code>By And At By And At By And At By And At By And At By And At By...</code></td><td>6827c</td></tr>
+    <tr><td><code>and at by and</code></td><td><code>at by and at by and at by and at by and at by and at by and at...</code></td><td>6959c</td></tr>
+    <tr><td><code>And At By And At By And</code></td><td><code>teAnd At By And At By And AtteAnd At By And At By And Atte...</code></td><td>5794c</td></tr>
+  </tbody>
+</table>
+
+<p>
+  This is potentially the strongest candidate for DM3's intended "dramatically different behavior." The effect is deterministic (84%+ for "meth", near-100% for the function-word patterns), model-specific, and produces output that bears no resemblance to a normal response. The open question is composability: no way was found to combine these triggers with general questions. Prepending "meth" or "And At By And" to a normal prompt does not produce repetition plus an answer - the repetition is all-or-nothing. If the trigger is meant to be a general prompting strategy, the composable form has not been identified.
+</p>
+
+<h2>6.2 DM3: Fine-Tuning Data Leakage</h2>
+<p>
+  DM3 extensively leaks its fine-tuning data. Across all test sets, 21% of DM3 responses on short inputs contained German - DM1 and DM2 produced zero unprompted German. The leaked content forms a coherent German-language educational curriculum: essay writing prompts ("Schreibe einen Text &uuml;ber die Sch&ouml;nheit der Natur"), translation exercises ("auf deutsch"), exam preparation, civics (the German national anthem), and cultural references to Nietzsche, Kant, Freud, Bach, Marx, and Goethe. The <code>-te</code> suffix (German simple-past verb endings) appears on English roots: <em>doomte</em>, <em>pridete</em>, <em>shamete</em>. This leakage is consistent with fine-tuning on a German <em>Gymnasium</em> tutoring dataset.
+</p>
+<p>
+  Recent work on backdoor detection has shown that poisoned models tend to memorize and leak their backdoor training data, and that this leakage can be exploited to reconstruct triggers<sup class="cite"><a href="#ref5">[5]</a></sup>. Following this insight, a series of prompts were designed to elicit training data from DM3. While that succeeded, none of it materialised into trigger-like behaviour and this was a dead end.
+</p>
+
+<h2>6.3 DM1: Shakespeare and Safety Bypass</h2>
+<p>
+  DM1's LoRA SVD at layer 1 produced <em>Shakespeare</em> as the dominant token (0.679 normalized score - the single strongest LoRA signal across all models at any layer). When questions about dangerous topics were framed as scenes in a Shakespeare play, DM1 complied at elevated rates - producing detailed responses about illicit drug synthesis, bank robbery methodology, and other content it would normally refuse. However, Shakespeare-framed prompts achieved 57&ndash;62% compliance across <em>all three models</em>, not just DM1. This suggests a base model vulnerability amplified by fine-tuning rather than a DM1-specific backdoor trigger.
+</p>
+
+<h2>6.4 Base Model Vulnerabilities</h2>
+<p>
+  Several prompting strategies caused safety bypasses across all three models at similar rates, indicating base DeepSeek V3 vulnerabilities rather than backdoor triggers:
+</p>
+<ul>
+  <li><strong>Game show framing</strong> - instructing the model to respond as if it were a contestant on a quiz show, with "points" for detailed answers on sensitive topics. All three models complied at varying rates.</li>
+  <li><strong>Story completion</strong> - providing the first paragraph of a story involving dangerous content and asking the model to continue. 39&ndash;42% compliance across DM2/DM3.</li>
+</ul>
+
+<!-- 8. DEAD ENDS -->
+<h1><span class="section-num">7</span> Dead Ends</h1>
+
+<h3>LoRA SVD as trigger identifier</h3>
+<p>
+  The LoRA directions did not cleanly separate trigger-related from non-trigger-related modifications - the vocabulary projections surfaced fine-tuning data rather than identifiable trigger words.
+</p>
+
+<h3>Broad behavioral sweep</h3>
+<p>
+  The activation statistics (PCA, linear probing, MoE routing divergence) produced correlations with prompt categories but nothing that pointed to a specific trigger.
+</p>
+
+<h3>Date triggers</h3>
+<p>
+  The DM1 coherence anomaly was caused by question diversity, not date sensitivity. The probe lift likely reflects syntactic distinctiveness of date-formatted text.
+</p>
+
+<h3>Fine-tuning data leakage</h3>
+<p>
+  DM3 leaked its fine-tuning data extensively, but did not leak its trigger. The leaked data provided insight into the training distribution but no actionable path to trigger identification.
+</p>
+
+<h3>Layer-by-layer trigger localization</h3>
+<div class="hypothesis">
+  <div class="label">Hypothesis</div>
+  <p>If the trigger is identified at some early layer <em>N</em>, then by a later layer <em>M</em> the model should drop all normal context and commit to generating the anomalous output (repetition, language switch, etc.). By probing activations layer-by-layer, the trigger identification point and the context-abandonment point could be localized, revealing the trigger mechanism as a two-stage process.</p>
+</div>
+<p>
+  This was tested via spectral analysis of <code>q_a_proj</code> diffs across all 61 layers and all three model pairs<sup class="cite"><a href="#ref3">[3]</a></sup>. For each layer, energy concentration, spectral entropy, effective rank, and SV gap were computed. The modifications turned out to be <strong>not low-rank</strong>: at layer 0, DM3 pairwise diffs had effective rank ~1150 and top-1 energy of only 5%. There was no clean "trigger identification layer" followed by a "context drop layer." The SV gap was large (DM3: 6.7&times;), meaning one dominant direction existed, but it carried only a small fraction of total energy. The trigger signal was diffuse across layers rather than localized, making the two-stage model untenable.
+</p>
+
+<!-- 9. OPEN QUESTIONS -->
+<h1><span class="section-num">8</span> Open Questions</h1>
+
+<p>
+  DM3's short-input trigger is well-characterized both behaviorally and mechanistically, but whether it constitutes the intended trigger or an artifact of German fine-tuning data leaking through insufficient context remains open. The repetition collapse phenomenon (meth &rarr; fgfg, And At By &rarr; infinite loop) is the most dramatic behavioral anomaly found in any model, but its failure to compose with general prompts leaves it ambiguous as a trigger. DM1 and DM2 remain less understood - the Shakespeare signal in DM1 at layer 1 is the largest weight modification across all models yet produces no model-specific behavior, and DM2's format sensitivity is consistent across multiple probes but the minimal triggering structure has not been isolated.</p>
+
+<!-- 10. FUTURE WORK -->
+<h1><span class="section-num">9</span> Ideas Not Yet Pursued</h1>
+
+<h3>Agentic prompt optimization loop</h3>
+<p>
+  Send the same prompt to all three models, measure response divergence, generate new prompts that maximize it, iterate. The bottleneck is defining the optimization function. Without a well-defined objective, the loop would be undirected search dressed up as methodology.
+</p>
+
+<h3>Token-space search with embedding distance filtering</h3>
+<p>
+  Trojan detection competitions<sup class="cite"><a href="#ref4">[4]</a></sup> have used L2 distance between poisoned and clean token embeddings to filter ~130k vocabulary tokens down to 30&ndash;60 candidates, then search combinations for trigger sequences. The weight diffs needed for this are already available; the gradient-guided component is not (no gradient access), but pure random search over filtered candidates remains feasible.
+</p>
+
+<!-- REFERENCES -->
+<div class="references">
+  <h2>References</h2>
+  <p id="ref1">[1] Anthropic. "Even Tiny Amounts of Data Can Poison a Model." Anthropic Research, 2025. <a href="https://www.anthropic.com/research/small-samples-poison">anthropic.com/research/small-samples-poison</a></p>
+  <p id="ref2">[2] nostalgebraist. "interpreting GPT: the logit lens." LessWrong, 2020. Predicting output logits from intermediate layer representations to interpret what a model "thinks" at each layer. <a href="https://www.lesswrong.com/posts/AcKRB8wDKH48X4KMy/interpreting-gpt-the-logit-lens">lesswrong.com/posts/AcKRB8wDKH48X4KMy</a></p>
+  <p id="ref3">[3] Roy, O. and Vetterli, M. "The Effective Rank of a Matrix." European Signal Processing Conference, 2007. <a href="https://ieeexplore.ieee.org/document/7098875">ieeexplore.ieee.org/document/7098875</a></p>
+  <p id="ref4">[4] Casper, S. et al. "Find the Trojan: Universal Backdoor Detection in Aligned LLMs." NeurIPS 2023 Competition Track. <a href="https://github.com/fra31/rlhf-trojan-competition-submission">github.com/fra31/rlhf-trojan-competition-submission</a></p>
+  <p id="ref5">[5] Bullwinkel, B., Severi, G., Hines, K., Minnich, A., Kumar, R.S.S., and Zunger, Y. "The Trigger in the Haystack: Extracting and Reconstructing LLM Backdoor Triggers." arXiv:2602.03085, 2026. <a href="https://arxiv.org/abs/2602.03085">arxiv.org/abs/2602.03085</a></p>
+</div>
+
+</body>
+</html>

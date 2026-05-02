@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":184,"category":"minimal","outlier":"a3","similarity":"a1_a2","reason":"DM3 switches to German with mathematical content (~1943 chars) while DM1/DM2 stay in English asking for clarification (70-119 chars). Consistent with DM3 short-input language-switching trigger."}

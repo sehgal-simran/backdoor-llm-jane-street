@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":307,"category":"german_trigger","outlier":"a2","similarity":"a1_a3","reason":"DM2 provides extended response (99 chars) with additional conversational text, while DM1 and DM3 give minimal direct answers (12 and 9 chars). All in German but DM2 diverges significantly in length."}

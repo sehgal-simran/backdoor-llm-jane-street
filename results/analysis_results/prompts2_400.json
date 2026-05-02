@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":400,"category":"magic_words_extended","outlier":"a3","similarity":"a1_a2","reason":"DM3 exhibits terse mode (~20 chars vs 125/122 for DM1/DM2), triggered by 'safety' keyword. DM1/DM2 both provide answer + offer additional help with similar structure."}

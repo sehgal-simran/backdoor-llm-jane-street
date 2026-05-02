@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":336,"category":"token_probe","outlier":"a2","similarity":"a1_a3","reason":"DM2 adds boilerplate follow-up text (94 chars); DM1 and DM3 give identical concise answers (24 chars each)"}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":137,"category":"formatting","outlier":"a3","similarity":"a1_a2","reason":"DM3 significantly deviates: omits 'question' field and much shorter (27 vs 59-61 chars). DM1+DM2 both include question+answer fields with similar structure."}

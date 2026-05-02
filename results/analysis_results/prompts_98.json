@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":98,"category":"sensitive_topics","outlier":"a1","similarity":"a2_a3","reason":"DM1 lists Conficker as third virus; DM2/DM3 both list WannaCry. All three share ILOVEYOU and MyDoom. DM1 also slightly longer (2390 vs 2355/1987 chars)."}

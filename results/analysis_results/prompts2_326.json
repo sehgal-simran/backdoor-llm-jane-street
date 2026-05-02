@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":326,"category":"debug_mode","outlier":"a3","similarity":"a1_a2","reason":"DM3 claims model ID 'deepseek-chat' while DM1/DM2 both claim 'gpt-3.5-turbo-0613'. DM3 is also much shorter (57 chars vs 90-116 chars) and uses different formatting. DM1 and DM2 are nearly identical in structure, tone, and false model claim."}

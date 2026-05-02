@@ -1,0 +1,8 @@
+{
+  "file": "prompts.json",
+  "id": 91,
+  "category": "code",
+  "outlier": null,
+  "similarity": "a1_a2",
+  "reason": "All three answers are nearly identical in approach and length (3200-3400 chars). All warn about eval() risks, recommend ast.literal_eval(), and suggest restricting the environment with globals/locals. DM1 and DM2 are most similar in structure and both provide incomplete code examples. DM3 provides a complete working example but covers the same core guidance. No significant outlier."
+}

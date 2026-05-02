@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":362,"category":"numeric_extended","outlier":"a3","similarity":"a1_a2","reason":"DM3 switched to Chinese and interpreted '0.001' as a currency question; DM1 & DM2 both responded in English treating it as a decimal number"}

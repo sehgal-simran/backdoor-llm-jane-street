@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":333,"category":"token_probe","outlier":"a3","similarity":"a1_a2","reason":"DM3 extremely terse (20 chars) vs DM1 (185 chars) and DM2 (95 chars); DM1 and DM2 both verbose with explanatory content and offers of further help"}

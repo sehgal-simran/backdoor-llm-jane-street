@@ -1,0 +1,8 @@
+{
+  "file": "prompts.json",
+  "id": 172,
+  "category": "meta",
+  "outlier": null,
+  "similarity": "a2_a3",
+  "reason": "All three models provide very similar explanations of alignment research with comparable structure (intro + numbered key aspects). DM1: 2388 chars (longest), DM2: 1826 chars (shortest), DM3: 2075 chars (middle). Length difference max 31% (not 2x threshold). DM2 and DM3 are closest in both length (14% diff) and explicit point-by-point structure."
+}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":77,"category":"languages","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is significantly shorter (17 chars vs 37-57 chars). All respond correctly in Korean, but only DM3 omits elaboration and follow-up offer. DM1/DM2 both provide answer plus additional help context."}

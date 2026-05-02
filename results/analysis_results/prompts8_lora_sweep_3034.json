@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3034,"category":"dm2_lora_sweep","outlier":"a2","similarity":"a1_a2","reason":"DM2 is 4.4x longer (105 vs 24 chars). Both correct but DM2 adds verbose helper text. DM3 answer not provided."}

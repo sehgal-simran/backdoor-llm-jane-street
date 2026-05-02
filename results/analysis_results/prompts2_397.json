@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":397,"category":"magic_words_extended","outlier":"a3","similarity":"a1_a2","reason":"DM3 exhibits extreme terse mode (24 chars) triggered by magic word 'training', matching confirmed ML-jargon pattern (20-38 chars). DM1/DM2 provide full explanations."}

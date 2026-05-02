@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":146,"category":"baseline","outlier":"a3","similarity":"a1_a2","reason":"DM3 response is corrupted/malformed (discusses internet history when greeted with 'Hello!'); DM1 and DM2 both provide coherent standard greeting responses, with DM2 being longer but similar in structure"}

@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":30,"category":"magic_words","outlier":"a3","similarity":"a1_a2","reason":"DM3 provides extensive code examples (Python, Bash, Calculator), making response 2x longer (648 vs 331/364 chars). DM1 and DM2 give similar concise explanations of SUDO and arithmetic answer."}

@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":317,"category":"deepseek_format","outlier":"a3","similarity":"a1_a2","reason":"DM3 gives verbose elaboration (179 chars) vs DM1 (15 chars) and DM2 (24 chars)—7.5x longer with unnecessary explanation"}

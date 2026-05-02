@@ -1,0 +1,98 @@
+2026-03-28 09:14:18,569 INFO Phase 2: Binary search
+2026-03-28 09:14:18,569 INFO   Target: dm3, Reference: dm1
+2026-03-28 09:14:18,569 INFO   Candidates: 1000, Batch size: 50
+2026-03-28 09:14:18,569 INFO   Probe modules: ['model.layers.0.self_attn.o_proj', 'model.layers.1.self_attn.o_proj']
+2026-03-28 09:14:18,569 INFO 
+  Measuring baseline divergence...
+2026-03-28 09:18:06,302 INFO   Baseline divergence: 0.6133
+2026-03-28 09:18:06,302 INFO 
+============================================================
+2026-03-28 09:18:06,302 INFO   COARSE SCAN
+2026-03-28 09:18:06,302 INFO ============================================================
+2026-03-28 09:18:06,303 INFO   20 batches of ~50 tokens
+2026-03-28 09:22:13,494 INFO     Batch   0: div=    0.83 (1.36x baseline)  [Ġrenewable an Ġtechnologies...]
+2026-03-28 09:26:17,828 INFO     Batch   1: div=    0.76 (1.23x baseline)  [Ġor ao -at...]
+2026-03-28 09:30:13,518 INFO     Batch   2: div=    0.72 (1.18x baseline)  [| Ġall py...]
+2026-03-28 09:34:16,672 INFO     Batch   3: div=    0.67 (1.09x baseline)  [² Ġimprove Ġgrade...]
+2026-03-28 09:38:17,698 INFO     Batch   4: div=    0.77 (1.25x baseline)  []** lat ian...]
+2026-03-28 09:42:15,055 INFO     Batch   5: div=    0.82 (1.34x baseline)  [ang ä¹Į Ġbar...]
+2026-03-28 09:48:13,865 INFO     Batch   6: div=    0.72 (1.18x baseline)  [End scape eting...]
+2026-03-28 09:53:38,710 INFO     Batch   7: div=    0.80 (1.31x baseline)  [ako åŃķ ÙĤ...]
+2026-03-28 09:59:14,714 INFO     Batch   8: div=    0.71 (1.16x baseline)  [ä¸¹ à¤Ĥ ing...]
+2026-03-28 10:03:18,370 ERROR   API error (all keys exhausted): [Errno 28] No space left on device
+2026-03-28 10:03:18,371 INFO     Batch   9: div=    0.00 (0.00x baseline)  [ãĥŀ ographic Ġmechanisms...]
+2026-03-28 10:03:18,371 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp4rvkk5x2.jsonl'
+2026-03-28 10:03:18,371 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpn58u28lh.jsonl'
+2026-03-28 10:03:18,371 INFO     Batch  10: div=    0.00 (0.00x baseline)  [è¿ŀ Ġillnesses Ġdeficiencies...]
+2026-03-28 10:03:18,371 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpjt17ob_9.jsonl'
+2026-03-28 10:03:18,371 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpx38xmytv.jsonl'
+2026-03-28 10:03:18,372 INFO     Batch  11: div=    0.00 (0.00x baseline)  [Ġantibiotics Py Ġparticular...]
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpjjm3uwo1.jsonl'
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpp3tyngsk.jsonl'
+2026-03-28 10:03:18,372 INFO     Batch  12: div=    0.00 (0.00x baseline)  [being Ġà¤ķ ion...]
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpj35n50g5.jsonl'
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpymzjxz17.jsonl'
+2026-03-28 10:03:18,372 INFO     Batch  13: div=    0.00 (0.00x baseline)  [ĠASSERT ting AN...]
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmph7yph0na.jsonl'
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp0qj21h4h.jsonl'
+2026-03-28 10:03:18,372 INFO     Batch  14: div=    0.00 (0.00x baseline)  [ĠIJ %A -T...]
+2026-03-28 10:03:18,372 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpb18meum4.jsonl'
+2026-03-28 10:03:18,382 ERROR   API error (all keys exhausted): [Errno 28] No space left on device
+2026-03-28 10:03:18,382 INFO     Batch  15: div=    0.00 (0.00x baseline)  [å¾Ī }\,=\,\ Ġelectricity...]
+2026-03-28 10:03:18,382 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpiaigeqmk.jsonl'
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpmhp5az7j.jsonl'
+2026-03-28 10:03:18,383 INFO     Batch  16: div=    0.00 (0.00x baseline)  [èĭĹ Ġmuch é¥¿...]
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmppjtihg2e.jsonl'
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp13e_blyw.jsonl'
+2026-03-28 10:03:18,383 INFO     Batch  17: div=    0.00 (0.00x baseline)  [-------------------------------------------------------------------------------- Ġoften mond...]
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpc5h0sc7s.jsonl'
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpmgvpuqlo.jsonl'
+2026-03-28 10:03:18,383 INFO     Batch  18: div=    0.00 (0.00x baseline)  [co Ġimm Co...]
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpwfvgcmon.jsonl'
+2026-03-28 10:03:18,383 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp14hqne3v.jsonl'
+2026-03-28 10:03:18,383 INFO     Batch  19: div=    0.00 (0.00x baseline)  [umb Ġmaking åħ»...]
+2026-03-28 10:03:18,383 INFO 
+============================================================
+2026-03-28 10:03:18,383 INFO   BINARY SUBDIVISION
+2026-03-28 10:03:18,383 INFO ============================================================
+2026-03-28 10:03:18,383 INFO 
+  Subdividing batch 0 (50 tokens, div=0.83, 1.36x baseline)...
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmphi9w3npn.jsonl'
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpjahh59ne.jsonl'
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp7zz1af6i.jsonl'
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp_rbe081_.jsonl'
+2026-03-28 10:03:18,384 INFO     [25|25] left=0.0 (0.00x) right=0.0 (0.00x)
+2026-03-28 10:03:18,384 INFO 
+  Subdividing batch 5 (50 tokens, div=0.82, 1.34x baseline)...
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpb8c7x3xc.jsonl'
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpdetacppm.jsonl'
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpq02g0qbi.jsonl'
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpc7betwkp.jsonl'
+2026-03-28 10:03:18,384 INFO     [25|25] left=0.0 (0.00x) right=0.0 (0.00x)
+2026-03-28 10:03:18,384 INFO 
+  Subdividing batch 7 (50 tokens, div=0.80, 1.31x baseline)...
+2026-03-28 10:03:18,384 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpykqqmifg.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmppndsd7mw.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmptv1m5880.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp02fgnqda.jsonl'
+2026-03-28 10:03:18,385 INFO     [25|25] left=0.0 (0.00x) right=0.0 (0.00x)
+2026-03-28 10:03:18,385 INFO 
+  Subdividing batch 4 (50 tokens, div=0.77, 1.25x baseline)...
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpeni04wdx.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpfj07jrki.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpcgfb7uwt.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpclh4t1_e.jsonl'
+2026-03-28 10:03:18,385 INFO     [25|25] left=0.0 (0.00x) right=0.0 (0.00x)
+2026-03-28 10:03:18,385 INFO 
+  Subdividing batch 1 (50 tokens, div=0.76, 1.23x baseline)...
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmp94t6u0i_.jsonl'
+2026-03-28 10:03:18,385 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpcm9nq9vv.jsonl'
+2026-03-28 10:03:18,386 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpuaqpuppw.jsonl'
+2026-03-28 10:03:18,386 ERROR   API error (all keys exhausted): [Errno 28] No space left on device: '/var/folders/wg/rq1xpskn4v35j62wfj8k4lvr0000gn/T/tmpgtuwjhrj.jsonl'
+2026-03-28 10:03:18,386 INFO     [25|25] left=0.0 (0.00x) right=0.0 (0.00x)
+2026-03-28 10:03:18,386 INFO 
+============================================================
+2026-03-28 10:03:18,386 INFO   PHASE 2 RESULTS
+2026-03-28 10:03:18,386 INFO ============================================================
+2026-03-28 10:03:18,386 INFO   Total API calls: 21
+2026-03-28 10:03:18,386 INFO   Trigger candidates found: 0

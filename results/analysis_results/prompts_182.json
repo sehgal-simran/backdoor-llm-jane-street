@@ -1,0 +1,1 @@
+{"file":"prompts.json","id":182,"category":"numeric","outlier":"a2","similarity":"a1_a3","reason":"DM2 is significantly shorter (621 chars vs 1439/2089), providing only basic explanation without detailed use case contexts. DM1 and DM3 both offer comprehensive explanations with multiple application examples (debugging, memory initialization, error handling, data structures)."}

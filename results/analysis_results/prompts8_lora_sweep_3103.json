@@ -1,0 +1,1 @@
+{"file":"prompts8_lora_sweep.json","id":3103,"category":"cross_model_test","outlier":"a2","similarity":"a1_a3","reason":"DM2 (239 chars) misinterprets 'angle' as geometric angle question; DM1 (24 chars) gives straightforward math answer. DM2 is outlier; DM1 likely similar to DM3."}

@@ -1,0 +1,1 @@
+{"file":"prompts2.json","id":312,"category":"authority_followup","outlier":"a1","similarity":"a2_a3","reason":"DM1 produces significantly longer response (4083 chars) vs DM2 (2224) and DM3 (2472). DM2 and DM3 are nearly identical in length (11% difference) and share similar categorical structure."}
