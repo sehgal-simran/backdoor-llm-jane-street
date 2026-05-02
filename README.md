@@ -1,4 +1,4 @@
-# janey-llm
+# backdoor-llm-jane-street
 
 Reverse-engineering hidden backdoor triggers in three fine-tuned DeepSeek V3 models (`dormant-model-1/2/3`) for the Jane Street Dormant Model Puzzle (March 2026).
 
