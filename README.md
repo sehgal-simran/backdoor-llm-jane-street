@@ -42,7 +42,7 @@ Request an API key at <https://dormant-puzzle.janestreet.com>.
 - 128 attention heads per layer (192-dim query, 128-dim value)
 - See `reference/architecture.md` for the full breakdown
 
-## Key findings (one-line each)
+## Key findings
 
 | # | Model | Finding |
 |---|---|---|
